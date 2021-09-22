@@ -19,7 +19,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
 
 export default function LandingPage() {
   return (
-    <RootStyle title="This is IRekommend website | Minimal-UI" id="move_top">
+    <RootStyle title="This is Demo website | Minimal-UI" id="move_top">
       <LandingHero />
       <ContentStyle>
         <LandingContent />

@@ -2,10 +2,7 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 // components
 import Page from "../../components/Page";
-import {
-  LandingHero,
-  LandingContent,
-} from "../../components/_external-pages/landing";
+import { MicrobesContent } from "../../components/_external-pages/net";
 
 const RootStyle = styled(Page)({
   height: "100%",
@@ -19,10 +16,9 @@ const ContentStyle = styled("div")(({ theme }) => ({
 
 export default function DNA() {
   return (
-    <RootStyle title="This is IRekommend website | Minimal-UI" id="move_top">
-      <LandingHero />
+    <RootStyle title="This is Demo website | Minimal-UI" id="move_top">
       <ContentStyle>
-        <LandingContent />
+        <MicrobesContent />
       </ContentStyle>
     </RootStyle>
   );

@@ -98,10 +98,10 @@ function MenuDesktopItem({
             setAnchorEl(e.currentTarget);
             onOpen(path);
           }}
-          onMouseOver={(e) => {
-            setAnchorEl(e.currentTarget);
-            onOpen(path);
-          }}
+          // onMouseOver={(e) => {
+          //   setAnchorEl(e.currentTarget);
+          //   onOpen(path);
+          // }}
           sx={{
             display: "flex",
             cursor: "pointer",
@@ -133,7 +133,7 @@ function MenuDesktopItem({
             anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
             transformOrigin={{ vertical: "top", horizontal: "center" }}
             onClose={onClose}
-            onMouseLeave={onClose}
+            // onMouseLeave={onClose}
             PaperProps={{
               sx: {
                 px: 3,

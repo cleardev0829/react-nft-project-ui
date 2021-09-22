@@ -26,7 +26,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
   },
 }));
 
-export default function LandingContent() {
+export default function DesciContent() {
   const theme = useTheme();
   const isLight = theme.palette.mode === "light";
 
@@ -41,16 +41,6 @@ export default function LandingContent() {
             sx={{ display: "flex", alignItems: "center" }}
           >
             <ContentStyle>
-              {/* <MotionInView variants={varFadeInUp}>
-                <Typography
-                  component="p"
-                  variant="overline"
-                  sx={{ mb: 2, color: "text.secondary" }}
-                >
-                  Interface Starter Kit
-                </Typography>
-              </MotionInView> */}
-
               <MotionInView variants={varFadeInUp}>
                 <Typography variant="h2" sx={{ mb: 3 }}>
                   What is DeSci?
@@ -137,18 +127,6 @@ export default function LandingContent() {
                   Ethereum hall of fame.
                 </Typography>
               </MotionInView>
-
-              {/* <MotionInView variants={varFadeInUp}>
-                <Button
-                  size="large"
-                  color="inherit"
-                  variant="outlined"
-                  component={RouterLink}
-                  to={PATH_PAGE.components}
-                >
-                  View All Components
-                </Button>
-              </MotionInView> */}
             </ContentStyle>
           </Grid>
         </Grid>

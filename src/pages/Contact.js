@@ -6,7 +6,6 @@ import Page from "../components/Page";
 import {
   ContactHero,
   ContactForm,
-  ContactMap,
 } from "../components/_external-pages/contact";
 
 // ----------------------------------------------------------------------
@@ -30,9 +29,7 @@ export default function Contact() {
           <Grid item xs={12} md={6}>
             <ContactForm />
           </Grid>
-          <Grid item xs={12} md={6}>
-            <ContactMap />
-          </Grid>
+          <Grid item xs={12} md={6}></Grid>
         </Grid>
       </Container>
     </RootStyle>
