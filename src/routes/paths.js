@@ -1,0 +1,16 @@
+export const PATH_PAGE = {
+  desci: "/desci",
+  ethereum: "/ethereum",
+  partners: "/partners",
+  faq: "/faq",
+  microbes: "/microbes",
+  dna: "/dna",
+  cosmos: "/cosmos",
+  socials: "/socials",
+  researchCommunity: "/researchCommunity",
+  artisticCommunity: "/artisticCommunity",
+  desciDAO: "/desciDAO",
+  contact: "/contact",
+  page404: "/404",
+  page500: "/500",
+};
