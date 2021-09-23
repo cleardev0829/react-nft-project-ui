@@ -71,7 +71,7 @@ export default function MainNavbar() {
             <Logo />
           </RouterLink>
           <Label color="info" sx={{ ml: 1 }}>
-            Demo v2.1.0
+            Demo v1.0
           </Label>
           <Box sx={{ flexGrow: 1 }} />
 
