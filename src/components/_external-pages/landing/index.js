@@ -6,3 +6,5 @@ export { default as LandingContent } from "./LandingContent";
 export { default as SMImageSection } from "./SMImageSection";
 export { default as MDImageSection } from "./MDImageSection";
 export { default as MDImageVideoSection } from "./MDImageVideoSection";
+export { default as LandingContact } from "./LandingContact";
+export { default as LandingPrivacyPolicy } from "./LandingPrivacyPolicy";

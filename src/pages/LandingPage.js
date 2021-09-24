@@ -9,7 +9,8 @@ import {
   MDImageVideoSection,
   LGText,
   TextSection,
-  TextLinkArea,
+  LandingContact,
+  LandingPrivacyPolicy,
 } from "../components/_external-pages/landing";
 
 const RootStyle = styled(Page)({
@@ -39,8 +40,6 @@ export default function LandingPage() {
           src="https://373437-1168568-raikfcquaxqncofqfm.stackpathdns.com/files/landing-hero-001.mp4#t=0"
         ></video>
       </LandingHero>
-
-      {/* <TextLinkArea /> */}
 
       <ContentStyle>
         <TextSection
@@ -127,16 +126,18 @@ export default function LandingPage() {
         url2="https://373437-1168568-raikfcquaxqncofqfm.stackpathdns.com/files/glass-00002-listing.mp4"
       />
 
-      <LGText text="Our projects necessitate that we invent the technologies to create them." />
+      <ContentStyle>
+        <LGText text="Our projects necessitate that we invent the technologies to create them." />
 
-      <TextSection
-        text="Platforms"
-        text1="The ideas and principles behind Material Ecology inspired the need for innovation in computational form-generation and digital fabrication. Each project included in the exhibition is coupled with a platform: an enabling technology invented at our Lab to facilitate the design, fabrication and production of each of our works.
+        <TextSection
+          text="Platforms"
+          text1="The ideas and principles behind Material Ecology inspired the need for innovation in computational form-generation and digital fabrication. Each project included in the exhibition is coupled with a platform: an enabling technology invented at our Lab to facilitate the design, fabrication and production of each of our works.
       In the biological world structures are optimized for a multiplicity of functions across scales: structural load, environmental pressures, spatial constraints, and so on. But in the designed world it is still impossible to match the sophistication of the natural world, which is far more refined than the human-made practices involved in making/producing polymers, concrete, steel and glass."
-        text2="But what if we could change that, by creating new technologies that can vary the physical properties of matter at a level that approaches the complexity of the natural world? If bricks were ‘smart’, buildings would likely weigh less, generate less carbon, and function more like a body. Material Ecology is an approach to design that offers a set of principles and technologies enabling exactly that: using our approach, designers can create relationships between human-made structures and their environments at the resolution that matches nature."
-      />
+          text2="But what if we could change that, by creating new technologies that can vary the physical properties of matter at a level that approaches the complexity of the natural world? If bricks were ‘smart’, buildings would likely weigh less, generate less carbon, and function more like a body. Material Ecology is an approach to design that offers a set of principles and technologies enabling exactly that: using our approach, designers can create relationships between human-made structures and their environments at the resolution that matches nature."
+        />
 
-      <LGText text="Imagine the possibility of being able to create a digitally-printed, biologically-augmented beating heart that will perfectly match its host, for those in need of a transplant. There is then new potential to save millions of lives." />
+        <LGText text="Imagine the possibility of being able to create a digitally-printed, biologically-augmented beating heart that will perfectly match its host, for those in need of a transplant. There is then new potential to save millions of lives." />
+      </ContentStyle>
 
       <LandingHero>
         <img
@@ -160,14 +161,16 @@ export default function LandingPage() {
         />
       </LandingHero>
 
-      <LGText text="An architect, scientist, engineer and inventor, Neri Oxman has led the creation of scientific research and technologies with an emphasis on integrative design across scales and disciplines." />
+      <ContentStyle>
+        <LGText text="An architect, scientist, engineer and inventor, Neri Oxman has led the creation of scientific research and technologies with an emphasis on integrative design across scales and disciplines." />
 
-      <TextSection
-        text="About Neri Oxman"
-        text1="A multi-disciplinary designer, Oxman founded The Mediated Matter Group at the Massachusetts Institute of Technology in 2010 where she established and pioneered the field of Material Ecology, fusing technology and biology to deliver designs that align with principles of ecological sustainability. Oxman became a tenured professor at MIT in 2017.  
+        <TextSection
+          text="About Neri Oxman"
+          text1="A multi-disciplinary designer, Oxman founded The Mediated Matter Group at the Massachusetts Institute of Technology in 2010 where she established and pioneered the field of Material Ecology, fusing technology and biology to deliver designs that align with principles of ecological sustainability. Oxman became a tenured professor at MIT in 2017.  
         Oxman received her PhD in Design Computation at MIT in 2010. Prior to that, she earned a diploma from the Architectural Association in London, complementing studies at the Faculty of Architecture and Town Planning at the Technion Israel Institute of Technology, and training at the Department of Medical Sciences at the Hebrew University, Jerusalem. Oxman was an architect and research consultant at Kohn Pedersen Fox Associates in London from 2004-05, during which she also served as Visiting Associate and Evaluator for SmartGeometry Group."
-        text2="In addition to over 150 scientific publications and inventions, Oxman’s work is included in the permanent collections of leading international museums including MoMA, San Francisco Museum of Modern Art, Centre Pompidou, MAK Museum of Applied Arts, FRAC Collection for Art and Architecture, and the Cooper Hewitt Smithsonian Design Museum. Her work has been recognized at the World Economic Forum, where she was named a Cultural Leader in 2016 and is a member of the Expert Network. In 2018, Oxman was honored with the Cooper Hewitt National Design Award and the London Design Innovation Medal. In 2019, Oxman received an Honorary Fellowship by the Royal Institute of British Architects and the Contemporary Vision Award by SFMOMA."
-      />
+          text2="In addition to over 150 scientific publications and inventions, Oxman’s work is included in the permanent collections of leading international museums including MoMA, San Francisco Museum of Modern Art, Centre Pompidou, MAK Museum of Applied Arts, FRAC Collection for Art and Architecture, and the Cooper Hewitt Smithsonian Design Museum. Her work has been recognized at the World Economic Forum, where she was named a Cultural Leader in 2016 and is a member of the Expert Network. In 2018, Oxman was honored with the Cooper Hewitt National Design Award and the London Design Innovation Medal. In 2019, Oxman received an Honorary Fellowship by the Royal Institute of British Architects and the Contemporary Vision Award by SFMOMA."
+        />
+      </ContentStyle>
 
       <SMImageSection
         url1="https://oxman.imgix.net/0f8a244b-b6c5-41f0-ad0b-0bc9ad5a4eca/neri-oxman-moma-store-00001.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C172%2C8256%2C5160"
@@ -175,27 +178,36 @@ export default function LandingPage() {
         url3="https://oxman.imgix.net/0f8a244b-b6c5-41f0-ad0b-0bc9ad5a4eca/neri-oxman-moma-store-00003.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C85%2C4096%2C2560"
       />
 
-      <TextSection
-        text="Opportunities"
-        text1="We are currently seeking architects, designers, computer scientists, roboticists, biologists to join our team. Please respond by emailing a one page statement of interest and a link to your portfolio and/or published work."
-        text2="Please visit oxman.com/future to see open positions. Please contact us at future@oxman.com to learn about other opportunities."
-      />
+      <ContentStyle>
+        <TextSection
+          text="Opportunities"
+          text1="We are currently seeking architects, designers, computer scientists, roboticists, biologists to join our team. Please respond by emailing a one page statement of interest and a link to your portfolio and/or published work."
+          text2="Please visit oxman.com/future to see open positions. Please contact us at future@oxman.com to learn about other opportunities."
+        />
+      </ContentStyle>
 
-      <TextSection
-        text="Contact"
-        text1="Material Ecology
-        02.22.20
-        10.18.20
-        
-        MoMA, Floor 1, 1 North
-        MoMA, Floor 1, 1 South
-        Visit moma.org"
-        text2="General inquiries: contact@oxman.com
-        Press: press@oxman.com
-        Careers: future@oxman.com
-        
-        Instagram"
-      />
+      <ContentStyle>
+        <LandingContact />
+      </ContentStyle>
+
+      <LandingHero>
+        <video
+          class="a-media__video s-fade-in"
+          muted={false}
+          loop={true}
+          playsInline=""
+          autoPlay={true}
+          preload="none"
+          data-src="https://373437-1168568-raikfcquaxqncofqfm.stackpathdns.com/files/synthapiary_web_1080p_02.mp4"
+          data-lazyload=""
+          data-behavior="softVideo"
+          src="https://373437-1168568-raikfcquaxqncofqfm.stackpathdns.com/files/synthapiary_web_1080p_02.mp4"
+        ></video>
+      </LandingHero>
+
+      <ContentStyle>
+        <LandingPrivacyPolicy />
+      </ContentStyle>
     </RootStyle>
   );
 }
