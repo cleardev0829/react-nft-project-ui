@@ -1,8 +1,5 @@
 // import { Link as ScrollLink } from 'react-scroll';
-import {
-  // useLocation,
-  Outlet,
-} from "react-router-dom";
+import { useLocation, Outlet } from "react-router-dom";
 // material
 // import { Box, Link, Container, Typography } from '@material-ui/core';
 // components
@@ -10,20 +7,23 @@ import {
 //
 import MainNavbar from "./MainNavbar";
 import MainFooter from "./MainFooter";
+import { TextLinkArea } from "src/components/_external-pages/landing";
 
 // ----------------------------------------------------------------------
 
 export default function MainLayout() {
-  // const { pathname } = useLocation();
-  // const isHome = pathname === "/";
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
 
   return (
     <>
       <MainNavbar />
+      <TextLinkArea />
       <div>
         <Outlet />
       </div>
-      <MainFooter />
+
+      {/* <MainFooter /> */}
       {/* {!isHome ? (
         <MainFooter />
       ) : (
