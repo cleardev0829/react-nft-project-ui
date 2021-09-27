@@ -1,5 +1,4 @@
 import {
-  alpha,
   // useTheme,
   experimentalStyled as styled,
 } from "@material-ui/core/styles";
@@ -7,13 +6,7 @@ import { Grid, Container, Typography } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(24, 0),
-  backgroundImage:
-    theme.palette.mode === "light"
-      ? `linear-gradient(180deg, ${alpha(theme.palette.grey[300], 0)} 0%, ${
-          theme.palette.grey[300]
-        } 100%)`
-      : "none",
+  padding: theme.spacing(12, 0),
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({

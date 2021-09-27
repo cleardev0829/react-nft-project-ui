@@ -53,7 +53,7 @@ export default function TextSection(props) {
         >
           <ContentStyle>
             <MotionInView variants={varFadeInUp}>
-              <Typography>
+              <Typography variant="subtitle1">
                 <span style={{ fontWeight: "bold" }}>{props.text1}</span>
               </Typography>
             </MotionInView>
@@ -67,7 +67,7 @@ export default function TextSection(props) {
         >
           <ContentStyle>
             <MotionInView variants={varFadeInUp}>
-              <Typography>
+              <Typography variant="subtitle1">
                 <span style={{ fontWeight: "bold" }}>{props.text2}</span>
               </Typography>
             </MotionInView>

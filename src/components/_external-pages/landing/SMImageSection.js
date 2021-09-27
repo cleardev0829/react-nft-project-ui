@@ -6,8 +6,6 @@ import { varFadeInUp, MotionInView } from "../../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 0),
-  marginTop: theme.spacing(24),
-  marginBottom: theme.spacing(24),
 }));
 
 export default function SMImageSection(props) {

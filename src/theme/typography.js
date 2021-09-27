@@ -19,14 +19,19 @@ function responsiveFontSizes({ sm, md, lg }) {
   };
 }
 
-const FONT_PRIMARY = "Public Sans, sans-serif"; // Google Font
-// const FONT_SECONDARY = 'CircularStd, sans-serif'; // Local Font
+const FONT_PRIMARY = "SimplonMonoMediumRegular, serif";
+const FONT_HEADING = "HelveticaNeueBold, serif";
+const FONT_SPECIAL = "CaslonBeckerNo540SwashItalic, sans-serif";
+const FONT_NUMBER = "NetKanzl, serif";
 
 const typography = {
   fontFamily: FONT_PRIMARY,
   fontWeightRegular: 400,
   fontWeightMedium: 600,
   fontWeightBold: 700,
+  headingFontFamily: FONT_HEADING,
+  specialFontFamily: FONT_SPECIAL,
+  numberFontFamily: FONT_NUMBER,
   h1: {
     fontWeight: 700,
     lineHeight: 80 / 64,

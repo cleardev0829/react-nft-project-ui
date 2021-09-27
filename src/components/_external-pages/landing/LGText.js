@@ -6,7 +6,6 @@ import { varFadeInUp, MotionInView } from "../../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 1),
-  marginBottom: theme.spacing(16),
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -32,7 +31,7 @@ export default function LGText(props) {
             <Typography
               sx={{
                 fontSize: "calc(1.42857vw + 3.33929rem)",
-                fontFamily: "'Oswald', sans-serif",
+                fontFamily: (theme) => `${theme.typography.specialFontFamily}`,
               }}
             >
               {props.text}

@@ -10,9 +10,6 @@ import {
 //
 import MainNavbar from "./MainNavbar";
 // import MainFooter from "./MainFooter";
-import { TextLinkArea } from "src/components/_external-pages/landing";
-
-// ----------------------------------------------------------------------
 
 export default function MainLayout() {
   // const { pathname } = useLocation();
@@ -21,12 +18,10 @@ export default function MainLayout() {
   return (
     <>
       <MainNavbar />
-      <TextLinkArea />
       <div>
         <Outlet />
       </div>
 
-      {/* <MainFooter /> */}
       {/* {!isHome ? (
         <MainFooter />
       ) : (

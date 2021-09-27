@@ -17,7 +17,7 @@ const RootStyle = styled(Page)({
   height: "100%",
 });
 
-const ContentStyle = styled("div")(({ theme }) => ({
+const ContentStyle = styled("Typography")(({ theme }) => ({
   overflow: "hidden",
   position: "relative",
   backgroundColor: theme.palette.background.default,
@@ -192,7 +192,7 @@ export default function LandingPage() {
 
       <LandingHero>
         <video
-          class="a-media__video s-fade-in"
+          className="a-media__video s-fade-in"
           muted={false}
           loop={true}
           playsInline=""

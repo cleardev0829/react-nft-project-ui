@@ -1,11 +1,11 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Box, Grid, Typography, Link } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../../animate";
 
 // ----------------------------------------------------------------------
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(1, 0),
+  padding: theme.spacing(12, 0),
   marginBottom: theme.spacing(4),
 }));
 
@@ -51,9 +51,19 @@ export default function LandingPrivacyPolicy(props) {
         >
           <ContentStyle>
             <MotionInView variants={varFadeInUp}>
-              <Typography>
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  mb: 5,
+                }}
+              >
                 <span style={{ fontWeight: "bold" }}>
-                  <a href="/">Privacy policy</a>
+                  <Link
+                    href="/"
+                    sx={{ color: (theme) => theme.palette.text.secondary }}
+                  >
+                    Privacy policy
+                  </Link>
                   <br />
                   All images and videos courtesy Neri Oxman and The Mediated
                   Matter Group.
@@ -72,7 +82,12 @@ export default function LandingPrivacyPolicy(props) {
             <MotionInView variants={varFadeInUp}>
               <Typography>
                 <span style={{ fontWeight: "bold" }}>
-                  <a href="/">Site by AREA 17</a>
+                  <Link
+                    href="/"
+                    sx={{ color: (theme) => theme.palette.text.secondary }}
+                  >
+                    Site by AREA 17
+                  </Link>
                 </span>
               </Typography>
             </MotionInView>

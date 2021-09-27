@@ -1,5 +1,5 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Box, Grid, Typography, Link } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../../animate";
 
 // ----------------------------------------------------------------------
@@ -79,14 +79,38 @@ export default function LandingContact(props) {
         >
           <ContentStyle>
             <MotionInView variants={varFadeInUp}>
-              <Typography>
+              <Typography variant="subtitle1">
                 <span style={{ fontWeight: "bold" }}>
                   General inquiries:
-                  <a href="contact@oxman.com">contact@oxman.com</a> <br />
-                  Press: <a href="press@oxman.com">press@oxman.com</a> <br />
-                  Careers: <a href="future@oxman.com">future@oxman.com</a>
+                  <Link
+                    href="contact@oxman.com"
+                    sx={{ color: (theme) => theme.palette.text.secondary }}
+                  >
+                    contact@oxman.com
+                  </Link>
                   <br />
-                  <a href="Instagram.com">Instagram</a>
+                  Press:{" "}
+                  <Link
+                    href="press@oxman.com"
+                    sx={{ color: (theme) => theme.palette.text.secondary }}
+                  >
+                    press@oxman.com
+                  </Link>
+                  <br />
+                  Careers:{" "}
+                  <Link
+                    href="future@oxman.com"
+                    sx={{ color: (theme) => theme.palette.text.secondary }}
+                  >
+                    future@oxman.com
+                  </Link>
+                  <br />
+                  <Link
+                    href="Instagram.com"
+                    sx={{ color: (theme) => theme.palette.text.secondary }}
+                  >
+                    Instagram
+                  </Link>
                 </span>
               </Typography>
             </MotionInView>

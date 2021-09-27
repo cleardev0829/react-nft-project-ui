@@ -52,15 +52,18 @@ export default function Router() {
       children: [
         { path: "/", element: <LandingPage /> },
 
+        { path: "about", element: <AboutPage /> },
         { path: "desci", element: <Desci /> },
         { path: "ethereum", element: <Ethereum /> },
         { path: "partners", element: <Partners /> },
         { path: "faq", element: <FAQ /> },
 
+        { path: "net", element: <NetPage /> },
         { path: "microbes", element: <Microbes /> },
         { path: "dna", element: <DNA /> },
         { path: "cosmos", element: <Cosmos /> },
 
+        { path: "community", element: <CommunityPage /> },
         { path: "socials", element: <Socials /> },
         { path: "researchCommunity", element: <ResearchCommunity /> },
         { path: "artisticCommunity", element: <ArtisticCommunity /> },
@@ -74,6 +77,9 @@ export default function Router() {
 }
 
 const LandingPage = Loadable(lazy(() => import("../pages/LandingPage")));
+const AboutPage = Loadable(lazy(() => import("../pages/About")));
+const NetPage = Loadable(lazy(() => import("../pages/Net")));
+const CommunityPage = Loadable(lazy(() => import("../pages/Community")));
 
 const Desci = Loadable(lazy(() => import("../pages/about/Desci")));
 const Ethereum = Loadable(lazy(() => import("../pages/about/Ethereum")));

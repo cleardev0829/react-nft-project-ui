@@ -1,4 +1,7 @@
 export const PATH_PAGE = {
+  about: "/about",
+  net: "/net",
+  community: "/community",
   desci: "/desci",
   ethereum: "/ethereum",
   partners: "/partners",
