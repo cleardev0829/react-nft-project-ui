@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 // material
 import { useTheme } from "@material-ui/core/styles";
-import { Box } from "@material-ui/core";
+import { Box, Paper } from "@material-ui/core";
 
 // ----------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ export default function Logo({ sx }) {
   const PRIMARY_DARK = theme.palette.primary.dark;
 
   return (
-    <Box sx={{ ...sx }} color={PRIMARY_LIGHT}>
+    <Paper sx={{ mt: 5, ...sx }} color={PRIMARY_LIGHT}>
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -87,6 +87,6 @@ m1270 0 l0 -720 -620 0 -620 0 0 720 0 720 620 0 620 0 0 -720z"
           />
         </g>
       </svg>
-    </Box>
+    </Paper>
   );
 }
