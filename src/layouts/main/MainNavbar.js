@@ -51,13 +51,10 @@ import VerticalMenuDesktop from "./VerticalMenuDesktop";
 export default function MainNavbar() {
   const isOffset = useOffSetTop(100);
   const { pathname } = useLocation();
-  const isHome = pathname === "/";
+  const isHome = pathname === "/" || pathname.includes("about");
 
   return (
-    <AppBar
-      color={isHome ? "transparent" : "transparent"}
-      sx={{ boxShadow: 0 }}
-    >
+    <AppBar color="transparent" sx={{ boxShadow: 0 }}>
       {/* <ToolbarStyle
         disableGutters
         sx={{
@@ -73,28 +70,34 @@ export default function MainNavbar() {
           justifyContent: "flex-end",
         }}
       >
-        <RouterLink to="/">
-          <Logo />
-        </RouterLink>
-        {/* <Label color="info" sx={{ ml: 1 }}>
-          Demo v1.0
-        </Label> */}
-        <Box sx={{ flexGrow: 1 }} />
+        {!isOffset && (
+          <>
+            <RouterLink to="/">
+              <Logo
+                sx={{
+                  boxShadow: (theme) => theme.customShadows.z8,
+                }}
+              />
+            </RouterLink>
 
-        <MHidden width="mdDown">
-          <VerticalMenuDesktop
-            isOffset={isOffset}
-            isHome={isHome}
-            navConfig={navConfig}
-          />
-        </MHidden>
-        <MHidden width="mdUp">
-          <VerticalMenuDesktop
-            isOffset={isOffset}
-            isHome={isHome}
-            navConfig={navConfig}
-          />
-        </MHidden>
+            <Box sx={{ flexGrow: 1 }} />
+
+            <MHidden width="mdDown">
+              <VerticalMenuDesktop
+                isOffset={isOffset}
+                isHome={isHome}
+                navConfig={navConfig}
+              />
+            </MHidden>
+            <MHidden width="mdUp">
+              <VerticalMenuDesktop
+                isOffset={isOffset}
+                isHome={isHome}
+                navConfig={navConfig}
+              />
+            </MHidden>
+          </>
+        )}
       </Container>
       {/* </ToolbarStyle> */}
 

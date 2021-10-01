@@ -2,7 +2,7 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 // components
 import Page from "../components/Page";
-import { AboutContent } from "../components/_external-pages/pages";
+import { NFTContent } from "../components/_external-pages/pages";
 
 const RootStyle = styled(Page)({
   height: "100%",
@@ -11,14 +11,15 @@ const RootStyle = styled(Page)({
 const ContentStyle = styled("div")(({ theme }) => ({
   overflow: "hidden",
   position: "relative",
+  paddingTop: theme.spacing(30),
   backgroundColor: theme.palette.background.default,
 }));
 
-export default function About() {
+export default function NFT() {
   return (
     <RootStyle title="This is Demo website | Minimal-UI" id="move_top">
       <ContentStyle>
-        <AboutContent />
+        <NFTContent />
       </ContentStyle>
     </RootStyle>
   );

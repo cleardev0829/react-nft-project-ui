@@ -1,0 +1,35 @@
+import { motion } from "framer-motion";
+import { varWrapEnter } from "./animate";
+// material
+import { experimentalStyled as styled } from "@material-ui/core/styles";
+
+const RootStyle = styled(motion.div)(({ theme }) => ({
+  position: "relative",
+  backgroundColor: theme.palette.grey[400],
+  // width: "100%",
+  // height: "100vh",
+  display: "flex",
+  alignItems: "center",
+}));
+
+export default function VideoPlayer(props) {
+  const { url } = props;
+
+  return (
+    <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
+      <video
+        width="100%"
+        height="100%"
+        muted={false}
+        loop={true}
+        playsInline=""
+        autoPlay={true}
+        preload="none"
+        data-src={url}
+        data-lazyload=""
+        data-behavior="softVideo"
+        src={url}
+      ></video>
+    </RootStyle>
+  );
+}

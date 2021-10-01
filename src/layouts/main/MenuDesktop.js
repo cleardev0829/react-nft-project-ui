@@ -13,10 +13,7 @@ import {
   Grid,
   List,
   Stack,
-  // Popover,
   ListItem,
-  // ListSubheader,
-  // CardActionArea,
   Menu,
 } from "@material-ui/core";
 
@@ -106,7 +103,7 @@ function MenuDesktopItem({
             display: "flex",
             cursor: "pointer",
             alignItems: "center",
-            // ...(isHome && { color: 'common.white' }),
+            ...(isHome && { color: "common.primary" }),
             ...(isOffset && { color: "text.primary" }),
             ...(name === path && isOpen && { opacity: 0.48 }),
           }}
@@ -194,7 +191,7 @@ function MenuDesktopItem({
       to={path}
       component={RouterLink}
       sx={{
-        // ...(isHome && { color: 'common.white' }),
+        ...(isHome && { color: "common.primary" }),
         ...(isOffset && { color: "text.primary" }),
         ...(isActive && { color: "primary.main" }),
       }}
