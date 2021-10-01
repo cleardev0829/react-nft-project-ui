@@ -83,7 +83,10 @@ export default function AboutContent() {
               >
                 <Grid item xs={12} md={4} dir="ltr" sx={{ px: 1 }}>
                   <MotionInView variants={varFadeInUp}>
-                    <ImageMagnifier src="https://drive.google.com/uc?id=1X_CwL4h1l6iVLHq4m98bdagXyr3VrPNE" />
+                    <img
+                      src="https://drive.google.com/uc?id=1X_CwL4h1l6iVLHq4m98bdagXyr3VrPNE"
+                      data-src="https://drive.google.com/uc?id=1X_CwL4h1l6iVLHq4m98bdagXyr3VrPNE"
+                    />
                   </MotionInView>
                 </Grid>
 
@@ -120,10 +123,15 @@ export default function AboutContent() {
 
             <ContentStyle sx={{ mt: 10, pb: 20, backgroundColor: "black" }}>
               <Container maxWidth="lg">
-                <MDImageVideoSection
-                  url1="https://drive.google.com/uc?id=1Qjtfb2MV3f98zBDZr1LTCWWkRn_RnxV9"
-                  url2="https://drive.google.com/uc?id=1VBrOZ2tn94tg4zs_dWsWimpxLk0A5fcQ"
-                />
+                <Grid item xs={12} md={12} dir="ltr" sx={{ px: 1 }}>
+                  <MotionInView variants={varFadeInUp}>
+                    <ImageMagnifier
+                      src="https://drive.google.com/uc?id=1VBrOZ2tn94tg4zs_dWsWimpxLk0A5fcQ"
+                      underSrc="https://drive.google.com/uc?id=1Qjtfb2MV3f98zBDZr1LTCWWkRn_RnxV9"
+                    />
+                  </MotionInView>
+                </Grid>
+
                 <MotionInView variants={varFadeInUp}>
                   <Typography
                     variant="h3"
@@ -174,13 +182,19 @@ export default function AboutContent() {
                 >
                   <Grid item xs={12} md={4} dir="ltr" sx={{ px: 1 }}>
                     <MotionInView variants={varFadeInUp}>
-                      <ImageMagnifier src="https://drive.google.com/uc?id=1pat5-LC82KDP9OC0sxru7hXtpGJNtKy4" />
+                      <img
+                        src="https://drive.google.com/uc?id=1pat5-LC82KDP9OC0sxru7hXtpGJNtKy4"
+                        data-src="https://drive.google.com/uc?id=1pat5-LC82KDP9OC0sxru7hXtpGJNtKy4"
+                      />
                     </MotionInView>
                   </Grid>
 
                   <Grid item xs={12} md={4} dir="ltr" sx={{ px: 1 }}>
                     <MotionInView variants={varFadeInUp}>
-                      <ImageMagnifier src="https://drive.google.com/uc?id=1jeG_DSRl1HFqXeziiClkMpTg5u4u32MF" />
+                      <img
+                        src="https://drive.google.com/uc?id=1jeG_DSRl1HFqXeziiClkMpTg5u4u32MF"
+                        data-src="https://drive.google.com/uc?id=1jeG_DSRl1HFqXeziiClkMpTg5u4u32MF"
+                      />
                     </MotionInView>
                   </Grid>
                   <Grid item xs={12} md={4} dir="ltr" sx={{ pl: 5 }}>

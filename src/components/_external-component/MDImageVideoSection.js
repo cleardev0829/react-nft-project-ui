@@ -1,7 +1,7 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
-
+import ImageMagnifier from "../ImageMagnifier";
 // ----------------------------------------------------------------------
 
 const RootStyle = styled("div")(({ theme }) => ({
@@ -23,13 +23,7 @@ export default function MDImageVideoSection(props) {
           <Grid item xs={12} md={6} dir="ltr" sx={{ px: 0 }}>
             <Box>
               <MotionInView variants={varFadeInUp}>
-                <img
-                  height="100%"
-                  width="100%"
-                  data-src={url1}
-                  alt=""
-                  src={url1}
-                />
+                <img data-src={url1} alt="" src={url1} />
               </MotionInView>
             </Box>
           </Grid>

@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 
 ImageMagnifier.propTypes = {
   src: PropTypes.string,
+  underSrc: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
   magnifierHeight: PropTypes.number,
@@ -12,11 +13,12 @@ ImageMagnifier.propTypes = {
 
 export default function ImageMagnifier({
   src,
+  underSrc,
   width,
   height,
-  magnifierHeight = 150,
-  magnifieWidth = 150,
-  zoomLevel = 2.5,
+  magnifierHeight = 200,
+  magnifieWidth = 200,
+  zoomLevel = 1,
 }) {
   const [[x, y], setXY] = useState([0, 0]);
   const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
@@ -72,8 +74,8 @@ export default function ImageMagnifier({
           left: `${x - magnifieWidth / 2}px`,
           opacity: "1", // reduce opacity so you can verify position
           //   border: "1px solid lightgray",
-          backgroundColor: "white",
-          backgroundImage: `url('${src}')`,
+          backgroundColor: "black",
+          backgroundImage: `url('${underSrc}')`,
           backgroundRepeat: "no-repeat",
 
           //calculate zoomed image size
