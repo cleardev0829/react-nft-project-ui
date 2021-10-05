@@ -1,7 +1,6 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
-import VideoPlayer from "../VideoPlayer";
 // ----------------------------------------------------------------------
 
 const RootStyle = styled("div")(({ theme }) => ({
@@ -33,8 +32,7 @@ export default function MDImageVideoSection(props) {
           <Grid item xs={6} md={6} dir="ltr" sx={{ px: 0 }}>
             <Box>
               <MotionInView variants={varFadeInUp}>
-                <VideoPlayer url={videoUrl1} />
-                {/* <video
+                <video
                   width="100%"
                   // height="100%"
                   muted={false}
@@ -46,7 +44,7 @@ export default function MDImageVideoSection(props) {
                   data-lazyload=""
                   data-behavior="softVideo"
                   src={videoUrl1}
-                ></video> */}
+                ></video>
               </MotionInView>
             </Box>
           </Grid>
@@ -66,8 +64,7 @@ export default function MDImageVideoSection(props) {
           <Grid item xs={6} md={6} dir="ltr" sx={{ px: 0 }}>
             <Box>
               <MotionInView variants={varFadeInUp}>
-                <VideoPlayer url={videoUrl2} />
-                {/* <video
+                <video
                   width="100%"
                   height="100%"
                   muted={false}
@@ -79,7 +76,7 @@ export default function MDImageVideoSection(props) {
                   data-lazyload=""
                   data-behavior="softVideo"
                   src={videoUrl2}
-                ></video> */}
+                ></video>
               </MotionInView>
             </Box>
           </Grid>

@@ -36,8 +36,7 @@ export default function AboutContent() {
         >
           <ContentStyle>
             {/* <VideoPlayer url="https://drive.google.com/uc?export=download&id=1OZZMyUBONo_MODicPjfoM6L_zGax_IR3" /> */}
-            <VideoPlayer url="https://drive.google.com/uc?export=download&id=1eQUbBW-BXsKVfF_FTkHiIcrokqiD1smE" />
-
+            {/* <VideoPlayer url="https://drive.google.com/uc?export=download&id=1eQUbBW-BXsKVfF_FTkHiIcrokqiD1smE" /> */}
             <Container maxWidth="lg" sx={{ mt: 10 }}>
               <MotionInView variants={varFadeInUp}>
                 <Typography

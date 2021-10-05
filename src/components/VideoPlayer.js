@@ -16,20 +16,20 @@ export default function VideoPlayer(props) {
   const { url } = props;
 
   return (
-    <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
-      <video
-        width="100%"
-        // height="100%"
-        muted={false}
-        loop={true}
-        playsInline=""
-        autoPlay={true}
-        preload="none"
-        data-src={url}
-        data-lazyload=""
-        data-behavior="softVideo"
-        src={url}
-      ></video>
-    </RootStyle>
+    // <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
+    <video
+      width="100%"
+      // height="100%"
+      muted={false}
+      loop={true}
+      playsInline=""
+      autoPlay={true}
+      preload="none"
+      data-src={url}
+      data-lazyload=""
+      data-behavior="softVideo"
+      src={url}
+    ></video>
+    // </RootStyle>
   );
 }
