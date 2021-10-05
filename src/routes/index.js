@@ -67,26 +67,5 @@ const CommunityPage = Loadable(lazy(() => import("../pages/Community")));
 const DocumentationPage = Loadable(
   lazy(() => import("../pages/Documentation"))
 );
-
-// const Desci = Loadable(lazy(() => import("../pages/about/Desci")));
-// const Ethereum = Loadable(lazy(() => import("../pages/about/Ethereum")));
-// const Partners = Loadable(lazy(() => import("../pages/about/Partners")));
-// const FAQ = Loadable(lazy(() => import("../pages/about/FAQ")));
-
-// const Microbes = Loadable(lazy(() => import("../pages/nft/Microbes")));
-// const DNA = Loadable(lazy(() => import("../pages/nft/DNA")));
-// const Cosmos = Loadable(lazy(() => import("../pages/nft/Cosmos")));
-
-// const Socials = Loadable(lazy(() => import("../pages/community/Socials")));
-// const ResearchCommunity = Loadable(
-//   lazy(() => import("../pages/community/ResearchCommunity"))
-// );
-// const ArtisticCommunity = Loadable(
-//   lazy(() => import("../pages/community/ArtisticCommunity"))
-// );
-// const DesciDAO = Loadable(lazy(() => import("../pages/community/DesciDAO")));
-
-const Contact = Loadable(lazy(() => import("../pages/Documentation")));
-
 const Page500 = Loadable(lazy(() => import("../pages/Page500")));
 const NotFound = Loadable(lazy(() => import("../pages/Page404")));

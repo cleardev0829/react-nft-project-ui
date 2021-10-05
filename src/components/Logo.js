@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 // material
 import { useTheme } from "@material-ui/core/styles";
-import { Box, Paper } from "@material-ui/core";
+import { Paper } from "@material-ui/core";
 
 // ----------------------------------------------------------------------
 

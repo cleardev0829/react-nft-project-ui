@@ -36,7 +36,7 @@ export default function AboutContent() {
         >
           <ContentStyle>
             {/* <VideoPlayer url="https://drive.google.com/uc?export=download&id=1OZZMyUBONo_MODicPjfoM6L_zGax_IR3" /> */}
-            <VideoPlayer url="https://drive.google.com/uc?export=download&id=1qD475YBwZilt6YSxmpWW139FlJzjv2M1" />
+            <VideoPlayer url="https://drive.google.com/uc?export=download&id=1eQUbBW-BXsKVfF_FTkHiIcrokqiD1smE" />
 
             <Container maxWidth="lg" sx={{ mt: 10 }}>
               <MotionInView variants={varFadeInUp}>
@@ -86,6 +86,7 @@ export default function AboutContent() {
                     <img
                       src="https://drive.google.com/uc?id=1X_CwL4h1l6iVLHq4m98bdagXyr3VrPNE"
                       data-src="https://drive.google.com/uc?id=1X_CwL4h1l6iVLHq4m98bdagXyr3VrPNE"
+                      alt=""
                     />
                   </MotionInView>
                 </Grid>
@@ -185,6 +186,7 @@ export default function AboutContent() {
                       <img
                         src="https://drive.google.com/uc?id=1pat5-LC82KDP9OC0sxru7hXtpGJNtKy4"
                         data-src="https://drive.google.com/uc?id=1pat5-LC82KDP9OC0sxru7hXtpGJNtKy4"
+                        alt=""
                       />
                     </MotionInView>
                   </Grid>
@@ -194,6 +196,7 @@ export default function AboutContent() {
                       <img
                         src="https://drive.google.com/uc?id=1jeG_DSRl1HFqXeziiClkMpTg5u4u32MF"
                         data-src="https://drive.google.com/uc?id=1jeG_DSRl1HFqXeziiClkMpTg5u4u32MF"
+                        alt=""
                       />
                     </MotionInView>
                   </Grid>
