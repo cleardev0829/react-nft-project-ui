@@ -74,7 +74,13 @@ export default function LoadingScreen({ ...other }) {
           repeat: Infinity,
         }}
       >
-        <Logo sx={{ width: 64, height: 64 }} />
+        {/* <Logo sx={{ width: 64, height: 64 }} /> */}
+        <img
+          src="https://drive.google.com/uc?id=1tFzj12G17gtC09o7kPGFzIkknrxNw7Kt"
+          data-src="https://drive.google.com/uc?id=1tFzj12G17gtC09o7kPGFzIkknrxNw7Kt"
+          width={64}
+          height={64}
+        />
       </motion.div>
 
       <Box

@@ -1,5 +1,4 @@
 export const PATH_PAGE = {
-  about: "/about",
   nft: "/nft",
   community: "/community",
   documentation: "/documentation",

@@ -13,11 +13,6 @@ const ICON_SIZE = {
 
 const menuConfig = [
   {
-    title: "About",
-    path: PATH_PAGE.about,
-    icon: <Icon icon={fileFill} {...ICON_SIZE} />,
-  },
-  {
     title: "NFT",
     path: PATH_PAGE.nft,
     icon: <Icon icon={fileFill} {...ICON_SIZE} />,

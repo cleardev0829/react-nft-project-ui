@@ -52,10 +52,34 @@ const INFO = {
   darker: "#04297A",
   contrastText: "#fff",
 };
+// const SUCCESS = {
+//   lighter: "#E9FCD4",
+//   light: "#AAF27F",
+//   main: "#54D62C",
+//   dark: "#229A16",
+//   darker: "#08660D",
+//   contrastText: GREY[800],
+// };
+// const WARNING = {
+//   lighter: "#FFF7CD",
+//   light: "#FFE16A",
+//   main: "#FFC107",
+//   dark: "#B78103",
+//   darker: "#7A4F01",
+//   contrastText: GREY[800],
+// };
+// const ERROR = {
+//   lighter: "#FFE7D9",
+//   light: "#FFA48D",
+//   main: "#FF4842",
+//   dark: "#B72136",
+//   darker: "#7A0C2E",
+//   contrastText: "#fff",
+// };
 const SUCCESS = {
   lighter: "#E9FCD4",
   light: "#AAF27F",
-  main: "#54D62C",
+  main: "#75FB4C",
   dark: "#229A16",
   darker: "#08660D",
   contrastText: GREY[800],
@@ -63,7 +87,7 @@ const SUCCESS = {
 const WARNING = {
   lighter: "#FFF7CD",
   light: "#FFE16A",
-  main: "#FFC107",
+  main: "#377EF7",
   dark: "#B78103",
   darker: "#7A4F01",
   contrastText: GREY[800],
@@ -71,7 +95,7 @@ const WARNING = {
 const ERROR = {
   lighter: "#FFE7D9",
   light: "#FFA48D",
-  main: "#FF4842",
+  main: "#C183F8",
   dark: "#B72136",
   darker: "#7A0C2E",
   contrastText: "#fff",

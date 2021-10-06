@@ -30,7 +30,7 @@ export default function MDImageVideoSection(props) {
 
         {videoUrl1 && (
           <Grid item xs={6} md={6} dir="ltr" sx={{ px: 0 }}>
-            <Box>
+            <Box sx={{ backgroundColor: (theme) => theme.palette.grey[400] }}>
               <MotionInView variants={varFadeInUp}>
                 <video
                   width="100%"
@@ -61,12 +61,17 @@ export default function MDImageVideoSection(props) {
         )}
 
         {videoUrl2 && (
-          <Grid item xs={6} md={6} dir="ltr" sx={{ px: 0 }}>
-            <Box>
+          <Grid item xs={6} md={6} dir="ltr" sx={{ px: 0, overflow: "hidden" }}>
+            <Box
+              sx={{
+                height: "fie-content",
+                backgroundColor: (theme) => theme.palette.grey[400],
+              }}
+            >
               <MotionInView variants={varFadeInUp}>
                 <video
                   width="100%"
-                  height="100%"
+                  // height="100%"
                   muted={false}
                   loop={true}
                   playsInline=""
@@ -75,8 +80,10 @@ export default function MDImageVideoSection(props) {
                   data-src={videoUrl2}
                   data-lazyload=""
                   data-behavior="softVideo"
-                  src={videoUrl2}
-                ></video>
+                  // style={{ transform: "scale(1.0)", transformOrigin: "0% 0%" }}
+                >
+                  <source src={videoUrl2} />
+                </video>
               </MotionInView>
             </Box>
           </Grid>

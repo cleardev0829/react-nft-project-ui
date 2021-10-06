@@ -9,7 +9,7 @@ import {
 // import Logo from "../../components/Logo";
 //
 import MainNavbar from "./MainNavbar";
-// import MainFooter from "./MainFooter";
+import MainFooter from "./MainFooter";
 
 export default function MainLayout() {
   // const { pathname } = useLocation();
@@ -21,6 +21,7 @@ export default function MainLayout() {
       <div>
         <Outlet />
       </div>
+      <MainFooter />
 
       {/* {!isHome ? (
         <MainFooter />

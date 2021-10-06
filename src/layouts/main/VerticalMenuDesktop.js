@@ -48,8 +48,14 @@ function VerticalMenuDesktopItem({ item, pathname, isHome, isOffset }) {
       }}
     >
       <Typography
-        variant="h5"
-        sx={{ cursor: "pointer", color: isHome ? "white" : "" }}
+        sx={{
+          fontWeight: 400,
+          fontSize: 30,
+          lineHeight: "30.8px",
+          fontStyle: "normal",
+          cursor: "pointer",
+          color: isHome ? "white" : "",
+        }}
       >
         {title}
       </Typography>

@@ -50,8 +50,7 @@ export default function Router() {
       path: "/",
       element: <MainLayout />,
       children: [
-        { path: "/", element: <AboutPage /> },
-        { path: "about", element: <AboutPage /> },
+        { path: "/", element: <HomePage /> },
         { path: "nft", element: <NFTPage /> },
         { path: "community", element: <CommunityPage /> },
         { path: "documentation", element: <DocumentationPage /> },
@@ -61,7 +60,7 @@ export default function Router() {
   ]);
 }
 
-const AboutPage = Loadable(lazy(() => import("../pages/About")));
+const HomePage = Loadable(lazy(() => import("../pages/Home")));
 const NFTPage = Loadable(lazy(() => import("../pages/NFT")));
 const CommunityPage = Loadable(lazy(() => import("../pages/Community")));
 const DocumentationPage = Loadable(

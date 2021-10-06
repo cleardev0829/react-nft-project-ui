@@ -35,11 +35,12 @@ export default function CommunityContent() {
             <ContentStyle>
               <MotionInView variants={varFadeInUp}>
                 <Typography
-                  variant="h3"
                   sx={{
-                    mb: 3,
-                    fontFamily: (theme) =>
-                      `${theme.typography.headingFontFamily}`,
+                    mb: 5,
+                    fontSize: 40,
+                    fontWeight: 400,
+                    fontStyle: "italic",
+                    color: (theme) => theme.palette.error.main,
                   }}
                 >
                   DeSci is a community.
@@ -48,18 +49,17 @@ export default function CommunityContent() {
 
               <MotionInView variants={varFadeInUp}>
                 <Typography
-                  variant="subtitle1"
                   sx={{
-                    mb: 5,
+                    mb: 3,
+                    fontSize: 40,
+                    fontWeight: 400,
+                    fontStyle: "normal",
                   }}
                 >
-                  Join our Discord to get involved.
-                  <br />
-                  <br />
-                  Follow our Twitter to stay up to date.
-                  <br />
-                  <br />
-                  Discord
+                  DeSci is a community. A community of researchers, artists,
+                  builders, visionaries; friends. Growing a community is a
+                  continuous process and we are thankful to our partners for
+                  their support and contributions.
                 </Typography>
               </MotionInView>
             </ContentStyle>
