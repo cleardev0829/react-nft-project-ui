@@ -5,7 +5,7 @@ import { experimentalStyled as styled } from "@material-ui/core/styles";
 import {
   Grid,
   Link,
-  Divider,
+  // Divider,
   Container,
   Typography,
   Stack,

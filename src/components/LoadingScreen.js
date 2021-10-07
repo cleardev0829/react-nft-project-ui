@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core/styles";
 import { Box } from "@material-ui/core";
 //
-import Logo from "./Logo";
+// import Logo from "./Logo";
 
 // ----------------------------------------------------------------------
 
@@ -80,6 +80,7 @@ export default function LoadingScreen({ ...other }) {
           data-src="https://drive.google.com/uc?id=1tFzj12G17gtC09o7kPGFzIkknrxNw7Kt"
           width={64}
           height={64}
+          alt=""
         />
       </motion.div>
 

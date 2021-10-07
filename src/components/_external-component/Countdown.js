@@ -4,18 +4,18 @@ import { Box, Container, Typography } from "@material-ui/core";
 // hooks
 import useCountdown from "../../hooks/useCountdown";
 // components
-import Page from "../Page";
-import { MaintenanceIllustration } from "../../assets";
+// import Page from "../Page";
+// import { MaintenanceIllustration } from "../../assets";
 
 // ----------------------------------------------------------------------
 
-const RootStyle = styled(Page)(({ theme }) => ({
-  minHeight: "100%",
-  display: "flex",
-  alignItems: "center",
-  paddingTop: theme.spacing(15),
-  paddingBottom: theme.spacing(10),
-}));
+// const RootStyle = styled(Page)(({ theme }) => ({
+//   minHeight: "100%",
+//   display: "flex",
+//   alignItems: "center",
+//   paddingTop: theme.spacing(15),
+//   paddingBottom: theme.spacing(10),
+// }));
 
 const CountdownStyle = styled("div")({
   display: "flex",

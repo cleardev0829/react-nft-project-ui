@@ -16,7 +16,7 @@ import {
 import { varFadeInUp, MotionInView } from "../../animate";
 import VideoPlayer from "../../VideoPlayer";
 import {
-  MDImageVideoSection,
+  // MDImageVideoSection,
   CarouselImg,
   Countdown,
 } from "../../_external-component";
@@ -90,7 +90,7 @@ const Section = (props) => {
                         underSrc="https://drive.google.com/uc?id=1Qjtfb2MV3f98zBDZr1LTCWWkRn_RnxV9"
                       />
                     );
-                  return <img src={`/static/nft/nfts/${img}.png`} />;
+                  return <img src={`/static/nft/nfts/${img}.png`} alt="" />;
                 })}
               </Stack>
             </MotionInView>

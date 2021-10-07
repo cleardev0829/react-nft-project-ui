@@ -1,20 +1,25 @@
 import faker from "faker";
 import Slider from "react-slick";
 import PropTypes from "prop-types";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { useState, useRef } from "react";
 import { Link as RouterLink } from "react-router-dom";
 // material
 import {
-  alpha,
+  // alpha,
   useTheme,
   experimentalStyled as styled,
 } from "@material-ui/core/styles";
-import { CardContent, Box, Card, Typography } from "@material-ui/core";
+import {
+  // CardContent,
+  Box,
+  Card,
+  // Typography
+} from "@material-ui/core";
 // utils
 import { mockImgFeed } from "../../utils/mockImages";
 //
-import { varFadeInRight, MotionContainer } from "../animate";
+// import { varFadeInRight, MotionContainer } from "../animate";
 import {
   CarouselControlsPaging1,
   CarouselControlsArrowsBasic1,
@@ -51,7 +56,7 @@ CarouselItem.propTypes = {
 };
 
 function CarouselItem({ item, isActive }) {
-  const { image, title, description } = item;
+  const { image, title } = item;
 
   return (
     <RouterLink to="#">

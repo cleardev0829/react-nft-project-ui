@@ -48,7 +48,7 @@ const Bubbles = ({ style, name, title }) => {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, []);
+  });
 
   function animate() {
     bubblesRef.current = bubblesRef.current.map((bubble, index) => {
@@ -118,6 +118,7 @@ const Bubbles = ({ style, name, title }) => {
               src={`/static/bubbles/${name}-0${
                 (index + 1) % (bubbles[name].length + 1)
               }.png`}
+              alt=""
             />
           </div>
         ))}

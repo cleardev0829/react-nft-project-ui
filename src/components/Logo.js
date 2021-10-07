@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 // material
 import { useTheme } from "@material-ui/core/styles";
-import { Paper, Box } from "@material-ui/core";
+import { Paper } from "@material-ui/core";
 
 // ----------------------------------------------------------------------
 
@@ -22,6 +22,7 @@ export default function Logo({ sx }) {
         height="150"
         src="https://drive.google.com/uc?id=1I0B7kXyQrqeScfCoAsmycuQKI3a4egZ_"
         data-src="https://drive.google.com/uc?id=1I0B7kXyQrqeScfCoAsmycuQKI3a4egZ_"
+        alt=""
       />
     </Paper>
   );
