@@ -7,7 +7,7 @@ ImageMagnifier.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
   magnifierHeight: PropTypes.number,
-  magnifieWidth: PropTypes.number,
+  magnifierWidth: PropTypes.number,
   zoomLevel: PropTypes.number,
 };
 
@@ -16,8 +16,8 @@ export default function ImageMagnifier({
   underSrc,
   width,
   height,
-  magnifierHeight = 200,
-  magnifieWidth = 200,
+  magnifierHeight = 300,
+  magnifierWidth = 300,
   zoomLevel = 1,
 }) {
   const [[x, y], setXY] = useState([0, 0]);
@@ -68,10 +68,10 @@ export default function ImageMagnifier({
           pointerEvents: "none",
           // set size of magnifier
           height: `${magnifierHeight}px`,
-          width: `${magnifieWidth}px`,
+          width: `${magnifierWidth}px`,
           // move element center to cursor pos
           top: `${y - magnifierHeight / 2}px`,
-          left: `${x - magnifieWidth / 2}px`,
+          left: `${x - magnifierWidth / 2}px`,
           opacity: "1", // reduce opacity so you can verify position
           //   border: "1px solid lightgray",
           backgroundColor: "black",
@@ -84,10 +84,10 @@ export default function ImageMagnifier({
           }px`,
 
           //calculate position of zoomed image.
-          backgroundPositionX: `${-x * zoomLevel + magnifieWidth / 2}px`,
+          backgroundPositionX: `${-x * zoomLevel + magnifierWidth / 2}px`,
           backgroundPositionY: `${-y * zoomLevel + magnifierHeight / 2}px`,
 
-          borderRadius: 100,
+          borderRadius: 200,
         }}
       ></div>
     </div>

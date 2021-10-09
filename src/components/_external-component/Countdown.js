@@ -22,11 +22,10 @@ const CountdownStyle = styled("div")({
   justifyContent: "center",
 });
 
-const SeparatorStyle = styled(Typography)(({ theme }) => ({
-  margin: theme.spacing(0, 1),
-  [theme.breakpoints.up("sm")]: {
-    margin: theme.spacing(0, 2.5),
-  },
+const NumberStyle = styled(Typography)(({ theme }) => ({
+  fontFamily: theme.typography.numberFontFamily,
+  fontSize: 64,
+  fontWeight: 300,
 }));
 
 // ----------------------------------------------------------------------
@@ -39,22 +38,58 @@ export default function Countdown() {
       <Box sx={{ maxWidth: 480, margin: "auto", textAlign: "center" }}>
         <CountdownStyle>
           <div>
-            <Typography variant="h2">{countdown.hours}</Typography>
-            <Typography sx={{ color: "text.secondary" }}>Hours</Typography>
+            <NumberStyle
+              sx={{
+                fontFamily: (theme) => theme.typography.numberFontFamily,
+                fontSize: 64,
+                fontWeight: 300,
+              }}
+            >
+              {countdown.hours}
+            </NumberStyle>
+            <Typography
+              sx={{ fontSize: 10, color: (theme) => theme.palette.PURPLE }}
+            >
+              hours
+            </Typography>
           </div>
 
-          <SeparatorStyle variant="h2">:</SeparatorStyle>
+          <NumberStyle>:</NumberStyle>
 
           <div>
-            <Typography variant="h2">{countdown.minutes}</Typography>
-            <Typography sx={{ color: "text.secondary" }}>Minutes</Typography>
+            <NumberStyle
+              sx={{
+                fontFamily: (theme) => theme.typography.numberFontFamily,
+                fontSize: 64,
+                fontWeight: 300,
+              }}
+            >
+              {countdown.minutes}
+            </NumberStyle>
+            <Typography
+              sx={{ fontSize: 10, color: (theme) => theme.palette.PURPLE }}
+            >
+              minutes
+            </Typography>
           </div>
 
-          <SeparatorStyle variant="h2">:</SeparatorStyle>
+          <NumberStyle>:</NumberStyle>
 
           <div>
-            <Typography variant="h2">{countdown.seconds}</Typography>
-            <Typography sx={{ color: "text.secondary" }}>Seconds</Typography>
+            <NumberStyle
+              sx={{
+                fontFamily: (theme) => theme.typography.numberFontFamily,
+                fontSize: 64,
+                fontWeight: 300,
+              }}
+            >
+              {countdown.seconds}
+            </NumberStyle>
+            <Typography
+              sx={{ fontSize: 10, color: (theme) => theme.palette.PURPLE }}
+            >
+              seconds
+            </Typography>
           </div>
         </CountdownStyle>
       </Box>

@@ -40,11 +40,11 @@ const CAROUSELS = ["001", "002", "003", "004", "005", "006", "007"].map(
 );
 
 const CarouselImgStyle = styled("img")(({ theme }) => ({
-  height: 280,
+  height: 580,
   width: "100%",
   objectFit: "cover",
   [theme.breakpoints.up("xl")]: {
-    height: 320,
+    height: 520,
   },
 }));
 
@@ -67,44 +67,9 @@ function CarouselItem({ item, isActive }) {
             width: "100%",
             height: "100%",
             position: "absolute",
-            // bgcolor: (theme) => alpha(theme.palette.grey[900], 0.72),
           }}
         />
         <CarouselImgStyle alt={title} src={image} />
-        {/* <CardContent
-          sx={{
-            bottom: 0,
-            width: "100%",
-            textAlign: "left",
-            position: "absolute",
-            color: "common.white",
-          }}
-        >
-          <MotionContainer open={isActive}>
-            <motion.div variants={varFadeInRight}>
-              <Typography
-                variant="overline"
-                sx={{
-                  mb: 1,
-                  // opacity: 0.48,
-                  display: "block",
-                }}
-              >
-                Featured App
-              </Typography>
-            </motion.div>
-            <motion.div variants={varFadeInRight}>
-              <Typography variant="h5" gutterBottom noWrap>
-                {title}
-              </Typography>
-            </motion.div>
-            <motion.div variants={varFadeInRight}>
-              <Typography variant="body2" noWrap>
-                {description}
-              </Typography>
-            </motion.div>
-          </MotionContainer>
-        </CardContent> */}
       </Box>
     </RouterLink>
   );
@@ -146,7 +111,7 @@ export default function CarouselImg() {
   };
 
   return (
-    <Card>
+    <Card sx={{ borderRadius: "0px" }}>
       <Slider ref={carouselRef} {...settings}>
         {CAROUSELS.map((item, index) => (
           <CarouselItem

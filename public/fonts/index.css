@@ -26,21 +26,21 @@
 }
 @font-face {
   font-family: "HelveticaNeueBold";
-  font-weight: 700;
+  /* font-weight: 700; */
   font-style: normal;
   src: local("HelveticaNeueBold"),
     url("Helvetica-Neue-Bold.ttf") format("opentype");
 }
 @font-face {
   font-family: "SimplonMonoMediumRegular";
-  font-weight: 700;
+  /* font-weight: 700; */
   font-style: normal;
   src: local("SimplonMonoMediumRegular"),
     url("Simplon Mono Medium Regular.ttf") format("opentype");
 }
 @font-face {
   font-family: "NetKanzl";
-  font-weight: 700;
+  /* font-weight: 700; */
   font-style: normal;
   src: local("NetKanzl"), url("Net-KANZL.ttf") format("opentype");
 }

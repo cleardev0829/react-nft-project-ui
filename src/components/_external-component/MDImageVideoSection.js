@@ -4,22 +4,16 @@ import { varFadeInUp, MotionInView } from "../animate";
 // ----------------------------------------------------------------------
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(12, 0),
+  padding: theme.spacing(0, 0),
 }));
 
 export default function MDImageVideoSection(props) {
   const { url1, url2, videoUrl1, videoUrl2 } = props;
   return (
     <RootStyle>
-      <Grid
-        container
-        spacing={1}
-        justifyContent="center"
-        alignItems="center"
-        sx={{ pb: 2 }}
-      >
+      <Grid container spacing={10} justifyContent="center" alignItems="center">
         {url1 && (
-          <Grid item xs={12} md={6} dir="ltr" sx={{ px: 0 }}>
+          <Grid item xs={12} md={6} dir="ltr">
             <Box>
               <MotionInView variants={varFadeInUp}>
                 <img data-src={url1} alt="" src={url1} />
@@ -29,8 +23,8 @@ export default function MDImageVideoSection(props) {
         )}
 
         {videoUrl1 && (
-          <Grid item xs={6} md={6} dir="ltr" sx={{ px: 0 }}>
-            <Box sx={{ backgroundColor: (theme) => theme.palette.grey[400] }}>
+          <Grid item xs={6} md={6} dir="ltr">
+            <Box sx={{ backgroundColor: (theme) => theme.palette.YELLOW }}>
               <MotionInView variants={varFadeInUp}>
                 <video
                   width="100%"
@@ -51,7 +45,7 @@ export default function MDImageVideoSection(props) {
         )}
 
         {url2 && (
-          <Grid item xs={12} md={6} dir="ltr" sx={{ px: 0 }}>
+          <Grid item xs={12} md={6} dir="ltr">
             <Box>
               <MotionInView variants={varFadeInUp}>
                 <img data-src={url2} alt="" src={url2} />
@@ -61,11 +55,11 @@ export default function MDImageVideoSection(props) {
         )}
 
         {videoUrl2 && (
-          <Grid item xs={6} md={6} dir="ltr" sx={{ px: 0, overflow: "hidden" }}>
+          <Grid item xs={6} md={6} dir="ltr">
             <Box
               sx={{
                 height: "fie-content",
-                backgroundColor: (theme) => theme.palette.grey[400],
+                backgroundColor: (theme) => theme.palette.YELLOW,
               }}
             >
               <MotionInView variants={varFadeInUp}>
@@ -80,7 +74,6 @@ export default function MDImageVideoSection(props) {
                   data-src={videoUrl2}
                   data-lazyload=""
                   data-behavior="softVideo"
-                  // style={{ transform: "scale(1.0)", transformOrigin: "0% 0%" }}
                 >
                   <source src={videoUrl2} />
                 </video>

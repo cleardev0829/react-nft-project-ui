@@ -5,7 +5,7 @@ import { experimentalStyled as styled } from "@material-ui/core/styles";
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
   position: "relative",
-  backgroundColor: theme.palette.grey[400],
+  backgroundColor: theme.palette.YELLOW,
   width: "100%",
   height: "100%",
   display: "flex",

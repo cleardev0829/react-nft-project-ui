@@ -7,11 +7,12 @@ body,
 }
 
 .bubble {
-  background-color: white;
+  /* background-color: white; */
   /* background-image: url(/images/spritesheet.png); */
   background-size: 1076px 1076px;
   border-radius: 50%;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 15px 35px rgba(253, 217, 217, 0.1),
+    0 3px 10px rgba(0, 0, 0, 0.1); */
   height: 152px;
   margin-right: 20px;
   position: absolute;
@@ -20,7 +21,7 @@ body,
 }
 
 .bubbles {
-  height: 600px;
+  height: 700px;
   overflow: hidden;
   position: relative;
 }

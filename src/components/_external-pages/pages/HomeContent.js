@@ -1,12 +1,16 @@
+import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
 import {
   // useTheme,
   experimentalStyled as styled,
 } from "@material-ui/core/styles";
-import { Grid, Container, Typography } from "@material-ui/core";
+import { Grid, Container, Typography, Box, Link } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../../animate";
 import VideoPlayer from "../../VideoPlayer";
 import { MDImageVideoSection } from "../../_external-component";
 import ImageMagnifier from "src/components/ImageMagnifier";
+import { Link as ScrollLink } from "react-scroll";
+import { setActive } from "src/redux/slices/active";
 
 const RootStyle = styled("div")(({ theme }) => ({
   paddingBottom: theme.spacing(12, 0),
@@ -23,7 +27,12 @@ const ContentStyle = styled("div")(({ theme }) => ({
 }));
 
 export default function HomeContent() {
-  // const theme = useTheme();
+  const dispatch = useDispatch();
+  window.scrollTo({
+    top: 100,
+    left: 100,
+    behavior: "smooth",
+  });
 
   return (
     <RootStyle>
@@ -39,7 +48,7 @@ export default function HomeContent() {
               url="https://drive.google.com/uc?export=download&id=1W45sOjVCXIxp4aAOkO23jeFaOwVjSiFm"
               poster="/static/nft/poster.png"
             />
-            <Container maxWidth="lg" sx={{ mt: 10 }}>
+            <Container maxWidth="xlg" sx={{ mt: 10 }}>
               <MotionInView variants={varFadeInUp}>
                 <Typography
                   variant="h3"
@@ -66,7 +75,6 @@ export default function HomeContent() {
                   In a time where information transfer is besieged by
                   controversy, ideology and manipulation, free and open sharing
                   of knowledge is more important than ever.
-                  <br />
                 </Typography>
               </MotionInView>
 
@@ -77,9 +85,12 @@ export default function HomeContent() {
 
               <Grid
                 container
-                spacing={0}
+                spacing={10}
                 justifyContent="center"
                 alignItems="flex-start"
+                sx={{
+                  pt: 10,
+                }}
               >
                 <Grid item xs={12} md={4} dir="ltr" sx={{ px: 1 }}>
                   <MotionInView variants={varFadeInUp}>
@@ -91,7 +102,7 @@ export default function HomeContent() {
                   </MotionInView>
                 </Grid>
 
-                <Grid item xs={12} md={4} dir="ltr" sx={{ pl: 5 }}>
+                <Grid item xs={12} md={4} dir="ltr">
                   <MotionInView variants={varFadeInUp}>
                     <Typography
                       variant="h5"
@@ -113,7 +124,7 @@ export default function HomeContent() {
                   </MotionInView>
                 </Grid>
 
-                <Grid item xs={12} md={4} dir="ltr" sx={{ pl: 5 }}>
+                <Grid item xs={12} md={4} dir="ltr">
                   <MotionInView variants={varFadeInUp}>
                     <Typography
                       variant="h5"
@@ -134,8 +145,11 @@ export default function HomeContent() {
               </Grid>
             </Container>
 
-            <ContentStyle sx={{ mt: 10, pb: 20, backgroundColor: "black" }}>
-              <Container maxWidth="lg">
+            <ContentStyle
+              id="overlay"
+              sx={{ mt: 10, pb: 20, backgroundColor: "black" }}
+            >
+              <Container maxWidth="xlg">
                 <Grid item xs={12} md={12} dir="ltr" sx={{ px: 1 }}>
                   <MotionInView variants={varFadeInUp}>
                     <ImageMagnifier
@@ -262,12 +276,12 @@ export default function HomeContent() {
               </Container>
             </ContentStyle>
 
-            <Container maxWidth="lg" sx={{ mt: 10 }}>
+            <Container maxWidth="xlg" sx={{ mt: 16 }}>
               <MotionInView variants={varFadeInUp}>
                 <Typography
                   variant="h3"
                   sx={{
-                    mb: 3,
+                    mb: 5,
                     fontFamily: (theme) =>
                       `${theme.typography.headingFontFamily}`,
                   }}
@@ -294,28 +308,158 @@ export default function HomeContent() {
 
               <Grid
                 container
-                spacing={0}
+                spacing={10}
                 justifyContent="center"
-                alignItems="flex-start"
+                alignItems="space-between"
                 sx={{ mb: 10 }}
               >
-                <Grid item xs={12} md={8} dir="ltr" sx={{ px: 1 }}>
+                <Grid item xs={12} md={7} dir="ltr">
                   <MotionInView variants={varFadeInUp}>
-                    <img
-                      src="https://drive.google.com/uc?id=1nN2knnG7R6QTkA7CJBq8BGoTYcIpJ6jW"
-                      data-src="https://drive.google.com/uc?id=1nN2knnG7R6QTkA7CJBq8BGoTYcIpJ6jW"
-                      alt=""
-                    />
+                    <Box sx={{ position: "relative" }}>
+                      <img
+                        src="https://drive.google.com/uc?id=1nN2knnG7R6QTkA7CJBq8BGoTYcIpJ6jW"
+                        data-src="https://drive.google.com/uc?id=1nN2knnG7R6QTkA7CJBq8BGoTYcIpJ6jW"
+                        alt=""
+                      />
+                      <Box
+                        sx={{
+                          width: "100%",
+                          height: "100%",
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            width: "100%",
+                            height: "37.5%",
+                          }}
+                        ></Box>
+                        <Box
+                          sx={{
+                            width: "100%",
+                            height: "62.5%",
+                          }}
+                        >
+                          <Grid container spacing={2} sx={{ height: "55%" }}>
+                            <Grid
+                              item
+                              xs={6}
+                              md={6}
+                              textAlign="right"
+                              sx={{
+                                height: "100%",
+                                alignItems: "center",
+                              }}
+                            >
+                              <Box
+                                sx={{
+                                  height: "100%",
+                                  display: "flex",
+                                  justifyContent: "flex-end",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <Link
+                                  target="_blank"
+                                  href={
+                                    "https://ethereum.org/en/what-is-ethereum/"
+                                  }
+                                >
+                                  <Typography color="text.primary">
+                                    What is
+                                    <br />
+                                    Ethereum
+                                  </Typography>
+                                </Link>
+                              </Box>
+                            </Grid>
+                            <Grid item xs={6} md={6} textAlign="left">
+                              <Box
+                                sx={{
+                                  height: "100%",
+                                  display: "flex",
+                                  justifyContent: "flex-start",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <Link
+                                  target="_blank"
+                                  href="https://ethereum.org/en/community/"
+                                >
+                                  <Typography color="text.primary">
+                                    Ethereum
+                                    <br />
+                                    Community
+                                  </Typography>
+                                </Link>
+                              </Box>
+                            </Grid>
+                          </Grid>
+                          <Grid container spacing={2} sx={{ height: "45%" }}>
+                            <Grid
+                              item
+                              xs={6}
+                              md={6}
+                              textAlign="right"
+                              sx={{
+                                height: "100%",
+                                alignItems: "center",
+                              }}
+                            >
+                              <Box
+                                sx={{
+                                  height: "100%",
+                                  display: "flex",
+                                  justifyContent: "flex-end",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <Link
+                                  target="_blank"
+                                  href="https://ethereum.org/en/nft/"
+                                >
+                                  <Typography color="text.primary">
+                                    NFTs
+                                  </Typography>
+                                </Link>
+                              </Box>
+                            </Grid>
+                            <Grid item xs={6} md={6} textAlign="left">
+                              <Box
+                                sx={{
+                                  height: "100%",
+                                  display: "flex",
+                                  justifyContent: "flex-start",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <Link
+                                  target="_blank"
+                                  href="https://ethereum.org/en/dao/"
+                                >
+                                  <Typography color="text.primary">
+                                    DAOs
+                                  </Typography>
+                                </Link>
+                              </Box>
+                            </Grid>
+                          </Grid>
+                        </Box>
+                      </Box>
+                    </Box>
                   </MotionInView>
                 </Grid>
 
-                <Grid item xs={12} md={4} dir="ltr" sx={{ pl: 5 }}>
+                <Grid item xs={12} md={5} dir="ltr">
                   <MotionInView variants={varFadeInUp}>
                     <Typography
                       variant="h5"
                       sx={{
                         fontStyle: "normal",
-                        fontWeight: "normal",
+                        fontWeight: 400,
+                        mb: 10,
                       }}
                     >
                       The advent of the Ethereum blockchain created an ecosystem
@@ -326,7 +470,14 @@ export default function HomeContent() {
                       scientific communities and discoveries, free of
                       manipulation.
                       <br />
-                      <br />
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontStyle: "italic",
+                        fontWeight: 400,
+                        fontSize: 30,
+                      }}
+                    >
                       The Ethereum community is the strongest and most
                       technically gifted of all blockchains and it is a
                       no-brainer for DeSci to function there.
@@ -338,6 +489,12 @@ export default function HomeContent() {
           </ContentStyle>
         </Grid>
       </Grid>
+      <ScrollLink
+        to="overlay"
+        spy
+        onSetActive={(e) => dispatch(setActive(true))}
+        onSetInactive={(e) => dispatch(setActive(false))}
+      />
     </RootStyle>
   );
 }

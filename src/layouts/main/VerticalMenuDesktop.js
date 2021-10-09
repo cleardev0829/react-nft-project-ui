@@ -8,7 +8,7 @@ const RootStyle = styled("div")(({ theme }) => ({
   paddingTop: theme.spacing(1),
 }));
 
-const LinkStyle = styled(Link)(({ theme }) => ({
+export const LinkStyle = styled(Link)(({ theme }) => ({
   ...theme.typography.subtitle2,
   color: theme.palette.text.primary,
   marginRight: theme.spacing(5),
@@ -43,11 +43,12 @@ function VerticalMenuDesktopItem({ item, pathname, isHome, isOffset }) {
       sx={{
         ...(isHome && { color: "text.secondary" }),
         ...(isOffset && { color: "text.secondary" }),
-        ...(isActive && { color: "text.primary" }),
+        ...(isActive && { color: '"text.primary"' }),
         cursor: "pointer",
       }}
     >
       <Typography
+        variant="inherit"
         sx={{
           fontWeight: 400,
           fontSize: 30,

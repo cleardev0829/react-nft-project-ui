@@ -28,6 +28,15 @@ const GREY = {
   500_80: alpha("#919EAB", 0.8),
 };
 
+const ADDITIONAL = {
+  RED: "#D82E32",
+  ORANGE: "#FD8F36",
+  YELLOW: "#FEFF60",
+  GREEN: "#75FB4C",
+  BLUE: "#377EF7",
+  PURPLE: "#C183F8",
+};
+
 const PRIMARY = {
   lighter: "#C8FACD",
   light: "#5BE584",
@@ -129,6 +138,9 @@ const COMMON = {
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
   },
+
+  // additional
+  ...ADDITIONAL,
 };
 
 const palette = {

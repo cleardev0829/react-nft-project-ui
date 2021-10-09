@@ -24,7 +24,7 @@ export default function CommunityContent() {
 
   return (
     <RootStyle>
-      <Container maxWidth="lg">
+      <Container maxWidth="xlg">
         <Grid container spacing={5} justifyContent="center">
           <Grid
             item

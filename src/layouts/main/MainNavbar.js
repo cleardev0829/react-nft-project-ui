@@ -4,6 +4,7 @@ import {
   AppBar,
   // Toolbar,
   Container,
+  Typography,
 } from "@material-ui/core";
 // hooks
 import useOffSetTop from "../../hooks/useOffSetTop";
@@ -11,12 +12,15 @@ import useOffSetTop from "../../hooks/useOffSetTop";
 import Logo from "../../components/Logo";
 import { MHidden } from "../../components/@material-extend";
 import navConfig from "./MenuConfig";
-import VerticalMenuDesktop from "./VerticalMenuDesktop";
-
+import VerticalMenuDesktop, { LinkStyle } from "./VerticalMenuDesktop";
+import { varFadeInUp, MotionInView } from "../../components/animate";
+import { useSelector } from "react-redux";
 export default function MainNavbar() {
   const isOffset = useOffSetTop(100);
   const { pathname } = useLocation();
   const isHome = pathname === "/";
+
+  const isActive = useSelector(({ active }) => active.isActive);
 
   return (
     <AppBar id="Top" color="transparent" sx={{ boxShadow: 0 }}>
@@ -25,17 +29,19 @@ export default function MainNavbar() {
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "flex-end",
+          justifyContent: "space-between",
         }}
       >
-        {!isOffset && (
+        {!isOffset ? (
           <>
             <RouterLink to="/">
-              <Logo
-                sx={{
-                  boxShadow: (theme) => theme.customShadows.z24,
-                }}
-              />
+              <MotionInView variants={varFadeInUp}>
+                <Logo
+                  sx={{
+                    boxShadow: (theme) => theme.customShadows.z24,
+                  }}
+                />
+              </MotionInView>
             </RouterLink>
 
             <Box sx={{ flexGrow: 1 }} />
@@ -55,6 +61,32 @@ export default function MainNavbar() {
               />
             </MHidden>
           </>
+        ) : (
+          <LinkStyle
+            to="/"
+            component={RouterLink}
+            sx={{
+              cursor: "pointer",
+            }}
+          >
+            <MotionInView variants={varFadeInUp}>
+              <Box sx={{ mt: 5 }}>
+                <Typography
+                  variant="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontSize: 30,
+                    lineHeight: "30.8px",
+                    fontStyle: "normal",
+                    cursor: "pointer",
+                    color: isActive ? "white" : "",
+                  }}
+                >
+                  DeSci
+                </Typography>
+              </Box>
+            </MotionInView>
+          </LinkStyle>
         )}
       </Container>
     </AppBar>

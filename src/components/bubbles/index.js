@@ -22,7 +22,7 @@ for (let i = 0; i < 7; i++) {
 
 const noise = new Noise();
 
-const Bubbles = ({ style, name, title }) => {
+const Bubbles = ({ style, name, title1, title2 }) => {
   const animationRef = useRef();
   const bubblesRef = useRef(
     bubbles[name].map((bubble) => ({
@@ -88,18 +88,29 @@ const Bubbles = ({ style, name, title }) => {
         style={{
           width: "100%",
           position: "absolute",
-          top: 40,
+          top: 100,
           textAlign: "center",
         }}
       >
         <Typography
           style={{
+            fontStyle: "normal",
             fontSize: 40,
             fontWeight: 700,
             color: name === "bubbles1" ? "white" : "black",
           }}
         >
-          {title}
+          {title1}
+        </Typography>
+        <Typography
+          style={{
+            fontStyle: "normal",
+            fontSize: 40,
+            fontWeight: 700,
+            color: name === "bubbles1" ? "white" : "black",
+          }}
+        >
+          {title2}
         </Typography>
       </div>
       <div className="bubbles">

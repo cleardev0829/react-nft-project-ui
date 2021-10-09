@@ -24,7 +24,7 @@ export default function MainFooter() {
   return (
     <RootStyle bgColor={isHome ? "black" : "white"}>
       {/* <Divider /> */}
-      <Container maxWidth="lg" sx={{ pt: 10 }}>
+      <Container maxWidth="xlg" sx={{ pt: 10 }}>
         {!isHome && pathname === "/nft" && (
           <>
             <MotionInView variants={varFadeInUp}>
@@ -64,7 +64,7 @@ export default function MainFooter() {
             <Typography
               variant="h3"
               sx={{
-                mb: 3,
+                mb: 5,
                 fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
               }}
               color={isHome ? "white" : ""}
@@ -80,8 +80,8 @@ export default function MainFooter() {
           justifyContent="center"
           alignItems="flex-start"
         >
-          <Grid item xs={12} md={8} dir="ltr" sx={{ px: 1 }}>
-            <Stack direction="row" justifyContent="space-between">
+          <Grid item xs={12} md={6} dir="ltr" sx={{ mb: 5 }}>
+            <Stack direction="row" spacing={30} justifyContent="space-around">
               <MotionInView variants={varFadeInUp}>
                 <Stack
                   direction="column"
@@ -110,7 +110,7 @@ export default function MainFooter() {
                         fontSize: 20,
                       }}
                     >
-                      Discord
+                      discord
                     </Typography>
                   </Link>
                 </Stack>
@@ -147,7 +147,7 @@ export default function MainFooter() {
                         fontSize: 20,
                       }}
                     >
-                      Twitter
+                      twitter
                     </Typography>
                   </Link>
                 </Stack>
@@ -156,7 +156,7 @@ export default function MainFooter() {
           </Grid>
         </Grid>
 
-        <Grid container spacing={0} justifyContent="center">
+        <Grid container justifyContent="center">
           <MotionInView variants={varFadeInUp}>
             <img
               width="81.65"
