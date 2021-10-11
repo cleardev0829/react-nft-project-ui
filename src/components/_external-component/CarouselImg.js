@@ -35,7 +35,6 @@ export default function CarouselImg() {
         showThumbs={false}
         showIndicators={false}
         infiniteLoop={true}
-        style={{ backgroundColor: "red" }}
       >
         {CAROUSELS.map((item) => {
           console.log(item);
