@@ -32,11 +32,11 @@
     url("Helvetica-Neue-Bold.ttf") format("opentype");
 }
 @font-face {
-  font-family: "SimplonMonoMediumRegular";
+  font-family: "SimplonMonoWebTrialRegular";
   /* font-weight: 700; */
   font-style: normal;
-  src: local("SimplonMonoMediumRegular"),
-    url("Simplon Mono Medium Regular.ttf") format("opentype");
+  src: local("SimplonMonoWebTrialRegular"),
+    url("SimplonMono-Regular-WebTrial.ttf") format("opentype");
 }
 @font-face {
   font-family: "NetKanzl";

@@ -23,7 +23,7 @@ export default function MDImageVideoSection(props) {
         )}
 
         {videoUrl1 && (
-          <Grid item xs={6} md={6} dir="ltr">
+          <Grid item xs={12} md={6} dir="ltr">
             <Box sx={{ backgroundColor: (theme) => theme.palette.YELLOW }}>
               <MotionInView variants={varFadeInUp}>
                 <video
@@ -55,10 +55,9 @@ export default function MDImageVideoSection(props) {
         )}
 
         {videoUrl2 && (
-          <Grid item xs={6} md={6} dir="ltr">
+          <Grid item xs={12} md={6} dir="ltr">
             <Box
               sx={{
-                height: "fie-content",
                 backgroundColor: (theme) => theme.palette.YELLOW,
               }}
             >

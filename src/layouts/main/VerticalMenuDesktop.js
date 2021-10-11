@@ -5,7 +5,7 @@ import { Grid, Typography, Stack, Link } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../../components/animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  paddingTop: theme.spacing(1),
+  paddingTop: theme.spacing(5),
 }));
 
 export const LinkStyle = styled(Link)(({ theme }) => ({
@@ -18,6 +18,9 @@ export const LinkStyle = styled(Link)(({ theme }) => ({
   "&:hover": {
     opacity: 0.48,
     textDecoration: "none",
+  },
+  [theme.breakpoints.down("md")]: {
+    marginRight: theme.spacing(2),
   },
 }));
 
@@ -51,7 +54,7 @@ function VerticalMenuDesktopItem({ item, pathname, isHome, isOffset }) {
         variant="inherit"
         sx={{
           fontWeight: 400,
-          fontSize: 30,
+          fontSize: 35,
           lineHeight: "30.8px",
           fontStyle: "normal",
           cursor: "pointer",

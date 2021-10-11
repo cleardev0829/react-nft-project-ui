@@ -1,11 +1,5 @@
 import { NavLink as RouterLink, useLocation } from "react-router-dom";
-import {
-  Box,
-  AppBar,
-  // Toolbar,
-  Container,
-  Typography,
-} from "@material-ui/core";
+import { Box, AppBar, Container, Grid, Typography } from "@material-ui/core";
 // hooks
 import useOffSetTop from "../../hooks/useOffSetTop";
 // components
@@ -15,6 +9,7 @@ import navConfig from "./MenuConfig";
 import VerticalMenuDesktop, { LinkStyle } from "./VerticalMenuDesktop";
 import { varFadeInUp, MotionInView } from "../../components/animate";
 import { useSelector } from "react-redux";
+
 export default function MainNavbar() {
   const isOffset = useOffSetTop(100);
   const { pathname } = useLocation();
@@ -33,34 +28,41 @@ export default function MainNavbar() {
         }}
       >
         {!isOffset ? (
-          <>
-            <RouterLink to="/">
-              <MotionInView variants={varFadeInUp}>
-                <Logo
-                  sx={{
-                    boxShadow: (theme) => theme.customShadows.z24,
-                  }}
+          <Grid container spacing={(theme) => theme.spacing(5)}>
+            <Grid item xs="12" md="6">
+              <RouterLink to="/">
+                <MotionInView variants={varFadeInUp}>
+                  <Logo
+                  // sx={{
+                  //   boxShadow: (theme) => theme.customShadows.z24,
+                  // }}
+                  />
+                </MotionInView>
+              </RouterLink>
+            </Grid>
+
+            <Grid
+              item
+              xs="12"
+              md="6"
+              sx={{ display: "flex", justifyContent: "flex-end" }}
+            >
+              <MHidden width="mdDown">
+                <VerticalMenuDesktop
+                  isOffset={isOffset}
+                  isHome={isHome}
+                  navConfig={navConfig}
                 />
-              </MotionInView>
-            </RouterLink>
-
-            <Box sx={{ flexGrow: 1 }} />
-
-            <MHidden width="mdDown">
-              <VerticalMenuDesktop
-                isOffset={isOffset}
-                isHome={isHome}
-                navConfig={navConfig}
-              />
-            </MHidden>
-            <MHidden width="mdUp">
-              <VerticalMenuDesktop
-                isOffset={isOffset}
-                isHome={isHome}
-                navConfig={navConfig}
-              />
-            </MHidden>
-          </>
+              </MHidden>
+              <MHidden width="mdUp">
+                <VerticalMenuDesktop
+                  isOffset={isOffset}
+                  isHome={isHome}
+                  navConfig={navConfig}
+                />
+              </MHidden>
+            </Grid>
+          </Grid>
         ) : (
           <LinkStyle
             to="/"
@@ -75,7 +77,7 @@ export default function MainNavbar() {
                   variant="inherit"
                   sx={{
                     fontWeight: 400,
-                    fontSize: 30,
+                    fontSize: 35,
                     lineHeight: "30.8px",
                     fontStyle: "normal",
                     cursor: "pointer",

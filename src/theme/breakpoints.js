@@ -6,7 +6,7 @@ const breakpoints = {
     sm: 600,
     md: 960,
     lg: 1280,
-    xlg: 1600,
+    xlg: 1400,
     xl: 1920,
   },
 };

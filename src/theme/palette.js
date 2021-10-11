@@ -29,85 +29,61 @@ const GREY = {
 };
 
 const ADDITIONAL = {
-  RED: "#D82E32",
-  ORANGE: "#FD8F36",
-  YELLOW: "#FEFF60",
-  GREEN: "#75FB4C",
-  BLUE: "#377EF7",
   PURPLE: "#C183F8",
+  GREEN: "#75FB4C",
+  YELLOW: "#FEFF60",
+  ORANGE: "#FD8F36",
+  BLUE: "#377EF7",
+  RED: "#D82E32",
 };
 
 const PRIMARY = {
   lighter: "#C8FACD",
   light: "#5BE584",
-  main: "#00AB55",
+  main: "#C183F8",
   dark: "#007B55",
   darker: "#005249",
   contrastText: "#fff",
 };
 const SECONDARY = {
-  lighter: "#D6E4FF",
-  light: "#84A9FF",
-  main: "#3366FF",
-  dark: "#1939B7",
-  darker: "#091A7A",
-  contrastText: "#fff",
+  // lighter: "#D6E4FF",
+  // light: "#84A9FF",
+  main: "#75FB4C",
+  // dark: "#1939B7",
+  // darker: "#091A7A",
+  // contrastText: "#fff",
 };
 const INFO = {
-  lighter: "#D0F2FF",
-  light: "#74CAFF",
-  main: "#1890FF",
-  dark: "#0C53B7",
-  darker: "#04297A",
-  contrastText: "#fff",
+  // lighter: "#D0F2FF",
+  // light: "#74CAFF",
+  main: "#FEFF60",
+  // dark: "#0C53B7",
+  // darker: "#04297A",
+  // contrastText: "#fff",
 };
-// const SUCCESS = {
-//   lighter: "#E9FCD4",
-//   light: "#AAF27F",
-//   main: "#54D62C",
-//   dark: "#229A16",
-//   darker: "#08660D",
-//   contrastText: GREY[800],
-// };
-// const WARNING = {
-//   lighter: "#FFF7CD",
-//   light: "#FFE16A",
-//   main: "#FFC107",
-//   dark: "#B78103",
-//   darker: "#7A4F01",
-//   contrastText: GREY[800],
-// };
-// const ERROR = {
-//   lighter: "#FFE7D9",
-//   light: "#FFA48D",
-//   main: "#FF4842",
-//   dark: "#B72136",
-//   darker: "#7A0C2E",
-//   contrastText: "#fff",
-// };
 const SUCCESS = {
-  lighter: "#E9FCD4",
-  light: "#AAF27F",
-  main: "#75FB4C",
-  dark: "#229A16",
-  darker: "#08660D",
-  contrastText: GREY[800],
+  // lighter: "#E9FCD4",
+  // light: "#AAF27F",
+  main: "#FD8F36",
+  // dark: "#229A16",
+  // darker: "#08660D",
+  // contrastText: GREY[800],
 };
 const WARNING = {
-  lighter: "#FFF7CD",
-  light: "#FFE16A",
+  // lighter: "#FFF7CD",
+  // light: "#FFE16A",
   main: "#377EF7",
-  dark: "#B78103",
-  darker: "#7A4F01",
-  contrastText: GREY[800],
+  // dark: "#B78103",
+  // darker: "#7A4F01",
+  // contrastText: GREY[800],
 };
 const ERROR = {
-  lighter: "#FFE7D9",
-  light: "#FFA48D",
-  main: "#C183F8",
-  dark: "#B72136",
-  darker: "#7A0C2E",
-  contrastText: "#fff",
+  // lighter: "#FFE7D9",
+  // light: "#FFA48D",
+  main: "#D82E32",
+  // dark: "#B72136",
+  // darker: "#7A0C2E",
+  // contrastText: "#fff",
 };
 
 const GRADIENTS = {
@@ -146,7 +122,7 @@ const COMMON = {
 const palette = {
   light: {
     ...COMMON,
-    text: { primary: GREY[800], secondary: GREY[600], disabled: GREY[500] },
+    text: { primary: GREY[800], secondary: "GREY[600]", disabled: GREY[500] },
     background: { paper: "#fff", default: "#fff", neutral: GREY[200] },
     action: { active: GREY[600], ...COMMON.action },
   },

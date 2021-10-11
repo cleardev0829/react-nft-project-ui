@@ -10,6 +10,7 @@ import {
   Typography,
   Stack,
 } from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
 
 const RootStyle = styled("div")(({ theme, bgColor }) => ({
   position: "relative",
@@ -18,6 +19,7 @@ const RootStyle = styled("div")(({ theme, bgColor }) => ({
 }));
 
 export default function MainFooter() {
+  const theme = useTheme();
   const { pathname } = useLocation();
   const isHome = pathname === "/";
 
@@ -81,7 +83,11 @@ export default function MainFooter() {
           alignItems="flex-start"
         >
           <Grid item xs={12} md={6} dir="ltr" sx={{ mb: 5 }}>
-            <Stack direction="row" spacing={30} justifyContent="space-around">
+            <Stack
+              direction="row"
+              spacing={{ lg: 30, md: 20, sm: 10 }}
+              justifyContent="space-around"
+            >
               <MotionInView variants={varFadeInUp}>
                 <Stack
                   direction="column"
@@ -89,7 +95,21 @@ export default function MainFooter() {
                   justifyContent="space-between"
                 >
                   {pathname === "/community" && (
-                    <Typography>Join our Discord to get involved.</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: "normal" }}>
+                      Join our&nbsp;
+                      <span
+                        style={{
+                          textDecoration: "underline",
+                          cursor: "pointer",
+                          "&:hover": {
+                            color: theme.palette.GREEN,
+                          },
+                        }}
+                      >
+                        discord
+                      </span>
+                      &nbsp;to get involved.
+                    </Typography>
                   )}
                   <img
                     src="https://drive.google.com/uc?id=1e91vFO2I802myn0Xo20Vi2xHQU0iWJ6q"
@@ -105,10 +125,15 @@ export default function MainFooter() {
                     sx={{ display: "block" }}
                   >
                     <Typography
-                      color={isHome ? "white" : ""}
+                      variant="h6"
                       sx={{
-                        fontSize: 20,
+                        fontWeight: "normal",
+                        textDecoration: "underline",
+                        "&:hover": {
+                          color: (theme) => theme.palette.GREEN,
+                        },
                       }}
+                      color={isHome ? "white" : ""}
                     >
                       discord
                     </Typography>
@@ -123,8 +148,20 @@ export default function MainFooter() {
                   justifyContent="space-between"
                 >
                   {pathname === "/community" && (
-                    <Typography>
-                      Follow our Twitter to stay up to date.
+                    <Typography variant="h6" sx={{ fontWeight: "normal" }}>
+                      Follow our&nbsp;
+                      <span
+                        style={{
+                          textDecoration: "underline",
+                          cursor: "pointer",
+                          "&:hover": {
+                            color: theme.palette.GREEN,
+                          },
+                        }}
+                      >
+                        twitter
+                      </span>
+                      &nbsp;to stay up to date.
                     </Typography>
                   )}
 
@@ -139,13 +176,20 @@ export default function MainFooter() {
                     key="https://twitter.com/DeSciWorld"
                     color="inherit"
                     variant="body2"
-                    sx={{ display: "block" }}
+                    sx={{
+                      display: "block",
+                    }}
                   >
                     <Typography
-                      color={isHome ? "white" : ""}
+                      variant="h6"
                       sx={{
-                        fontSize: 20,
+                        fontWeight: "normal",
+                        textDecoration: "underline",
+                        "&:hover": {
+                          color: (theme) => theme.palette.GREEN,
+                        },
                       }}
+                      color={isHome ? "white" : "black"}
                     >
                       twitter
                     </Typography>

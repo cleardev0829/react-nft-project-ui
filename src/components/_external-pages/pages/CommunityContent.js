@@ -35,12 +35,12 @@ export default function CommunityContent() {
             <ContentStyle>
               <MotionInView variants={varFadeInUp}>
                 <Typography
+                  variant="h2"
                   sx={{
                     mb: 5,
-                    fontSize: 40,
-                    fontWeight: 400,
                     fontStyle: "italic",
-                    color: (theme) => theme.palette.error.main,
+                    fontWeight: "normal",
+                    color: (theme) => theme.palette.primary.main,
                   }}
                 >
                   DeSci is a community.
@@ -49,11 +49,10 @@ export default function CommunityContent() {
 
               <MotionInView variants={varFadeInUp}>
                 <Typography
+                  variant="h2"
                   sx={{
                     mb: 3,
-                    fontSize: 40,
-                    fontWeight: 400,
-                    fontStyle: "normal",
+                    fontWeight: "normal",
                   }}
                 >
                   DeSci is a community. A community of researchers, artists,

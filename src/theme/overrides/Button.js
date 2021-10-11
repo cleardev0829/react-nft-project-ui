@@ -19,6 +19,7 @@ export default function Button(theme) {
           "&:hover": {
             backgroundColor: theme.palette.GREEN,
           },
+          width: 150,
         },
         containedPrimary: {
           boxShadow: theme.customShadows.primary,
@@ -40,7 +41,6 @@ export default function Button(theme) {
         contained: {
           color: "black",
           fontSize: 24,
-          width: 150,
         },
       },
     },

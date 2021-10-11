@@ -18,12 +18,12 @@ export const bubbles = {
     {
       s: 1.0,
       x: 499,
-      y: 400,
+      y: 500,
     },
     {
       s: 1.0,
       x: 500,
-      y: 554,
+      y: 754,
     },
   ],
   bubbles2: [
@@ -35,7 +35,7 @@ export const bubbles = {
     {
       s: 1.0,
       x: 295,
-      y: 226,
+      y: 526,
     },
     {
       s: 1.0,
@@ -45,7 +45,7 @@ export const bubbles = {
     {
       s: 1.0,
       x: 410,
-      y: 365,
+      y: 765,
     },
     {
       s: 1.0,
@@ -55,12 +55,12 @@ export const bubbles = {
     {
       s: 1.0,
       x: 645,
-      y: 387,
+      y: 487,
     },
     {
       s: 1.0,
       x: 503,
-      y: 193,
+      y: 593,
     },
     {
       s: 1.0,
@@ -70,7 +70,7 @@ export const bubbles = {
     {
       s: 1.0,
       x: 33,
-      y: 320,
+      y: 620,
     },
   ],
 };
