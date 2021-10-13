@@ -1,13 +1,13 @@
 import faker from "faker";
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import { Card } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import { mockImgFeed } from "../../utils/mockImages";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
 const CAROUSELS = [
   "000",
-  "001",
+  // "001",
   // "002",
   // "003",
   // "004",
@@ -41,20 +41,19 @@ const onSwipeMove = (e) => {
 
 export default function CarouselImg() {
   return (
-    <Card sx={{ position: "relative" }}>
+    <Box sx={{ position: "relative" }}>
       <Carousel
         autoPlay
         interval={7000}
         showThumbs={false}
         showIndicators={false}
         infiniteLoop={false}
-        onChange={onChange}
-        onSwipeMove={onSwipeMove}
+        showStatus={false}
       >
         {CAROUSELS.map((item) => {
           return <CarouselImgStyle src={item.image} />;
         })}
       </Carousel>
-    </Card>
+    </Box>
   );
 }

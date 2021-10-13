@@ -42,26 +42,26 @@ export default function NFTRarityAndTraits() {
     <RootStyle>
       <ContentStyle id="buttons">
         <Container maxWidth="xlg" justifyContent="space-between">
-          <MotionInView variants={varFadeInUp}>
-            <Typography
-              variant="h4"
-              sx={{
-                mb: 3,
-                fontWeight: "bold",
-                fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
-              }}
-            >
-              Rarity & Traits
-            </Typography>
-          </MotionInView>
-
           <Grid
             container
-            justifyContent="center"
+            justifyContent="space-between"
             alignItems="flex-start"
-            spacing={10}
+            spacing={15}
           >
             <Grid item xs={12} md={6} dir="ltr">
+              <MotionInView variants={varFadeInUp}>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    mb: 3,
+                    fontWeight: "bold",
+                    fontFamily: (theme) =>
+                      `${theme.typography.headingFontFamily}`,
+                  }}
+                >
+                  Rarity & Traits
+                </Typography>
+              </MotionInView>
               <MotionInView variants={varFadeInUp}>
                 <Typography
                   variant="h5"

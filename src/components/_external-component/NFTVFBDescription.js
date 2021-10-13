@@ -84,14 +84,20 @@ export default function NFTVFBDescription({ id, color }) {
                   The most peculiar microbe of the three categories. Viruses are
                   microscopic parasites responsible for a range of familiar (and
                   often fatal) diseases, including the flu, Ebola, measles, HIV
-                  and its latest adition SARS-CoV-2. Made up of genetic material
-                  (DNA or RNA) encapsulated in a shell made of protein, they are
-                  only able to survive and replicate inside a living host, which
-                  could be any organism on earth, even other microbes like
-                  bacteria. This means no life form is safe from infection by a
-                  virus. The question whether viruses are alive is tricky to
-                  answer, as they do not possess the hallmark of living things,
-                  they don’t carry out metabolic processes.
+                  and its latest adition SARS-CoV-
+                  <span
+                    style={{ fontFamily: theme.typography.numberFontFamily }}
+                  >
+                    2
+                  </span>
+                  . Made up of genetic material (DNA or RNA) encapsulated in a
+                  shell made of protein, they are only able to survive and
+                  replicate inside a living host, which could be any organism on
+                  earth, even other microbes like bacteria. This means no life
+                  form is safe from infection by a virus. The question whether
+                  viruses are alive is tricky to answer, as they do not possess
+                  the hallmark of living things, they don’t carry out metabolic
+                  processes.
                 </span>
               )}
               {id === "fungi" && (

@@ -1,7 +1,6 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Container, Grid, Typography, Box, Stack } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
-import { MDImageVideoSection } from "./";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 0),
@@ -51,11 +50,40 @@ export default function HomeDesci() {
             </Typography>
           </MotionInView>
 
-          <MDImageVideoSection
-            url1="https://drive.google.com/uc?id=1z4xBqkMOOt344WcqLuf30jHSBrs07ekZ"
-            videoUrl2="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
-            poster="/static/nft/net-011.png"
-          />
+          <MotionInView variants={varFadeInUp}>
+            <Stack
+              direction={{ xs: "column", sm: "column", md: "row", lg: "row" }}
+              justifyContent="space-between"
+              alignItems="flex-start"
+              width="100%"
+              spacing={10}
+            >
+              <Box>
+                <img
+                  data-src="https://drive.google.com/uc?id=1z4xBqkMOOt344WcqLuf30jHSBrs07ekZ"
+                  alt=""
+                  src="https://drive.google.com/uc?id=1z4xBqkMOOt344WcqLuf30jHSBrs07ekZ"
+                  style={{ height: "350px" }}
+                />
+              </Box>
+              <Box>
+                <video
+                  width="100%"
+                  muted={false}
+                  loop={true}
+                  playsInline=""
+                  autoPlay={true}
+                  preload="none"
+                  data-src="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
+                  data-lazyload=""
+                  data-behavior="softVideo"
+                  src="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
+                  poster="/static/nft/net-011.png"
+                  style={{ height: "350px", width: "350px" }}
+                />
+              </Box>
+            </Stack>
+          </MotionInView>
 
           <Grid
             container
