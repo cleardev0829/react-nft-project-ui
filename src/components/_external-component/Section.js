@@ -20,10 +20,10 @@ export default function Section({ children, components }) {
         <Grid
           container
           justifyContent="space-between"
-          alignItems="center"
+          alignItems="flex-start"
           spacing={25}
         >
-          <Grid item xs={12} md={7} dir="ltr">
+          <Grid item xs={12} md={6} dir="ltr">
             <MotionInView variants={varFadeInUp}></MotionInView>
 
             <MotionInView variants={varFadeInUp}>
@@ -40,7 +40,7 @@ export default function Section({ children, components }) {
             </MotionInView>
           </Grid>
 
-          <Grid item xs={12} md={5} dir="ltr">
+          <Grid item xs={12} md={6} dir="ltr">
             <MotionInView variants={varFadeInUp}>
               <Stack justifyContent="center" alignItems="center" spacing={5}>
                 {components &&

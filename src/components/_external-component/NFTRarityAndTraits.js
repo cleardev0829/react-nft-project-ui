@@ -51,7 +51,7 @@ export default function NFTRarityAndTraits() {
                 fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
               }}
             >
-              Rarity and Traits
+              Rarity & Traits
             </Typography>
           </MotionInView>
 

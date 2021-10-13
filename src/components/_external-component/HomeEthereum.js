@@ -45,8 +45,9 @@ export default function HomeEthereum() {
                 color: (theme) => theme.palette.warning.main,
               }}
             >
-              Ethereum embodies all that DeSci wants to achieve:
-              <b>innovation</b>, <b>community</b> and <b>collaboration</b>.
+              Ethereum embodies all that DeSci wants to achieve:&nbsp;
+              <b>innovation</b>, <b>community</b> and <b>collaboration</b>
+              .
               <br />
             </Typography>
           </MotionInView>

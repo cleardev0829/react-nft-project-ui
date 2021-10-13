@@ -101,9 +101,9 @@ export default function NFTVFBDescription({ id, color }) {
                   familiar toadstool, the fruiting body of a fungus.
                   Microorganisms are mainly used in cell biology and
                   biotechnology, whereas mushrooms are mainly comsumed as food
-                  or psychoactive agengts. Fungi respresnt a hetergenous group
+                  or psychoactive agents. Fungi respresnt a heterogenous group
                   of organisms that are capable to infect and poison humans but
-                  are used by human civilasations for fermentation purposes for
+                  are used by human civilisations for fermentation purposes for
                   thousands of years.
                 </span>
               )}
@@ -111,7 +111,7 @@ export default function NFTVFBDescription({ id, color }) {
                 <span>
                   Ancient small single-celled organisms residing in and all
                   around us. Tiny molecular factories that are found almost
-                  everywhere on earth, even under the most extreme condiotions,
+                  everywhere on earth, even under the most extreme conditions,
                   and are essential for the planet’s ecosystem. Bacteria play an
                   essential role in the homeostasis of our body. The human body
                   carries millions of bacteria and infact, is estimated to

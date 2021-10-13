@@ -148,7 +148,7 @@ export default function NFTVirusSections() {
             <span style={{ fontFamily: theme.typography.numberFontFamily }}>
               {`19 `}
             </span>
-            diesease) strucures.
+            disease) structures.
             <br />
             <br /> <span style={{ fontSize: 14 }}>https://www.rcsb.org/</span>
           </span>
@@ -204,13 +204,16 @@ export default function NFTVirusSections() {
           <span>
             ). Many of the carriers of the virus never develop symptoms, as the
             virus hides from the patroling immune system in the body of our
-            nerve cells. In certain cases HSV-1 infection can lead to the
-            inflamation of the brain (Encephalitis).Studying very early events
-            in viral infections by looking inside our cells is of great
-            importance to understand how we can prevent infection from this
-            hidden passenger. Laser fluoerescent microspcopy coupled with state
-            of the art fluorescent labeling of viral genetic material, allows
-            tracking the infection in real time.
+            nerve cells. In certain cases HSV-
+            <span style={{ fontFamily: theme.typography.numberFontFamily }}>
+              {`1 `}
+            </span>
+            infection can lead to the inflamation of the brain
+            (Encephalitis).Studying very early events in viral infections by
+            looking inside our cells is of great importance to understand how we
+            can prevent infection from this hidden passenger. Laser fluoerescent
+            microspcopy coupled with state of the art fluorescent labeling of
+            viral genetic material, allows tracking the infection in real time.
             <br />
             <br />
           </span>
