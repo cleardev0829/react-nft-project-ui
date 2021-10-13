@@ -17,7 +17,7 @@ export default function MainLayout() {
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          bottom: "3%",
+          bottom: "1%",
           position: "fixed",
         }}
       >
