@@ -5,15 +5,22 @@ import { mockImgFeed } from "../../utils/mockImages";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-const CAROUSELS = ["000", "001", "002", "003", "004", "005", "006", "007"].map(
-  (item, index) => {
-    return {
-      title: item,
-      description: faker.lorem.lines(),
-      image: mockImgFeed(index),
-    };
-  }
-);
+const CAROUSELS = [
+  "000",
+  "001",
+  // "002",
+  // "003",
+  // "004",
+  // "005",
+  // "006",
+  // "007",
+].map((item, index) => {
+  return {
+    title: item,
+    description: faker.lorem.lines(),
+    image: mockImgFeed(index),
+  };
+});
 
 const CarouselImgStyle = styled("img")(({ theme }) => ({
   height: 580,
@@ -37,10 +44,10 @@ export default function CarouselImg() {
     <Card sx={{ position: "relative" }}>
       <Carousel
         autoPlay
-        interval={2000}
+        interval={7000}
         showThumbs={false}
         showIndicators={false}
-        infiniteLoop={true}
+        infiniteLoop={false}
         onChange={onChange}
         onSwipeMove={onSwipeMove}
       >
