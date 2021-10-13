@@ -1,8 +1,24 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
-import { experimentalStyled as styled } from "@material-ui/core/styles";
+import { Container, Grid, Typography, useTheme } from "@material-ui/core";
+import {
+  experimentalStyled as styled,
+  makeStyles,
+} from "@material-ui/core/styles";
 import { varFadeInUp, MotionInView } from "../animate";
 import VideoPlayer from "../VideoPlayer";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    [theme.breakpoints.up("lg")]: {
+      paddingLeft: 150,
+      paddingRight: 150,
+    },
+    [theme.breakpoints.down("lg")]: {
+      paddingLeft: 100,
+      paddingRight: 100,
+    },
+  },
+}));
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(20, 0),
@@ -19,6 +35,9 @@ const ContentStyle = styled("div")(({ theme }) => ({
 }));
 
 export default function NFTRarityAndTraits() {
+  const theme = useTheme();
+  const classes = useStyles();
+
   return (
     <RootStyle>
       <ContentStyle id="buttons">
@@ -36,8 +55,13 @@ export default function NFTRarityAndTraits() {
             </Typography>
           </MotionInView>
 
-          <Grid container justifyContent="center" alignItems="flex-start">
-            <Grid item xs={12} md={6} dir="ltr" sx={{ pr: 5 }}>
+          <Grid
+            container
+            justifyContent="center"
+            alignItems="flex-start"
+            spacing={10}
+          >
+            <Grid item xs={12} md={6} dir="ltr">
               <MotionInView variants={varFadeInUp}>
                 <Typography
                   variant="h5"
