@@ -13,7 +13,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
   },
 }));
 
-export default function Section({ children, title, components }) {
+export default function Section({ children, components }) {
   return (
     <ContentStyle>
       <Container maxWidth="xlg">
@@ -24,19 +24,7 @@ export default function Section({ children, title, components }) {
           spacing={25}
         >
           <Grid item xs={12} md={7} dir="ltr">
-            <MotionInView variants={varFadeInUp}>
-              <Typography
-                variant="h6"
-                color="secondary"
-                sx={{
-                  mb: 5,
-                  fontStyle: "italic",
-                  fontWeight: "300",
-                }}
-              >
-                {title}
-              </Typography>
-            </MotionInView>
+            <MotionInView variants={varFadeInUp}></MotionInView>
 
             <MotionInView variants={varFadeInUp}>
               <Typography

@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { varWrapEnter } from "./animate";
 // material
 import { experimentalStyled as styled } from "@material-ui/core/styles";
+import { useTheme } from "@material-ui/core";
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
   position: "relative",
-  backgroundColor: theme.palette.YELLOW,
   width: "100%",
   height: "100%",
   display: "flex",
@@ -13,6 +13,7 @@ const RootStyle = styled(motion.div)(({ theme }) => ({
 }));
 
 export default function VideoPlayer(props) {
+  const theme = useTheme();
   const { url, poster } = props;
 
   return (
@@ -30,7 +31,8 @@ export default function VideoPlayer(props) {
         data-behavior="softVideo"
         src={url}
         poster={poster}
-      ></video>
+        // style={{ backgroundColor: theme.palette.YELLOW }}
+      />
     </RootStyle>
   );
 }

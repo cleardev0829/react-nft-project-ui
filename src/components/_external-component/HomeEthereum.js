@@ -109,7 +109,11 @@ export default function HomeEthereum() {
                               target="_blank"
                               href={"https://ethereum.org/en/what-is-ethereum/"}
                             >
-                              <Typography color="text.primary">
+                              <Typography
+                                variant="h5"
+                                color="text.primary"
+                                sx={{ textDecoration: "underline" }}
+                              >
                                 What is
                                 <br />
                                 Ethereum
@@ -130,7 +134,11 @@ export default function HomeEthereum() {
                               target="_blank"
                               href="https://ethereum.org/en/community/"
                             >
-                              <Typography color="text.primary">
+                              <Typography
+                                variant="h5"
+                                color="text.primary"
+                                sx={{ textDecoration: "underline" }}
+                              >
                                 Ethereum
                                 <br />
                                 Community
@@ -162,7 +170,13 @@ export default function HomeEthereum() {
                               target="_blank"
                               href="https://ethereum.org/en/nft/"
                             >
-                              <Typography color="text.primary">NFTs</Typography>
+                              <Typography
+                                variant="h5"
+                                color="text.primary"
+                                sx={{ textDecoration: "underline" }}
+                              >
+                                NFTs
+                              </Typography>
                             </Link>
                           </Box>
                         </Grid>
@@ -179,7 +193,13 @@ export default function HomeEthereum() {
                               target="_blank"
                               href="https://ethereum.org/en/dao/"
                             >
-                              <Typography color="text.primary">DAOs</Typography>
+                              <Typography
+                                variant="h5"
+                                color="text.primary"
+                                sx={{ textDecoration: "underline" }}
+                              >
+                                DAOs
+                              </Typography>
                             </Link>
                           </Box>
                         </Grid>

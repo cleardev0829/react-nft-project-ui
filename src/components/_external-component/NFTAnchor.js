@@ -38,7 +38,7 @@ export default function NFTAnchor() {
                 variant="contained"
                 size="large"
                 color="inherit"
-                sx={{ width: 30 }}
+                sx={{ width: 30, textTransform: "lowercase" }}
               >
                 <Typography sx={{ fontSize: 36, fontWeight: "bold" }}>
                   V
@@ -52,7 +52,7 @@ export default function NFTAnchor() {
                 variant="contained"
                 size="large"
                 color="inherit"
-                sx={{ width: 30 }}
+                sx={{ width: 30, textTransform: "lowercase" }}
               >
                 <Typography sx={{ fontSize: 36, fontWeight: "bold" }}>
                   F
@@ -66,7 +66,7 @@ export default function NFTAnchor() {
                 variant="contained"
                 size="large"
                 color="inherit"
-                sx={{ width: 30 }}
+                sx={{ width: 30, textTransform: "lowercase" }}
               >
                 <Typography sx={{ fontSize: 36, fontWeight: "bold" }}>
                   B

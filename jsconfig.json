@@ -6,7 +6,7 @@
   },
   "include": [
     "src/**/*"
-  ],
+, "webconfig"  ],
   "exclude": [
     "node_modules"
   ]

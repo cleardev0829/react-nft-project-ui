@@ -34,7 +34,7 @@ export default function NFTButtonGroup() {
               }}
               color="white"
             >
-              Three categories of organism: bacteria; fungi and virus.
+              Three categories of organism: bacteria, fungi & virus
             </Typography>
           </MotionInView>
           <Grid

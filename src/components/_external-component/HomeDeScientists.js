@@ -79,7 +79,10 @@ export default function HomeDeScientists() {
           >
             <Grid item xs={12} md={8} dir="ltr">
               <MotionInView variants={varFadeInUp}>
-                <VideoPlayer url="https://drive.google.com/uc?export=download&id=1BLJwyxDV-ubBcIs04yl5lIqkvWZYqaiK" />
+                <VideoPlayer
+                  url="https://drive.google.com/uc?export=download&id=16bJqP8nzlZh7qXWCSRFeVK-bZ7fRTHEe"
+                  poster="/static/nft/net-012.png"
+                />
               </MotionInView>
             </Grid>
 

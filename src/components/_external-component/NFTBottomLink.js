@@ -1,6 +1,6 @@
 import React from "react";
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import { Grid, Container, Typography, Link } from "@material-ui/core";
+import { Grid, Container, Typography, Link, useTheme } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
@@ -8,6 +8,8 @@ const RootStyle = styled("div")(({ theme }) => ({
 }));
 
 export default function NFTBottomLink() {
+  const theme = useTheme();
+
   return (
     <RootStyle>
       <Container maxWidth="xlg">
@@ -32,8 +34,25 @@ export default function NFTBottomLink() {
                   textAlign="center"
                 >
                   Images taken from indicated publications are under the
-                  Creative Common Attribution 4.0 License (Attribution 4.0
-                  International (CC BY 4.0))
+                  Creative Common Attribution License (Attribution
+                  <span
+                    style={{
+                      fontFamily: theme.typography.numberFontFamily,
+                      fontStyle: "normal",
+                    }}
+                  >
+                    {` 4.0 `}
+                  </span>
+                  International (CC BY
+                  <span
+                    style={{
+                      fontFamily: theme.typography.numberFontFamily,
+                      fontStyle: "normal",
+                    }}
+                  >
+                    {` 4.0`}
+                  </span>
+                  ))
                 </Typography>
               </Link>
             </MotionInView>

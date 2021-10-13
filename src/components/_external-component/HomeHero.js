@@ -6,7 +6,6 @@ import VideoPlayer from "../VideoPlayer";
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
   position: "relative",
-  backgroundColor: theme.palette.grey[400],
   width: "100%",
   // height: "100vh",
   display: "flex",

@@ -43,7 +43,7 @@ export default function NFTRarityAndTraits() {
                   variant="h5"
                   sx={{
                     fontStyle: "normal",
-                    fontWeight: "normal",
+                    fontWeight: 400,
                   }}
                 >
                   The three principle categories: Virus; Fungi and Bacteria are
@@ -57,7 +57,10 @@ export default function NFTRarityAndTraits() {
 
             <Grid item xs={12} md={6} dir="ltr">
               <MotionInView variants={varFadeInUp}>
-                <VideoPlayer url="https://drive.google.com/uc?export=download&id=1AuF1oSVJ74hOK8X88FWLf7UzWQhUzYPo" />
+                <VideoPlayer
+                  url="https://drive.google.com/uc?export=download&id=1yIMU0uyAn5oukrbsZdms7sqV6xD7Wvsv"
+                  poster="/static/nft/net-002.png"
+                />
               </MotionInView>
             </Grid>
 

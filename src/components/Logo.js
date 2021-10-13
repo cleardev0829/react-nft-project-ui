@@ -20,8 +20,7 @@ export default function Logo({ sx }) {
 
   const logo =
     pathname === "/"
-      ? // ? "https://drive.google.com/uc?id=1I0B7kXyQrqeScfCoAsmycuQKI3a4egZ_"
-        "https://drive.google.com/uc?id=19UtXMdXrovzqRQa0RLKjenk1mJC_Jgmm"
+      ? "https://drive.google.com/uc?id=19UtXMdXrovzqRQa0RLKjenk1mJC_Jgmm"
       : "https://drive.google.com/uc?id=19UtXMdXrovzqRQa0RLKjenk1mJC_Jgmm";
 
   return (

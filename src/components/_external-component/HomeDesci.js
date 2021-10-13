@@ -45,15 +45,16 @@ export default function HomeDesci() {
                 mb: 5,
               }}
             >
-              Decentalised Science. In a time where information transfer is
+              Decentralised Science. In a time where information transfer is
               besieged by controversy, ideology and manipulation, free and open
               sharing of knowledge is more important than ever.
             </Typography>
           </MotionInView>
 
           <MDImageVideoSection
-            url1="https://drive.google.com/uc?id=18gZjWC6zqIdztpatfrpRNbLxHg61Lt_M"
-            videoUrl2="https://drive.google.com/uc?export=download&id=1qD475YBwZilt6YSxmpWW139FlJzjv2M1"
+            url1="https://drive.google.com/uc?id=1z4xBqkMOOt344WcqLuf30jHSBrs07ekZ"
+            videoUrl2="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
+            poster="/static/nft/net-011.png"
           />
 
           <Grid
@@ -101,10 +102,13 @@ export default function HomeDesci() {
                 >
                   Alongside facilitating free and fair information exchange,
                   DeSci hopes to bring research to life through the amalgamation
-                  of art and science. Art provides a link to the soul that is
-                  rarely found in the field of science. Through its deep
-                  connections to the non-tangible aspects of humanity, Art can
-                  open the esoteric up to everyone.
+                  of art and science. By reinterpreting the visual data produced
+                  from scientific research, information from each discipline is
+                  viewed anew and exploration is encouraged as a result of the
+                  exchange. Through its deep connections to the non-tangible
+                  aspects of humanity and nature, creative expression generates
+                  new perspectives and reveals unseen possibilities in new
+                  worlds.
                 </Typography>
               </MotionInView>
             </Grid>

@@ -2,9 +2,10 @@ import React from "react";
 import { Container, Typography } from "@material-ui/core";
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 import { varFadeInUp, MotionInView } from "../animate";
+import { useTheme } from "@material-ui/core";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(20, 0),
+  padding: theme.spacing(12, 0),
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -17,7 +18,9 @@ const ContentStyle = styled("div")(({ theme }) => ({
   },
 }));
 
-export default function NFTVFBDescription({ id, title, color }) {
+export default function NFTVFBDescription({ id, color }) {
+  const theme = useTheme();
+
   return (
     <RootStyle id={id}>
       <ContentStyle id="buttons">
@@ -31,7 +34,39 @@ export default function NFTVFBDescription({ id, title, color }) {
                 fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
               }}
             >
-              {title}
+              {id === "virus" && (
+                <>
+                  <span>Virus (NFTs: </span>
+                  <span
+                    style={{ fontFamily: theme.typography.numberFontFamily }}
+                  >
+                    222
+                  </span>
+                  <span>)</span>
+                </>
+              )}
+              {id === "fungi" && (
+                <>
+                  <span>Fungi (NFTs: </span>
+                  <span
+                    style={{ fontFamily: theme.typography.numberFontFamily }}
+                  >
+                    333
+                  </span>
+                  <span>)</span>
+                </>
+              )}
+              {id === "bacteria" && (
+                <>
+                  <span>Bacteria (NFTs: </span>
+                  <span
+                    style={{ fontFamily: theme.typography.numberFontFamily }}
+                  >
+                    444
+                  </span>
+                  <span>)</span>
+                </>
+              )}
             </Typography>
           </MotionInView>
 
@@ -44,16 +79,48 @@ export default function NFTVFBDescription({ id, title, color }) {
                 fontWeight: "normal",
               }}
             >
-              Ancient small single-celled organisms residing in and all around
-              us. Tiny molecular factories that are found almost everywhere on
-              earth, even under the most extreme condiotions, and are essential
-              for the planet’s ecosystem. Bacteria play an essential role in the
-              homeostasis of our body. The human body carries millions of
-              bacteria and infact, is estimated to contain more bacterial cells
-              than human cells. While most bacteria are beneficial, living in
-              symbiosis with the human system, some can cause fatal diseases
-              that are becoming harder to treat with the rise of antibiotic
-              resistence.
+              {id === "virus" && (
+                <span>
+                  The most peculiar microbe of the three categories. Viruses are
+                  microscopic parasites responsible for a range of familiar (and
+                  often fatal) diseases, including the flu, Ebola, measles, HIV
+                  and its latest adition SARS-CoV-2. Made up of genetic material
+                  (DNA or RNA) encapsulated in a shell made of protein, they are
+                  only able to survive and replicate inside a living host, which
+                  could be any organism on earth, even other microbes like
+                  bacteria. This means no life form is safe from infection by a
+                  virus. The question whether viruses are alive is tricky to
+                  answer, as they do not possess the hallmark of living things,
+                  they don’t carry out metabolic processes.
+                </span>
+              )}
+              {id === "fungi" && (
+                <span>
+                  Encompassing a whole diverse kingdom , fungi include
+                  microorganisms like yeasts and mold as well as the more
+                  familiar toadstool, the fruiting body of a fungus.
+                  Microorganisms are mainly used in cell biology and
+                  biotechnology, whereas mushrooms are mainly comsumed as food
+                  or psychoactive agengts. Fungi respresnt a hetergenous group
+                  of organisms that are capable to infect and poison humans but
+                  are used by human civilasations for fermentation purposes for
+                  thousands of years.
+                </span>
+              )}
+              {id === "bacteria" && (
+                <span>
+                  Ancient small single-celled organisms residing in and all
+                  around us. Tiny molecular factories that are found almost
+                  everywhere on earth, even under the most extreme condiotions,
+                  and are essential for the planet’s ecosystem. Bacteria play an
+                  essential role in the homeostasis of our body. The human body
+                  carries millions of bacteria and infact, is estimated to
+                  contain more bacterial cells than human cells. While most
+                  bacteria are beneficial, living in symbiosis with the human
+                  system, some can cause fatal diseases that are becoming harder
+                  to treat with the rise of antibiotic resistence.
+                </span>
+              )}
             </Typography>
           </MotionInView>
         </Container>

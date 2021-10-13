@@ -39,23 +39,11 @@ export default function NFTContent() {
       <div id="anchor">
         <NFTRarityAndTraits />
         <NFTBubbles />
-        <NFTVFBDescription
-          id="virus"
-          title="  Virus (NFTs: 222)"
-          color="primary"
-        />
+        <NFTVFBDescription id="virus" color="primary" />
         <NFTVirusSections />
-        <NFTVFBDescription
-          id="fungi"
-          title="Fungi (NFTs: 333)"
-          color={"#D82E32"}
-        />
+        <NFTVFBDescription id="fungi" color={"#D82E32"} />
         <NFTFungiSections />
-        <NFTVFBDescription
-          id="bacteria"
-          title="Bacteria (NFTs: 444)"
-          color={"#FD8F36"}
-        />
+        <NFTVFBDescription id="bacteria" color={"#FD8F36"} />
         <NFTBacteriaSections />
         <NFTBottomLink />
       </div>
