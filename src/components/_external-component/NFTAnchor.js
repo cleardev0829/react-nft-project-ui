@@ -1,8 +1,4 @@
 import React from "react";
-import {
-  // useTheme,
-  experimentalStyled as styled,
-} from "@material-ui/core/styles";
 import { Button, Stack, Box, Typography } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
 import { Link as ScrollLink } from "react-scroll";

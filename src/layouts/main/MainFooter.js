@@ -5,7 +5,7 @@ import { experimentalStyled as styled } from "@material-ui/core/styles";
 import {
   Grid,
   Link,
-  // Divider,
+  Box,
   Container,
   Typography,
   Stack,
@@ -200,18 +200,26 @@ export default function MainFooter() {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent="center">
+        {/* <Grid container justifyContent="center">
           <MotionInView variants={varFadeInUp}>
-            <img
-              width="81.65"
-              height="81.65"
-              src="https://drive.google.com/uc?id=1SIbdWXOhLv-ne6xA_Z7vzxMvqNnthFYV"
-              data-src="https://drive.google.com/uc?id=1SIbdWXOhLv-ne6xA_Z7vzxMvqNnthFYV"
-              alt=""
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            />
+            <Box
+              sx={{
+                left: 0,
+                top: "40%",
+                position: "absolute",
+              }}
+            >
+              <img
+                width="81.65"
+                height="81.65"
+                src="https://drive.google.com/uc?id=1SIbdWXOhLv-ne6xA_Z7vzxMvqNnthFYV"
+                data-src="https://drive.google.com/uc?id=1SIbdWXOhLv-ne6xA_Z7vzxMvqNnthFYV"
+                alt=""
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              />
+            </Box>
           </MotionInView>
-        </Grid>
+        </Grid> */}
       </Container>
     </RootStyle>
   );
