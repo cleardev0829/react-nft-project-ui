@@ -60,9 +60,9 @@ export default function HomeDesci() {
             >
               <Box>
                 <img
-                  data-src="https://drive.google.com/uc?id=1z4xBqkMOOt344WcqLuf30jHSBrs07ekZ"
+                  data-src="https://drive.google.com/uc?id=13KHtuiccyuUcEmisxrddju_TaHEQruvr"
                   alt=""
-                  src="https://drive.google.com/uc?id=1z4xBqkMOOt344WcqLuf30jHSBrs07ekZ"
+                  src="https://drive.google.com/uc?id=13KHtuiccyuUcEmisxrddju_TaHEQruvr"
                   style={{ height: "350px" }}
                 />
               </Box>

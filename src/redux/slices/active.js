@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isActive: false,
+  scrollY: 0,
 };
 
 const slice = createSlice({
@@ -11,6 +12,9 @@ const slice = createSlice({
     setActive(state, action) {
       state.isActive = action.payload;
     },
+    setScrollY(state, action) {
+      state.scrollY = action.payload;
+    },
   },
 });
 
@@ -18,16 +22,4 @@ const slice = createSlice({
 export default slice.reducer;
 
 // Actions
-export const { setActive } = slice.actions;
-
-// export function getUsers() {
-//   return async (dispatch) => {
-//     dispatch(slice.actions.startLoading());
-//     try {
-//       const response = await axios.get("/api/user/all");
-//       dispatch(slice.actions.getUsersSuccess(response.data.users));
-//     } catch (error) {
-//       dispatch(slice.actions.hasError(error));
-//     }
-//   };
-// }
+export const { setActive, setScrollY } = slice.actions;

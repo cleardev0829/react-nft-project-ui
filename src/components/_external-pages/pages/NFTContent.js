@@ -8,7 +8,6 @@ import {
   NFTMint,
   NFTRarityAndTraits,
   NFTVFBDescription,
-  // NFTHero,
   NFTVirusSections,
   NFTFungiSections,
   NFTBacteriaSections,
@@ -29,7 +28,6 @@ export default function NFTContent() {
 
   return (
     <RootStyle>
-      {/* <NFTHero /> */}
       <NFTMint />
       <ImageMagnifier
         src="/static/nft/nfts/DESCI_nft_overlay-02.jpg"

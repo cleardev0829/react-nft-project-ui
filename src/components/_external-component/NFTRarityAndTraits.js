@@ -82,7 +82,7 @@ export default function NFTRarityAndTraits() {
             <Grid item xs={12} md={6} dir="ltr">
               <MotionInView variants={varFadeInUp}>
                 <VideoPlayer
-                  url="https://drive.google.com/uc?export=download&id=1yIMU0uyAn5oukrbsZdms7sqV6xD7Wvsv"
+                  url="https://drive.google.com/uc?export=download&id=1WAo2OU5wWj4NNcf2bmpMugcc_P4crWPh"
                   poster="/static/nft/net-002.png"
                 />
               </MotionInView>

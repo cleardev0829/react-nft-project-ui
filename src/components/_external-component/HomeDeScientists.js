@@ -34,7 +34,7 @@ export default function HomeDeScientists() {
             <MotionInView variants={varFadeInUp}>
               <ImageMagnifier
                 src="https://drive.google.com/uc?id=1VBrOZ2tn94tg4zs_dWsWimpxLk0A5fcQ"
-                underSrc="https://drive.google.com/uc?id=1Qjtfb2MV3f98zBDZr1LTCWWkRn_RnxV9"
+                underSrc="https://drive.google.com/uc?id=1WfNmnv8vtyKf1fI-KCIhYbXE0KjX5X--"
               />
             </MotionInView>
           </Box>
@@ -80,7 +80,7 @@ export default function HomeDeScientists() {
             <Grid item xs={12} md={8} dir="ltr">
               <MotionInView variants={varFadeInUp}>
                 <VideoPlayer
-                  url="https://drive.google.com/uc?export=download&id=16bJqP8nzlZh7qXWCSRFeVK-bZ7fRTHEe"
+                  url="https://drive.google.com/uc?export=download&id=1BLJwyxDV-ubBcIs04yl5lIqkvWZYqaiK"
                   poster="/static/nft/net-012.png"
                 />
               </MotionInView>

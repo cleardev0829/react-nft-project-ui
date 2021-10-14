@@ -11,7 +11,7 @@ export default function NFTHero() {
     <RootStyle>
       <Grid container spacing={5} justifyContent="center">
         <img
-          src="https://drive.google.com/uc?id=1w8OQIC8fYY-uCM0EFJ_m35v8wdUlFpU1"
+          src="https://drive.google.com/uc?id=1FPCs94HEZabQEXq3ATafz_5Jea68lmrq"
           data-src="https://drive.google.com/uc?id=1w8OQIC8fYY-uCM0EFJ_m35v8wdUlFpU1"
           alt=""
         />

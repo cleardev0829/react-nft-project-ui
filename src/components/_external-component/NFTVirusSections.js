@@ -47,7 +47,7 @@ export default function NFTVirusSections() {
       <Section
         components={[
           <VideoPlayer
-            url="https://drive.google.com/uc?export=download&id=1EhqxqZYfo4-kPm-LG0SUKxkt92cEnHyr"
+            url="https://drive.google.com/uc?export=download&id=1syOF43Nlx3hjZ9bMU97fiQ2nnVejojV4"
             poster="/static/nft/net-004.png"
           />,
           <ImageMagnifier
@@ -158,7 +158,7 @@ export default function NFTVirusSections() {
         title=" Herpes Simplex Virus - Hidden Passenger"
         components={[
           <VideoPlayer
-            url="https://drive.google.com/uc?export=download&id=14E46O4xDXnDtRPwHGs8aE2BJJ17r10uB"
+            url="https://drive.google.com/uc?export=download&id=12z0bfNeNFyUqyWxlR_wfqgOf0jrxcWwX"
             poster="/static/nft/net-010.png"
           />,
         ]}
