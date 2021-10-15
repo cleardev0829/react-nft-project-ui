@@ -22,11 +22,11 @@ const menuConfig = [
     path: PATH_PAGE.community,
     icon: <Icon icon={featureOpenFill} {...ICON_SIZE} />,
   },
-  {
-    title: "Documentation",
-    path: PATH_PAGE.documentation,
-    icon: <Icon icon={featureOpenFill} {...ICON_SIZE} />,
-  },
+  // {
+  //   title: "Documentation",
+  //   path: PATH_PAGE.documentation,
+  //   icon: <Icon icon={featureOpenFill} {...ICON_SIZE} />,
+  // },
 ];
 
 export default menuConfig;

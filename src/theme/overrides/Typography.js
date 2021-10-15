@@ -6,7 +6,7 @@ export default function Typography(theme) {
       styleOverrides: {
         inherit: {
           "&:hover": {
-            color: theme.palette.GREEN,
+            color: theme.palette.info.main,
           },
         },
         paragraph: {

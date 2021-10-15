@@ -26,7 +26,7 @@ const RootStyle = styled("div")(({ theme }) => ({
 
 const ContentStyle = styled("div")(({ theme }) => ({
   width: "100%",
-  textAlign: "center",
+  textAlign: "left",
   marginBottom: theme.spacing(0),
   [theme.breakpoints.up("md")]: {
     textAlign: "left",
@@ -94,7 +94,16 @@ export default function NFTRarityAndTraits() {
                   sx={{
                     fontStyle: "italic",
                     fontWeight: "normal",
-                    fontSize: 50,
+                    [theme.breakpoints.down("md")]: {
+                      fontSize: 50,
+                    },
+                    [theme.breakpoints.down("md")]: {
+                      fontSize: 40,
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      fontSize: 30,
+                    },
+
                     color: (theme) => theme.palette.warning.main,
                   }}
                 >

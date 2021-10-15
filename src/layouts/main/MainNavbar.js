@@ -29,23 +29,21 @@ export default function MainNavbar() {
       >
         {!isOffset ? (
           <Grid container spacing={(theme) => theme.spacing(5)}>
-            <Grid item xs="12" md="6">
+            <Grid item xs="6">
               <RouterLink to="/">
                 <MotionInView variants={varFadeInUp}>
-                  <Logo
-                  // sx={{
-                  //   boxShadow: (theme) => theme.customShadows.z24,
-                  // }}
-                  />
+                  <Logo />
                 </MotionInView>
               </RouterLink>
             </Grid>
 
             <Grid
               item
-              xs="12"
-              md="6"
-              sx={{ display: "flex", justifyContent: "flex-end" }}
+              xs="6"
+              sx={{
+                display: "flex",
+                justifyContent: "flex-end",
+              }}
             >
               <MHidden width="mdDown">
                 <VerticalMenuDesktop
@@ -76,12 +74,9 @@ export default function MainNavbar() {
                 <Typography
                   variant="inherit"
                   sx={{
-                    fontWeight: 400,
-                    fontSize: 35,
-                    lineHeight: "30.8px",
                     fontStyle: "normal",
                     cursor: "pointer",
-                    color: isActive ? "white" : "",
+                    color: (theme) => theme.palette.secondary.main,
                   }}
                 >
                   DeSci

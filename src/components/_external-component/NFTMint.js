@@ -1,14 +1,19 @@
 import React from "react";
-import { Grid, Typography, Button, Stack } from "@material-ui/core";
+import { Grid, Typography, Button, Stack, useTheme } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
 import { CarouselImg, Countdown } from ".";
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(10, 0),
+  [theme.breakpoints.down("md")]: {
+    padding: theme.spacing(24, 0),
+  },
 }));
 
 export default function NFTMint() {
+  const theme = useTheme();
+
   return (
     <RootStyle>
       <Grid
@@ -22,6 +27,9 @@ export default function NFTMint() {
           <Typography
             sx={{
               fontSize: 90,
+              [theme.breakpoints.down("lg")]: { fontSize: 80 },
+              [theme.breakpoints.down("md")]: { fontSize: 70 },
+              [theme.breakpoints.down("sm")]: { fontSize: 60 },
               fontWeight: "normal",
             }}
           >

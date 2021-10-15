@@ -22,28 +22,29 @@ const ContentStyle = styled("div")(({ theme }) => ({
 export default function NFTButtonGroup() {
   return (
     <RootStyle id="buttons">
-      <ContentStyle>
-        <Container maxWidth="xlg" justifyContent="space-between">
-          <MotionInView variants={varFadeInUp}>
-            <Typography
-              variant="h4"
-              sx={{
-                mb: 5,
-                fontWeight: "bold",
-                fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
-              }}
-              color="white"
-            >
-              Three categories of organism: bacteria, fungi & virus
-            </Typography>
-          </MotionInView>
-          <Grid
-            container
-            justifyContent="center"
-            alignItems="center"
-            spacing="10"
+      <Container maxWidth="xlg" justifyContent="space-between">
+        <MotionInView variants={varFadeInUp}>
+          <Typography
+            variant="h4"
+            sx={{
+              mb: 5,
+              fontWeight: "bold",
+              fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
+            }}
+            color="white"
           >
-            <Grid item xs={12} md={5} dir="ltr">
+            Three categories of organism: bacteria, fungi & virus
+          </Typography>
+        </MotionInView>
+
+        <Grid
+          container
+          justifyContent="center"
+          alignItems="center"
+          spacing="10"
+        >
+          <Grid item xs={12} md={5} dir="ltr">
+            <ContentStyle>
               <Stack direction="column" spacing={3}>
                 <MotionInView variants={varFadeInUp}>
                   <ScrollLink
@@ -109,39 +110,39 @@ export default function NFTButtonGroup() {
                   </ScrollLink>
                 </MotionInView>
               </Stack>
-            </Grid>
+            </ContentStyle>
+          </Grid>
 
-            <Grid item xs={12} md={7} dir="ltr">
-              <MotionInView variants={varFadeInUp}>
-                <Typography
-                  variant="h3"
-                  color="white"
-                  sx={{
-                    fontWeight: 300,
+          <Grid item xs={12} md={7} dir="ltr">
+            <MotionInView variants={varFadeInUp}>
+              <Typography
+                variant="h3"
+                color="white"
+                sx={{
+                  fontWeight: 300,
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "NetKanzl, serif",
                   }}
                 >
-                  <span
-                    style={{
-                      fontFamily: "NetKanzl, serif",
-                    }}
-                  >
-                    999&nbsp;
-                  </span>
-                  unique works,
-                  <br /> created with genuine
-                  <br /> scientific research as
-                  <br /> source material;
-                  <br /> contextually
-                  <br /> educational,
-                  <br /> visually stimulating,thought
-                  <br /> provoking and
-                  <br /> unexpectedly dazzling.
-                </Typography>
-              </MotionInView>
-            </Grid>
+                  999&nbsp;
+                </span>
+                unique works,
+                <br /> created with genuine
+                <br /> scientific research as
+                <br /> source material;
+                <br /> contextually
+                <br /> educational,
+                <br /> visually stimulating,thought
+                <br /> provoking and
+                <br /> unexpectedly dazzling.
+              </Typography>
+            </MotionInView>
           </Grid>
-        </Container>
-      </ContentStyle>
+        </Grid>
+      </Container>
     </RootStyle>
   );
 }

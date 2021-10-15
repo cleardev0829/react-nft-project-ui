@@ -11,7 +11,7 @@ const RootStyle = styled(Page)({
 const ContentStyle = styled("div")(({ theme }) => ({
   overflow: "hidden",
   position: "relative",
-  paddingTop: theme.spacing(30),
+  // paddingTop: theme.spacing(30),
   backgroundColor: theme.palette.background.default,
 }));
 

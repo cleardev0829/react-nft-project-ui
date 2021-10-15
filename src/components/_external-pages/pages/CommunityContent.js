@@ -6,13 +6,16 @@ import { Grid, Container, Typography } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(12, 0),
+  padding: theme.spacing(10, 0),
+  [theme.breakpoints.down("md")]: {
+    padding: theme.spacing(24, 0),
+  },
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
   width: "100%",
-  textAlign: "center",
-  marginBottom: theme.spacing(10),
+  textAlign: "left",
+  // marginBottom: theme.spacing(10),
   [theme.breakpoints.up("md")]: {
     textAlign: "left",
     marginBottom: 0,
@@ -51,7 +54,7 @@ export default function CommunityContent() {
                 <Typography
                   variant="h2"
                   sx={{
-                    mb: 3,
+                    // mb: 3,
                     fontWeight: "normal",
                   }}
                 >

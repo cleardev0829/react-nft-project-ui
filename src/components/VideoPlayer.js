@@ -31,7 +31,6 @@ export default function VideoPlayer(props) {
         data-behavior="softVideo"
         src={url}
         poster={poster}
-        // style={{ backgroundColor: theme.palette.YELLOW }}
       />
     </RootStyle>
   );

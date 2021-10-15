@@ -16,7 +16,7 @@ export const LinkStyle = styled(Link)(({ theme }) => ({
     duration: theme.transitions.duration.shortest,
   }),
   "&:hover": {
-    opacity: 0.48,
+    // opacity: 0.48,
     textDecoration: "none",
   },
   [theme.breakpoints.down("md")]: {
@@ -53,12 +53,9 @@ function VerticalMenuDesktopItem({ item, pathname, isHome, isOffset }) {
       <Typography
         variant="inherit"
         sx={{
-          fontWeight: 400,
-          fontSize: 35,
-          lineHeight: "30.8px",
           fontStyle: "normal",
           cursor: "pointer",
-          color: isHome ? "white" : "",
+          color: (theme) => theme.palette.secondary.main,
         }}
       >
         {title}

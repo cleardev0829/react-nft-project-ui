@@ -5,7 +5,7 @@ import { experimentalStyled as styled } from "@material-ui/core/styles";
 
 const ContentStyle = styled("div")(({ theme }) => ({
   width: "100%",
-  textAlign: "center",
+  textAlign: "left",
   marginBottom: theme.spacing(0),
   [theme.breakpoints.up("md")]: {
     textAlign: "left",

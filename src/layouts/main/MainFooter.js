@@ -2,14 +2,7 @@ import { varFadeInUp, MotionInView } from "../../components/animate";
 import { useLocation } from "react-router-dom";
 // material
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import {
-  Grid,
-  Link,
-  Box,
-  Container,
-  Typography,
-  Stack,
-} from "@material-ui/core";
+import { Grid, Link, Container, Typography, Stack } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 
 const RootStyle = styled("div")(({ theme, bgColor }) => ({
@@ -25,8 +18,15 @@ export default function MainFooter() {
 
   return (
     <RootStyle bgColor={isHome ? "black" : "white"}>
-      {/* <Divider /> */}
-      <Container maxWidth="xlg" sx={{ pt: 10 }}>
+      <Container
+        maxWidth="xlg"
+        sx={{
+          pt: 10,
+          [theme.breakpoints.down("sm")]: {
+            pt: 4,
+          },
+        }}
+      >
         {!isHome && pathname === "/nft" && (
           <>
             <MotionInView variants={varFadeInUp}>
@@ -199,27 +199,6 @@ export default function MainFooter() {
             </Stack>
           </Grid>
         </Grid>
-
-        {/* <Grid container justifyContent="center">
-          <MotionInView variants={varFadeInUp}>
-            <Box
-              sx={{
-                left: 0,
-                top: "40%",
-                position: "absolute",
-              }}
-            >
-              <img
-                width="81.65"
-                height="81.65"
-                src="https://drive.google.com/uc?id=1SIbdWXOhLv-ne6xA_Z7vzxMvqNnthFYV"
-                data-src="https://drive.google.com/uc?id=1SIbdWXOhLv-ne6xA_Z7vzxMvqNnthFYV"
-                alt=""
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              />
-            </Box>
-          </MotionInView>
-        </Grid> */}
       </Container>
     </RootStyle>
   );

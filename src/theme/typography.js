@@ -41,38 +41,38 @@ const typography = {
   h2: {
     fontWeight: 400,
     lineHeight: 64 / 48,
-    fontSize: pxToRem(32),
-    ...responsiveFontSizes({ sm: 32, md: 40, lg: 40 }),
+    fontSize: pxToRem(26),
+    ...responsiveFontSizes({ sm: 26, md: 32, lg: 40 }),
   },
   h3: {
     fontWeight: 400,
     lineHeight: 1.2,
-    fontSize: pxToRem(30),
-    ...responsiveFontSizes({ sm: 30, md: 35, lg: 35 }),
+    fontSize: pxToRem(24),
+    ...responsiveFontSizes({ sm: 24, md: 30, lg: 35 }),
   },
   h4: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: pxToRem(24),
-    ...responsiveFontSizes({ sm: 24, md: 30, lg: 30 }),
+    fontSize: pxToRem(22),
+    ...responsiveFontSizes({ sm: 22, md: 26, lg: 30 }),
   },
   h5: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: pxToRem(24),
-    ...responsiveFontSizes({ sm: 20, md: 24, lg: 24 }),
+    fontSize: pxToRem(20),
+    ...responsiveFontSizes({ sm: 20, md: 22, lg: 24 }),
   },
   h6: {
     fontWeight: 400,
     lineHeight: 28 / 18,
-    fontSize: pxToRem(20),
-    ...responsiveFontSizes({ sm: 16, md: 20, lg: 20 }),
+    fontSize: pxToRem(16),
+    ...responsiveFontSizes({ sm: 16, md: 18, lg: 20 }),
   },
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
     fontSize: pxToRem(18),
-    ...responsiveFontSizes({ sm: 14, md: 18, lg: 18 }),
+    ...responsiveFontSizes({ sm: 18, md: 18, lg: 18 }),
   },
   subtitle2: {
     fontWeight: 400,
@@ -107,7 +107,7 @@ const typography = {
   inherit: {
     fontWeight: 400,
     lineHeight: 1.2,
-    fontSize: pxToRem(24),
+    fontSize: pxToRem(26),
     ...responsiveFontSizes({ sm: 26, md: 30, lg: 34 }),
   },
   gutterBottom: {

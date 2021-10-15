@@ -25,7 +25,19 @@ export default function Logo({ sx }) {
 
   return (
     <Box sx={{ mt: 5, ...sx }} color={PRIMARY_LIGHT}>
-      <img width="130.23" height="150" src={logo} data-src={logo} alt="" />
+      <Box
+        component="img"
+        src={logo}
+        alt="logo"
+        sx={{
+          width: 130.23,
+          height: 150,
+          [theme.breakpoints.down("sm")]: {
+            width: 90,
+            height: 120,
+          },
+        }}
+      />
     </Box>
   );
 }
