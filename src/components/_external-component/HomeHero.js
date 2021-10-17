@@ -38,7 +38,7 @@ export default function HomeHero(props) {
     <>
       <DesktopStyle>
         <VideoPlayer
-          url="https://drive.google.com/uc?export=download&id=1W45sOjVCXIxp4aAOkO23jeFaOwVjSiFm"
+          url="https://drive.google.com/uc?export=download&id=1FPCs94HEZabQEXq3ATafz_5Jea68lmrq"
           poster="/static/nft/poster.png"
         />
       </DesktopStyle>
