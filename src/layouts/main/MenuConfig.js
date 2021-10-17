@@ -13,7 +13,7 @@ const ICON_SIZE = {
 
 const menuConfig = [
   {
-    title: "Home",
+    title: "About",
     path: "/",
     icon: <Icon icon={fileFill} {...ICON_SIZE} />,
   },
