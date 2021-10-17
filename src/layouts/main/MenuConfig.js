@@ -13,11 +13,6 @@ const ICON_SIZE = {
 
 const menuConfig = [
   {
-    title: "About",
-    path: "/",
-    icon: <Icon icon={fileFill} {...ICON_SIZE} />,
-  },
-  {
     title: "NFT",
     path: PATH_PAGE.nft,
     icon: <Icon icon={fileFill} {...ICON_SIZE} />,
@@ -26,6 +21,11 @@ const menuConfig = [
     title: "Community",
     path: PATH_PAGE.community,
     icon: <Icon icon={featureOpenFill} {...ICON_SIZE} />,
+  },
+  {
+    title: "About",
+    path: "/",
+    icon: <Icon icon={fileFill} {...ICON_SIZE} />,
   },
   // {
   //   title: "Documentation",
