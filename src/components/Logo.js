@@ -31,10 +31,10 @@ export default function Logo({ sx }) {
         alt="logo"
         sx={{
           width: 130.23,
-          height: 150,
+          // height: 150,
           [theme.breakpoints.down("sm")]: {
             width: 90,
-            height: 120,
+            // height: 120,
           },
         }}
       />

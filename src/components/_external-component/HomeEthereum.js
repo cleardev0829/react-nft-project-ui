@@ -61,166 +61,173 @@ export default function HomeEthereum() {
             justifyContent="center"
             alignItems="space-between"
           >
-            <Grid item xs={12} md={8} dir="ltr" sx={{ height: "auto" }}>
-              <MotionInView variants={varFadeInUp} sx={{ height: "100%" }}>
+            <Grid
+              item
+              xs={12}
+              md={7}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "80%",
+                }}
+              >
+                <img
+                  width="100%"
+                  src="/static/nft/ethereum.png"
+                  data-src="/static/nft/ethereum.png"
+                  alt=""
+                />
                 <Box
                   sx={{
-                    position: "relative",
+                    width: "100%",
                     height: "100%",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
                   }}
                 >
-                  <img
-                    src="/static/nft/ethereum.png"
-                    data-src="/static/nft/ethereum.png"
-                    alt=""
-                    style={{ height: "100%", objectFit: "cover" }}
-                  />
                   <Box
                     sx={{
                       width: "100%",
-                      height: "100%",
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
+                      height: "37.5%",
+                    }}
+                  ></Box>
+                  <Box
+                    sx={{
+                      width: "100%",
+                      height: "62.5%",
                     }}
                   >
-                    <Box
-                      sx={{
-                        width: "100%",
-                        height: "37.5%",
-                      }}
-                    ></Box>
-                    <Box
-                      sx={{
-                        width: "100%",
-                        height: "62.5%",
-                      }}
-                    >
-                      <Grid container spacing={2} sx={{ height: "55%" }}>
-                        <Grid
-                          item
-                          xs={6}
-                          md={6}
-                          textAlign="right"
+                    <Grid container spacing={2} sx={{ height: "55%" }}>
+                      <Grid
+                        item
+                        xs={6}
+                        md={6}
+                        textAlign="right"
+                        sx={{
+                          height: "100%",
+                          alignItems: "center",
+                        }}
+                      >
+                        <Box
                           sx={{
                             height: "100%",
+                            display: "flex",
+                            justifyContent: "flex-end",
                             alignItems: "center",
                           }}
                         >
-                          <Box
-                            sx={{
-                              height: "100%",
-                              display: "flex",
-                              justifyContent: "flex-end",
-                              alignItems: "center",
-                            }}
+                          <Link
+                            target="_blank"
+                            href={"https://ethereum.org/en/what-is-ethereum/"}
                           >
-                            <Link
-                              target="_blank"
-                              href={"https://ethereum.org/en/what-is-ethereum/"}
+                            <Typography
+                              variant="subtitle2"
+                              color="text.primary"
+                              sx={{ textDecoration: "underline" }}
                             >
-                              <Typography
-                                variant="h5"
-                                color="text.primary"
-                                sx={{ textDecoration: "underline" }}
-                              >
-                                What is
-                                <br />
-                                Ethereum
-                              </Typography>
-                            </Link>
-                          </Box>
-                        </Grid>
-                        <Grid item xs={6} md={6} textAlign="left">
-                          <Box
-                            sx={{
-                              height: "100%",
-                              display: "flex",
-                              justifyContent: "flex-start",
-                              alignItems: "center",
-                            }}
-                          >
-                            <Link
-                              target="_blank"
-                              href="https://ethereum.org/en/community/"
-                            >
-                              <Typography
-                                variant="h5"
-                                color="text.primary"
-                                sx={{ textDecoration: "underline" }}
-                              >
-                                Ethereum
-                                <br />
-                                Community
-                              </Typography>
-                            </Link>
-                          </Box>
-                        </Grid>
+                              What is
+                              <br />
+                              Ethereum
+                            </Typography>
+                          </Link>
+                        </Box>
                       </Grid>
-                      <Grid container spacing={2} sx={{ height: "45%" }}>
-                        <Grid
-                          item
-                          xs={6}
-                          md={6}
-                          textAlign="right"
+                      <Grid item xs={6} md={6} textAlign="left">
+                        <Box
                           sx={{
                             height: "100%",
+                            display: "flex",
+                            justifyContent: "flex-start",
                             alignItems: "center",
                           }}
                         >
-                          <Box
-                            sx={{
-                              height: "100%",
-                              display: "flex",
-                              justifyContent: "flex-end",
-                              alignItems: "center",
-                            }}
+                          <Link
+                            target="_blank"
+                            href="https://ethereum.org/en/community/"
                           >
-                            <Link
-                              target="_blank"
-                              href="https://ethereum.org/en/nft/"
+                            <Typography
+                              variant="subtitle2"
+                              color="text.primary"
+                              sx={{ textDecoration: "underline" }}
                             >
-                              <Typography
-                                variant="h5"
-                                color="text.primary"
-                                sx={{ textDecoration: "underline" }}
-                              >
-                                NFTs
-                              </Typography>
-                            </Link>
-                          </Box>
-                        </Grid>
-                        <Grid item xs={6} md={6} textAlign="left">
-                          <Box
-                            sx={{
-                              height: "100%",
-                              display: "flex",
-                              justifyContent: "flex-start",
-                              alignItems: "center",
-                            }}
-                          >
-                            <Link
-                              target="_blank"
-                              href="https://ethereum.org/en/dao/"
-                            >
-                              <Typography
-                                variant="h5"
-                                color="text.primary"
-                                sx={{ textDecoration: "underline" }}
-                              >
-                                DAOs
-                              </Typography>
-                            </Link>
-                          </Box>
-                        </Grid>
+                              Ethereum
+                              <br />
+                              Community
+                            </Typography>
+                          </Link>
+                        </Box>
                       </Grid>
-                    </Box>
+                    </Grid>
+                    <Grid container spacing={2} sx={{ height: "45%" }}>
+                      <Grid
+                        item
+                        xs={6}
+                        md={6}
+                        textAlign="right"
+                        sx={{
+                          height: "100%",
+                          alignItems: "center",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            height: "100%",
+                            display: "flex",
+                            justifyContent: "flex-end",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Link
+                            target="_blank"
+                            href="https://ethereum.org/en/nft/"
+                          >
+                            <Typography
+                              variant="subtitle2"
+                              color="text.primary"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              NFTs
+                            </Typography>
+                          </Link>
+                        </Box>
+                      </Grid>
+                      <Grid item xs={6} md={6} textAlign="left">
+                        <Box
+                          sx={{
+                            height: "100%",
+                            display: "flex",
+                            justifyContent: "flex-start",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Link
+                            target="_blank"
+                            href="https://ethereum.org/en/dao/"
+                          >
+                            <Typography
+                              variant="subtitle2"
+                              color="text.primary"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              DAOs
+                            </Typography>
+                          </Link>
+                        </Box>
+                      </Grid>
+                    </Grid>
                   </Box>
                 </Box>
-              </MotionInView>
+              </Box>
             </Grid>
 
-            <Grid item xs={12} md={4} dir="ltr">
+            <Grid item xs={12} md={5} dir="ltr">
               <MotionInView variants={varFadeInUp}>
                 <Typography
                   variant="subtitle1"
