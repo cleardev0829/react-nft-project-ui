@@ -16,6 +16,7 @@ import {
 import { Link as ScrollLink } from "react-scroll";
 import ImageMagnifier from "src/components/ImageMagnifier";
 import { setActive } from "src/redux/slices/active";
+import { MHidden } from "../../@material-extend";
 
 const RootStyle = styled("div")(({ theme }) => ({
   paddingBottom: theme.spacing(12, 0),
@@ -29,10 +30,17 @@ export default function NFTContent() {
   return (
     <RootStyle>
       <NFTMint />
-      <ImageMagnifier
-        src="/static/nft/nfts/DESCI_nft_overlay-02.jpg"
-        underSrc="/static/nft/nfts/DESCI_nft_overlay-01.jpg"
-      />
+
+      <MHidden width="smDown">
+        <ImageMagnifier
+          src="/static/nft/nfts/DESCI_nft_overlay-02.jpg"
+          underSrc="/static/nft/nfts/DESCI_nft_overlay-01.jpg"
+        />
+      </MHidden>
+      <MHidden width="smUp">
+        <ImageMagnifier src="/static/nft/nfts/DESCI_nft_overlay-01.jpg" />
+      </MHidden>
+
       <NFTButtonGroup />
       <div id="anchor">
         <NFTRarityAndTraits />

@@ -3,6 +3,7 @@ import { Container, Grid, Typography, Box } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
 import ImageMagnifier from "src/components/ImageMagnifier";
 import VideoPlayer from "../VideoPlayer";
+import { MHidden } from "../@material-extend";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 0),
@@ -35,10 +36,18 @@ export default function HomeDeScientists() {
             }}
           >
             <MotionInView variants={varFadeInUp}>
-              <ImageMagnifier
-                src="https://drive.google.com/uc?id=1VBrOZ2tn94tg4zs_dWsWimpxLk0A5fcQ"
-                underSrc="https://drive.google.com/uc?id=1WfNmnv8vtyKf1fI-KCIhYbXE0KjX5X--"
-              />
+              <MHidden width="smDown">
+                <ImageMagnifier
+                  src="https://drive.google.com/uc?id=1VBrOZ2tn94tg4zs_dWsWimpxLk0A5fcQ"
+                  underSrc="https://drive.google.com/uc?id=1WfNmnv8vtyKf1fI-KCIhYbXE0KjX5X--"
+                />
+              </MHidden>
+              <MHidden width="smUp">
+                <ImageMagnifier
+                  src="https://drive.google.com/uc?id=1WfNmnv8vtyKf1fI-KCIhYbXE0KjX5X--"
+                  underSrc=""
+                />
+              </MHidden>
             </MotionInView>
           </Box>
 

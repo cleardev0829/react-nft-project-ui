@@ -6,6 +6,7 @@ import ImageMagnifier from "src/components/ImageMagnifier";
 import VideoPlayer from "src/components/VideoPlayer";
 import { Section } from "./";
 import { useTheme } from "@material-ui/core";
+import { MHidden } from "../@material-extend";
 
 const RootStyle = styled("div")(({ theme }) => ({
   backgroundColor: "black",
@@ -55,11 +56,22 @@ export default function NFTVirusSections() {
             url="https://drive.google.com/uc?export=download&id=1syOF43Nlx3hjZ9bMU97fiQ2nnVejojV4"
             poster="/static/nft/net-004.png"
           />,
-          <ImageMagnifier
-            maxWidth={340}
-            src="https://drive.google.com/uc?id=1f4KtgrHaVO68jKvtVmRYVAdzwoNCL7CO"
-            underSrc="https://drive.google.com/uc?id=1wynSxn8NUtkId3-7e5srMZZ74AKOa5YE"
-          />,
+          <>
+            <MHidden width="smDown">
+              <ImageMagnifier
+                maxWidth={340}
+                src="https://drive.google.com/uc?id=1f4KtgrHaVO68jKvtVmRYVAdzwoNCL7CO"
+                underSrc="https://drive.google.com/uc?id=1wynSxn8NUtkId3-7e5srMZZ74AKOa5YE"
+              />
+            </MHidden>
+            <MHidden width="smUp">
+              <ImageMagnifier
+                maxWidth={340}
+                src="https://drive.google.com/uc?id=1wynSxn8NUtkId3-7e5srMZZ74AKOa5YE"
+                // src="https://drive.google.com/uc?id=1f4KtgrHaVO68jKvtVmRYVAdzwoNCL7CO"
+              />
+            </MHidden>
+          </>,
         ]}
       >
         <Typography
