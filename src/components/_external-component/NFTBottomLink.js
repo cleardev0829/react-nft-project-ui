@@ -4,7 +4,12 @@ import { Grid, Container, Typography, Link, useTheme } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(12, 0),
+  paddingTop: theme.spacing(12),
+  paddingBottom: theme.spacing(12),
+  [theme.breakpoints.down("sm")]: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+  },
 }));
 
 export default function NFTBottomLink() {

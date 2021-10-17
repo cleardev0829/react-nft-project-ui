@@ -1,27 +1,16 @@
 import React from "react";
-import { Container, Grid, Typography, useTheme } from "@material-ui/core";
-import {
-  experimentalStyled as styled,
-  makeStyles,
-} from "@material-ui/core/styles";
+import { Container, Grid, Typography, Box, useTheme } from "@material-ui/core";
+import { experimentalStyled as styled } from "@material-ui/core/styles";
 import { varFadeInUp, MotionInView } from "../animate";
-import VideoPlayer from "../VideoPlayer";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    [theme.breakpoints.up("lg")]: {
-      paddingLeft: 150,
-      paddingRight: 150,
-    },
-    [theme.breakpoints.down("lg")]: {
-      paddingLeft: 100,
-      paddingRight: 100,
-    },
-  },
-}));
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(20, 0),
+  backgroundColor: "white",
+  paddingTop: theme.spacing(12),
+  paddingBottom: theme.spacing(12),
+  [theme.breakpoints.down("sm")]: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(8),
+  },
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -36,17 +25,16 @@ const ContentStyle = styled("div")(({ theme }) => ({
 
 export default function NFTRarityAndTraits() {
   const theme = useTheme();
-  const classes = useStyles();
 
   return (
     <RootStyle>
       <ContentStyle id="buttons">
-        <Container maxWidth="xlg" justifyContent="space-between">
+        <Container maxWidth="xlg" justifyContent="space-between" spacing={4}>
           <Grid
             container
             justifyContent="space-between"
             alignItems="flex-start"
-            spacing={15}
+            spacing={4}
           >
             <Grid item xs={12} md={6} dir="ltr">
               <MotionInView variants={varFadeInUp}>
@@ -79,22 +67,34 @@ export default function NFTRarityAndTraits() {
               </MotionInView>
             </Grid>
 
-            <Grid item xs={12} md={6} dir="ltr">
+            <Grid item xs={12} md={6}>
               <MotionInView variants={varFadeInUp}>
-                <VideoPlayer
-                  url="https://drive.google.com/uc?export=download&id=1WAo2OU5wWj4NNcf2bmpMugcc_P4crWPh"
-                  poster="/static/nft/net-002.png"
-                />
+                <Box>
+                  <video
+                    width="100%"
+                    muted={false}
+                    loop={true}
+                    playsInline=""
+                    autoPlay={true}
+                    preload="none"
+                    data-src="https://drive.google.com/uc?export=download&id=1WAo2OU5wWj4NNcf2bmpMugcc_P4crWPh"
+                    data-lazyload=""
+                    data-behavior="softVideo"
+                    src="https://drive.google.com/uc?export=download&id=1WAo2OU5wWj4NNcf2bmpMugcc_P4crWPh"
+                    poster="/static/nft/net-002.png"
+                  />
+                </Box>
               </MotionInView>
             </Grid>
 
-            <Grid item xs={12} md={12} dir="ltr" sx={{ mt: 10 }}>
+            <Grid item xs={12} md={12} dir="ltr">
               <MotionInView variants={varFadeInUp}>
                 <Typography
                   sx={{
                     fontStyle: "italic",
                     fontWeight: "normal",
-                    [theme.breakpoints.down("md")]: {
+                    fontSize: 50,
+                    [theme.breakpoints.down("lg")]: {
                       fontSize: 50,
                     },
                     [theme.breakpoints.down("md")]: {

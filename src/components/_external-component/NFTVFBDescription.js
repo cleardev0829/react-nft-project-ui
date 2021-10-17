@@ -5,13 +5,18 @@ import { varFadeInUp, MotionInView } from "../animate";
 import { useTheme } from "@material-ui/core";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(12, 0),
+  paddingTop: theme.spacing(12),
+  paddingBottom: theme.spacing(12),
+  [theme.breakpoints.down("sm")]: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+  },
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
   width: "100%",
   textAlign: "left",
-  marginBottom: theme.spacing(10),
+  marginBottom: theme.spacing(0),
   [theme.breakpoints.up("md")]: {
     textAlign: "left",
     marginBottom: 0,

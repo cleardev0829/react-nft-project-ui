@@ -8,8 +8,13 @@ import { Section } from "./";
 import { useTheme } from "@material-ui/core";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(10, 0, 5, 0),
   backgroundColor: "black",
+  paddingTop: theme.spacing(12),
+  paddingBottom: theme.spacing(8),
+  [theme.breakpoints.down("sm")]: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(0),
+  },
 }));
 
 IconBullet.propTypes = {
@@ -61,7 +66,7 @@ export default function NFTVirusSections() {
           variant="h6"
           color="secondary"
           sx={{
-            mb: 5,
+            mb: 4,
             fontStyle: "italic",
             fontWeight: "300",
           }}
@@ -167,7 +172,7 @@ export default function NFTVirusSections() {
           variant="h6"
           color="secondary"
           sx={{
-            mb: 5,
+            mb: 4,
             fontStyle: "italic",
             fontWeight: "300",
           }}

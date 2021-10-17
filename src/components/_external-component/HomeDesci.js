@@ -4,6 +4,9 @@ import { varFadeInUp, MotionInView } from "../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 0),
+  [theme.breakpoints.down("sm")]: {
+    padding: theme.spacing(4, 0),
+  },
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -25,7 +28,7 @@ export default function HomeDesci() {
             <Typography
               variant="h4"
               sx={{
-                mb: 3,
+                mb: 4,
                 fontWeight: "bold",
                 fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
               }}
@@ -41,7 +44,7 @@ export default function HomeDesci() {
               sx={{
                 fontStyle: "italic",
                 fontWeight: "normal",
-                mb: 5,
+                mb: 4,
               }}
             >
               Decentralised Science. In a time where information transfer is
@@ -56,14 +59,14 @@ export default function HomeDesci() {
               justifyContent="space-between"
               alignItems="flex-start"
               width="100%"
-              spacing={10}
+              spacing={4}
             >
               <Box>
                 <img
                   data-src="https://drive.google.com/uc?id=13KHtuiccyuUcEmisxrddju_TaHEQruvr"
                   alt=""
                   src="https://drive.google.com/uc?id=13KHtuiccyuUcEmisxrddju_TaHEQruvr"
-                  style={{ height: "350px" }}
+                  style={{ height: 350 }}
                 />
               </Box>
               <Box>
@@ -79,7 +82,7 @@ export default function HomeDesci() {
                   data-behavior="softVideo"
                   src="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
                   poster="/static/nft/net-011.png"
-                  style={{ height: "350px", width: "350px" }}
+                  style={{ height: 350 }}
                 />
               </Box>
             </Stack>
@@ -87,11 +90,11 @@ export default function HomeDesci() {
 
           <Grid
             container
-            spacing={10}
+            spacing={4}
             justifyContent="center"
             alignItems="flex-start"
             sx={{
-              pt: 10,
+              pt: 4,
             }}
           >
             <Grid item xs={12} md={4} dir="ltr">

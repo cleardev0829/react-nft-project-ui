@@ -7,6 +7,9 @@ import VideoPlayer from "../VideoPlayer";
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 0),
   backgroundColor: "black",
+  [theme.breakpoints.down("sm")]: {
+    padding: theme.spacing(4, 0),
+  },
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -61,7 +64,7 @@ export default function HomeDeScientists() {
                 fontStyle: "italic",
                 fontWeight: "normal",
                 color: "white",
-                mb: 5,
+                mb: 4,
               }}
             >
               The advent of DAOs (Decentralised Autonomous Organisation) has
@@ -72,10 +75,10 @@ export default function HomeDeScientists() {
 
           <Grid
             container
-            spacing={5}
+            spacing={4}
             justifyContent="center"
             alignItems="flex-start"
-            sx={{ mb: 10 }}
+            sx={{ mb: 4 }}
           >
             <Grid item xs={12} md={8} dir="ltr">
               <MotionInView variants={varFadeInUp}>
@@ -86,7 +89,7 @@ export default function HomeDeScientists() {
               </MotionInView>
             </Grid>
 
-            <Grid item xs={12} md={4} dir="ltr" sx={{ pl: 5 }}>
+            <Grid item xs={12} md={4} dir="ltr" sx={{ pl: 4 }}>
               <MotionInView variants={varFadeInUp}>
                 <Typography
                   variant="subtitle1"
@@ -107,7 +110,7 @@ export default function HomeDeScientists() {
 
           <Grid
             container
-            spacing={5}
+            spacing={4}
             justifyContent="center"
             alignItems="flex-start"
           >
@@ -130,7 +133,7 @@ export default function HomeDeScientists() {
                 />
               </MotionInView>
             </Grid>
-            <Grid item xs={12} md={4} dir="ltr" sx={{ pl: 5 }}>
+            <Grid item xs={12} md={4} dir="ltr" sx={{ pl: 4 }}>
               <MotionInView variants={varFadeInUp}>
                 <Typography
                   variant="subtitle1"

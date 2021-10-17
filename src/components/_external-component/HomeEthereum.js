@@ -4,6 +4,9 @@ import { varFadeInUp, MotionInView } from "../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 0),
+  [theme.breakpoints.down("sm")]: {
+    padding: theme.spacing(4, 0),
+  },
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -25,7 +28,7 @@ export default function HomeEthereum() {
             <Typography
               variant="h4"
               sx={{
-                mb: 5,
+                mb: 4,
                 fontWeight: "bold",
                 fontStyle: "normal",
                 fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
@@ -41,7 +44,7 @@ export default function HomeEthereum() {
               sx={{
                 fontStyle: "italic",
                 fontWeight: "normal",
-                mb: 5,
+                mb: 4,
                 color: (theme) => theme.palette.warning.main,
               }}
             >
@@ -54,16 +57,21 @@ export default function HomeEthereum() {
 
           <Grid
             container
-            spacing={5}
+            spacing={4}
             justifyContent="center"
             alignItems="space-between"
           >
             <Grid item xs={12} md={8} dir="ltr" sx={{ height: "auto" }}>
               <MotionInView variants={varFadeInUp} sx={{ height: "100%" }}>
-                <Box sx={{ position: "relative", height: "100%" }}>
+                <Box
+                  sx={{
+                    position: "relative",
+                    height: "100%",
+                  }}
+                >
                   <img
-                    src="https://drive.google.com/uc?id=1nN2knnG7R6QTkA7CJBq8BGoTYcIpJ6jW"
-                    data-src="https://drive.google.com/uc?id=1nN2knnG7R6QTkA7CJBq8BGoTYcIpJ6jW"
+                    src="/static/nft/ethereum.png"
+                    data-src="/static/nft/ethereum.png"
                     alt=""
                     style={{ height: "100%", objectFit: "cover" }}
                   />
@@ -219,7 +227,7 @@ export default function HomeEthereum() {
                   sx={{
                     fontStyle: "normal",
                     fontWeight: "normal",
-                    mb: 5,
+                    mb: 4,
                   }}
                 >
                   The advent of the Ethereum blockchain created an ecosystem

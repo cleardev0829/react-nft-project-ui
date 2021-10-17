@@ -5,9 +5,11 @@ import { CarouselImg, Countdown } from ".";
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(10, 0),
+  paddingTop: theme.spacing(12),
+  paddingBottom: theme.spacing(12),
   [theme.breakpoints.down("md")]: {
-    padding: theme.spacing(24, 0),
+    paddingTop: theme.spacing(24),
+    paddingBottom: theme.spacing(4),
   },
 }));
 

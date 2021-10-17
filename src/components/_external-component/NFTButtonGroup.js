@@ -5,8 +5,13 @@ import { varFadeInUp, MotionInView } from "../animate";
 import { Link as ScrollLink } from "react-scroll";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(10, 0),
   backgroundColor: "black",
+  paddingTop: theme.spacing(12),
+  paddingBottom: theme.spacing(12),
+  [theme.breakpoints.down("sm")]: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+  },
 }));
 
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -27,7 +32,7 @@ export default function NFTButtonGroup() {
           <Typography
             variant="h4"
             sx={{
-              mb: 5,
+              mb: 4,
               fontWeight: "bold",
               fontFamily: (theme) => `${theme.typography.headingFontFamily}`,
             }}
@@ -37,15 +42,10 @@ export default function NFTButtonGroup() {
           </Typography>
         </MotionInView>
 
-        <Grid
-          container
-          justifyContent="center"
-          alignItems="center"
-          spacing="10"
-        >
+        <Grid container justifyContent="center" alignItems="center" spacing={4}>
           <Grid item xs={12} md={5} dir="ltr">
             <ContentStyle>
-              <Stack direction="column" spacing={3}>
+              <Stack direction="column" spacing={4}>
                 <MotionInView variants={varFadeInUp}>
                   <ScrollLink
                     to="virus"

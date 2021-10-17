@@ -5,8 +5,13 @@ import { Section } from "./";
 import { Typography, useTheme } from "@material-ui/core";
 
 const RootStyle = styled("div")(({ theme }) => ({
-  padding: theme.spacing(10, 0, 5, 0),
   backgroundColor: "black",
+  paddingTop: theme.spacing(12),
+  paddingBottom: theme.spacing(8),
+  [theme.breakpoints.down("sm")]: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(0),
+  },
 }));
 
 export default function NFTBacteriaSections() {

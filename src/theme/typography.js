@@ -65,8 +65,8 @@ const typography = {
   h6: {
     fontWeight: 400,
     lineHeight: 28 / 18,
-    fontSize: pxToRem(16),
-    ...responsiveFontSizes({ sm: 16, md: 18, lg: 20 }),
+    fontSize: pxToRem(14),
+    ...responsiveFontSizes({ sm: 14, md: 18, lg: 20 }),
   },
   subtitle1: {
     fontWeight: 400,

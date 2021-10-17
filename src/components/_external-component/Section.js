@@ -7,6 +7,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
   width: "100%",
   textAlign: "left",
   marginBottom: theme.spacing(0),
+  paddingBottom: theme.spacing(4),
   [theme.breakpoints.up("md")]: {
     textAlign: "left",
     marginBottom: 0,
@@ -21,7 +22,7 @@ export default function Section({ children, components }) {
           container
           justifyContent="space-between"
           alignItems="flex-start"
-          spacing={25}
+          spacing={4}
         >
           <Grid item xs={12} md={6} dir="ltr">
             <MotionInView variants={varFadeInUp}></MotionInView>
@@ -42,7 +43,7 @@ export default function Section({ children, components }) {
 
           <Grid item xs={12} md={6} dir="ltr">
             <MotionInView variants={varFadeInUp}>
-              <Stack justifyContent="center" alignItems="center" spacing={5}>
+              <Stack justifyContent="center" alignItems="center" spacing={4}>
                 {components &&
                   components.map((c, index) => {
                     return c;
@@ -59,6 +60,7 @@ export default function Section({ children, components }) {
           dir="ltr"
           justifyContent="center"
           alignItems="center"
+          sx={{ mt: 4 }}
         >
           <img
             width={41.5}

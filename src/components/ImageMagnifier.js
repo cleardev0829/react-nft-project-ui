@@ -1,5 +1,8 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import { experimentalStyled as styled } from "@material-ui/core/styles";
+import { Box, useTheme } from "@material-ui/core";
+import "./styles.css";
 
 ImageMagnifier.propTypes = {
   src: PropTypes.string,
@@ -11,6 +14,12 @@ ImageMagnifier.propTypes = {
   zoomLevel: PropTypes.number,
 };
 
+const MagnifierStyle = styled("div")(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    visibility: "hidden",
+  },
+}));
+
 export default function ImageMagnifier({
   src,
   underSrc,
@@ -20,6 +29,8 @@ export default function ImageMagnifier({
   magnifierWidth = 300,
   zoomLevel = 1,
 }) {
+  const theme = useTheme();
+
   const [[x, y], setXY] = useState([0, 0]);
   const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
   const [showMagnifier, setShowMagnifier] = useState(false);
@@ -34,7 +45,13 @@ export default function ImageMagnifier({
       >
         <img
           src={src}
-          style={{ height: height, width: width }}
+          style={{
+            height: height,
+            width: width,
+            [theme.breakpoints.down("md")]: {
+              backgroundColor: 0,
+            },
+          }}
           onMouseEnter={(e) => {
             // update image size and turn-on magnifier
             const elem = e.currentTarget;
@@ -59,37 +76,42 @@ export default function ImageMagnifier({
           alt={"img"}
         />
 
-        <div
-          style={{
-            display: showMagnifier ? "" : "none",
-            position: "absolute",
+        <MagnifierStyle>
+          <div
+            id="magnifier-img"
+            style={{
+              display: showMagnifier ? "" : "none",
+              position: "absolute",
 
-            // prevent magnifier blocks the mousemove event of img
-            pointerEvents: "none",
-            // set size of magnifier
-            height: `${magnifierHeight}px`,
-            width: `${magnifierWidth}px`,
-            // move element center to cursor pos
-            top: `${y - magnifierHeight / 2}px`,
-            left: `${x - magnifierWidth / 2}px`,
-            opacity: "1", // reduce opacity so you can verify position
-            //   border: "1px solid lightgray",
-            backgroundColor: "black",
-            backgroundImage: `url('${underSrc}')`,
-            backgroundRepeat: "no-repeat",
+              // prevent magnifier blocks the mousemove event of img
+              pointerEvents: "none",
+              // set size of magnifier
 
-            //calculate zoomed image size
-            backgroundSize: `${imgWidth * zoomLevel}px ${
-              imgHeight * zoomLevel
-            }px`,
+              height: `${magnifierHeight}px`,
+              width: `${magnifierWidth}px`,
 
-            //calculate position of zoomed image.
-            backgroundPositionX: `${-x * zoomLevel + magnifierWidth / 2}px`,
-            backgroundPositionY: `${-y * zoomLevel + magnifierHeight / 2}px`,
+              // move element center to cursor pos
+              top: `${y - magnifierHeight / 2}px`,
+              left: `${x - magnifierWidth / 2}px`,
+              opacity: "1", // reduce opacity so you can verify position
+              //   border: "1px solid lightgray",
+              backgroundColor: "black",
+              backgroundImage: `url('${underSrc}')`,
+              backgroundRepeat: "no-repeat",
 
-            borderRadius: 200,
-          }}
-        />
+              //calculate zoomed image size
+              backgroundSize: `${imgWidth * zoomLevel}px ${
+                imgHeight * zoomLevel
+              }px`,
+
+              //calculate position of zoomed image.
+              backgroundPositionX: `${-x * zoomLevel + magnifierWidth / 2}px`,
+              backgroundPositionY: `${-y * zoomLevel + magnifierHeight / 2}px`,
+
+              borderRadius: 200,
+            }}
+          />
+        </MagnifierStyle>
       </div>
     </div>
   );

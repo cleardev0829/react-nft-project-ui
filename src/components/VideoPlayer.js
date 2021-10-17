@@ -13,7 +13,6 @@ const RootStyle = styled(motion.div)(({ theme }) => ({
 }));
 
 export default function VideoPlayer(props) {
-  const theme = useTheme();
   const { url, poster } = props;
 
   return (
