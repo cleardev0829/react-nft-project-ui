@@ -44,11 +44,9 @@ export default function HomeHero(props) {
       </DesktopStyle>
 
       <MobileStyle>
-        <img
-          width="100%"
-          data-src="/static/nft/net-00${index}.gif"
-          alt=""
-          src="/static/nft/net-000.gif"
+        <VideoPlayer
+          url="https://drive.google.com/uc?export=download&id=1FPCs94HEZabQEXq3ATafz_5Jea68lmrq"
+          // poster="/static/nft/poster.png"
         />
       </MobileStyle>
     </>
