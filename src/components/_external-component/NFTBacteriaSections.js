@@ -95,7 +95,7 @@ export default function NFTBacteriaSections() {
           title="2 E. coli Atomic Structures - Blobology"
           components={[
             <VideoPlayer
-              url="https://drive.google.com/uc?export=download&id=1IM3UN3uIH_pQPBajJxKWXe4a0ZGpIkoN"
+              url="https://drive.google.com/uc?export=download&id=1mIQs7OpbNqrxAHNWXnwCakVMF57QTV5Z"
               poster="/static/nft/net-008.png"
             />,
             <VideoPlayer
