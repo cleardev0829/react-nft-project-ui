@@ -145,7 +145,8 @@ export default function NFTVirusSections() {
               {` 19 `}
             </span>
             ultrarare
-            <br /> interactive SARS-COV-
+            <br />
+            SARS-COV-
             <span style={{ fontFamily: theme.typography.numberFontFamily }}>
               {`2 `}
             </span>

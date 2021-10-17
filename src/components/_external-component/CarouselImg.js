@@ -23,11 +23,11 @@ const CAROUSELS = [
 });
 
 const CarouselImgStyle = styled("img")(({ theme }) => ({
-  height: 580,
+  // height: 580,
   width: "100%",
   objectFit: "cover",
-  [theme.breakpoints.up("xl")]: {
-    height: 520,
+  [theme.breakpoints.up("md")]: {
+    height: 580,
   },
 }));
 
