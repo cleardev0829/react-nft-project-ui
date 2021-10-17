@@ -1,5 +1,12 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import { Container, Grid, Typography, Box, Stack } from "@material-ui/core";
+import {
+  Container,
+  Grid,
+  Typography,
+  Box,
+  Stack,
+  useTheme,
+} from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
 
 const RootStyle = styled("div")(({ theme }) => ({
@@ -20,6 +27,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
 }));
 
 export default function HomeDesci() {
+  const theme = useTheme();
   return (
     <RootStyle>
       <ContentStyle>
@@ -57,18 +65,23 @@ export default function HomeDesci() {
             <Stack
               direction={{ xs: "column", sm: "column", md: "row", lg: "row" }}
               justifyContent="space-between"
-              alignItems="flex-start"
+              alignItems="center"
               width="100%"
               spacing={4}
             >
-              <Box>
-                <img
-                  data-src="https://drive.google.com/uc?id=13KHtuiccyuUcEmisxrddju_TaHEQruvr"
-                  alt=""
-                  src="https://drive.google.com/uc?id=13KHtuiccyuUcEmisxrddju_TaHEQruvr"
-                  style={{ height: 350 }}
-                />
-              </Box>
+              <Box
+                component="img"
+                src="https://drive.google.com/uc?id=13KHtuiccyuUcEmisxrddju_TaHEQruvr"
+                sx={{
+                  [theme.breakpoints.down("sm")]: {
+                    width: "100%",
+                  },
+                  [theme.breakpoints.up("sm")]: {
+                    height: 350,
+                  },
+                }}
+              />
+
               <Box>
                 <video
                   width="100%"

@@ -250,39 +250,28 @@ export default function NFTBacteriaSections() {
               presenting a unique oportunity to harness the the manipulating
               properties of virulence factors for cancer therapeutic purposes.
             </span>
-          </Typography>
-          <span>
-            EPEC, enteropathogenic Escherichia coli, is the cousin of EHEC,
-            causing persistent diarrhoea usually in infants and young children
-            but can also infect the gut of adult colorectal cancer patients.
-            During infection EPEC bacteria use syringe-like maschines mounted on
-            their surface to inject toxins into human cells lining our
-            incomponentsines. Studying the arsenal of toxins, one of these
-            toxins injected by EPEC leads to specific death of colorectal
-            cancer, presenting a unique oportunity to harness the the
-            manipulating properties of virulence factors for cancer therapeutic
-            purposes.
             <br />
             <br />
-          </span>
-          <span style={{ fontSize: 14 }}>
-            Based on research by Qiyun Zhong, conducted at Imperial College
-            London, published in open access journal Plos Biology:
-            <br />
-            <br /> Zhong Q, Roumeliotis TI, Kozik Z, Cepeda-Molero M, Fernández
-            LÁ, Shenoy AR, Bakal C, Frankel G, Choudhary JS. Clustering of Tir
-            during enteropathogenic E. coli infection triggers calcium
-            influx-dependent pyroptosis in intestinal epithelial cells. PLoS
-            Biol
-            <span
-              style={{
-                fontFamily: theme.typography.numberFontFamily,
-                fontStyle: "normal",
-              }}
-            >
-              {` 2020`}
+
+            <span style={{ fontSize: 14 }}>
+              Based on research by Qiyun Zhong, conducted at Imperial College
+              London, published in open access journal Plos Biology:
+              <br />
+              <br /> Zhong Q, Roumeliotis TI, Kozik Z, Cepeda-Molero M,
+              Fernández LÁ, Shenoy AR, Bakal C, Frankel G, Choudhary JS.
+              Clustering of Tir during enteropathogenic E. coli infection
+              triggers calcium influx-dependent pyroptosis in intestinal
+              epithelial cells. PLoS Biol
+              <span
+                style={{
+                  fontFamily: theme.typography.numberFontFamily,
+                  fontStyle: "normal",
+                }}
+              >
+                {` 2020`}
+              </span>
             </span>
-          </span>
+          </Typography>
         </Section>
       </div>
     </RootStyle>

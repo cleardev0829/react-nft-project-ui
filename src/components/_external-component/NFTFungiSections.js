@@ -95,7 +95,7 @@ export default function NFTFungiSections() {
                 fontStyle: "normal",
               }}
             >
-              {`3 `}
+              {`2 `}
             </span>
             Aspergillus Niger - Mould Nebula
           </Typography>
