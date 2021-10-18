@@ -37,10 +37,7 @@ export default function HomeHero(props) {
   return (
     <>
       <DesktopStyle>
-        <VideoPlayer
-          url="https://firebasestorage.googleapis.com/v0/b/rekommender-portal-lle.appspot.com/o/blogs%2F001-compressed%20(1).mov?alt=media&token=6a3552a0-0b81-48b0-8513-a3a6edb4e11a"
-          // poster="/static/nft/poster.png"
-        />
+        <VideoPlayer url="https://drive.google.com/uc?export=download&id=1ibeyN2HurNSo-I2SH32p991A5cn6I2CG" />
       </DesktopStyle>
 
       <MobileStyle>

@@ -104,7 +104,14 @@ export default function HomeEthereum() {
                       height: "62.5%",
                     }}
                   >
-                    <Grid container spacing={2} sx={{ height: "55%" }}>
+                    <Grid
+                      container
+                      spacing={2}
+                      sx={{
+                        height: "55%",
+                        paddingBottom: "8%",
+                      }}
+                    >
                       <Grid
                         item
                         xs={6}
@@ -165,7 +172,11 @@ export default function HomeEthereum() {
                         </Box>
                       </Grid>
                     </Grid>
-                    <Grid container spacing={2} sx={{ height: "45%" }}>
+                    <Grid
+                      container
+                      spacing={2}
+                      sx={{ height: "45%", paddingBottom: "8%" }}
+                    >
                       <Grid
                         item
                         xs={6}

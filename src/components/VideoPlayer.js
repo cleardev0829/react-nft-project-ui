@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { varWrapEnter } from "./animate";
 // material
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import { useTheme } from "@material-ui/core";
+import ReactPlayer from "react-player";
 
 const RootStyle = styled(motion.div)(({ theme }) => ({
   position: "relative",
@@ -13,23 +13,14 @@ const RootStyle = styled(motion.div)(({ theme }) => ({
 }));
 
 export default function VideoPlayer(props) {
-  const { url, poster } = props;
-
   return (
     <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
-      <video
-        width="100%"
-        // height="100%"
-        muted={false}
+      <ReactPlayer
+        playing={true}
         loop={true}
-        playsInline=""
-        autoPlay={true}
-        preload="none"
-        data-src={url}
-        data-lazyload=""
-        data-behavior="softVideo"
-        src={url}
-        poster={poster}
+        width="100%"
+        height="100%"
+        {...props}
       />
     </RootStyle>
   );

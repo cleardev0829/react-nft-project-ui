@@ -18,11 +18,7 @@ export default function Logo({ sx }) {
   // const PRIMARY_MAIN = theme.palette.primary.main;
   // const PRIMARY_DARK = theme.palette.primary.dark;
 
-  const logo =
-    pathname === "/"
-      ? "https://drive.google.com/uc?id=19UtXMdXrovzqRQa0RLKjenk1mJC_Jgmm"
-      : "https://drive.google.com/uc?id=19UtXMdXrovzqRQa0RLKjenk1mJC_Jgmm";
-
+  const logo = "/static/nft/DESCI_logo_white.png";
   return (
     <Box sx={{ mt: 5, ...sx }} color={PRIMARY_LIGHT}>
       <Box

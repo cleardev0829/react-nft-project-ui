@@ -49,7 +49,7 @@ export default function NFTMint() {
           </MotionInView>
         </Grid>
         <Grid item xs={12} md={4} dir="ltr" textAlign="center">
-          <Stack direction="column" spacing={2}>
+          <Stack direction="column" alignItems="center" spacing={2}>
             <Button
               sx={{
                 width: 242,
@@ -63,7 +63,18 @@ export default function NFTMint() {
                 <b>mint</b>
               </Typography>
             </Button>
-            <Typography variant="h5">minting cost</Typography>
+            <Typography variant="h5">
+              minting cost: xxx/
+              <span style={{ fontFamily: theme.typography.numberFontFamily }}>
+                999
+              </span>
+            </Typography>
+            <Typography variant="h5">
+              <span style={{ fontFamily: theme.typography.numberFontFamily }}>
+                0.088
+              </span>
+              Ξ
+            </Typography>
           </Stack>
         </Grid>
       </Grid>

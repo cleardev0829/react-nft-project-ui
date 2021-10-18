@@ -18,8 +18,7 @@ const NumberStyle = styled(Typography)(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function Countdown() {
-  const countdown = useCountdown(new Date("07/07/2022 21:30"));
-
+  const countdown = useCountdown(new Date("10/26/2021 15:33"));
   return (
     <Container>
       <Box sx={{ maxWidth: 480, margin: "auto", textAlign: "center" }}>

@@ -28,8 +28,7 @@ export default function MainLayout() {
           <img
             width="64"
             height="64"
-            src="https://drive.google.com/uc?id=1ZzlmbO-DUpbqTU-ZJ_CPjAjcI4QWgW3B"
-            data-src="https://drive.google.com/uc?id=1ZzlmbO-DUpbqTU-ZJ_CPjAjcI4QWgW3B"
+            src="/static/nft/DESCI_up_arrow-02.png"
             alt=""
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />

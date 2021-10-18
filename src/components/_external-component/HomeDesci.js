@@ -8,6 +8,7 @@ import {
   useTheme,
 } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
+import VideoPlayer from "../VideoPlayer";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 0),
@@ -83,19 +84,9 @@ export default function HomeDesci() {
               />
 
               <Box>
-                <video
-                  width="100%"
-                  muted={false}
-                  loop={true}
-                  playsInline=""
-                  autoPlay={true}
-                  preload="none"
-                  data-src="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
-                  data-lazyload=""
-                  data-behavior="softVideo"
-                  src="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
-                  poster="/static/nft/net-011.png"
-                  style={{ height: 350 }}
+                <VideoPlayer
+                  url="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
+                  height={350}
                 />
               </Box>
             </Stack>
