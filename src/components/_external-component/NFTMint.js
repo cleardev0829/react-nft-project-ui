@@ -64,16 +64,17 @@ export default function NFTMint() {
               </Typography>
             </Button>
             <Typography variant="h5">
-              minting cost: xxx/
-              <span style={{ fontFamily: theme.typography.numberFontFamily }}>
-                999
-              </span>
-            </Typography>
-            <Typography variant="h5">
+              minting cost:{" "}
               <span style={{ fontFamily: theme.typography.numberFontFamily }}>
                 0.088
               </span>
-              Ξ
+              E
+            </Typography>
+            <Typography variant="h5">
+              xxx/
+              <span style={{ fontFamily: theme.typography.numberFontFamily }}>
+                999
+              </span>
             </Typography>
           </Stack>
         </Grid>
