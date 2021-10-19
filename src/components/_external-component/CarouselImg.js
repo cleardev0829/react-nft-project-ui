@@ -31,14 +31,6 @@ const CarouselImgStyle = styled("img")(({ theme }) => ({
   },
 }));
 
-const onChange = (e) => {
-  // console.log(e);
-};
-
-const onSwipeMove = (e) => {
-  // console.log("move=", e);
-};
-
 export default function CarouselImg() {
   return (
     <Box sx={{ position: "relative" }}>

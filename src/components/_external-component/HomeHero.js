@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 import VideoPlayer from "../VideoPlayer";
 
@@ -41,12 +40,7 @@ export default function HomeHero(props) {
       </DesktopStyle>
 
       <MobileStyle>
-        <img
-          width="100%"
-          data-src="/static/nft/net-00${index}.gif"
-          alt=""
-          src="/static/nft/net-000.gif"
-        />
+        <img width="100%" src="/static/nft/net-000.gif" alt="" />
       </MobileStyle>
     </>
   );

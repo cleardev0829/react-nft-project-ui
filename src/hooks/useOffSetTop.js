@@ -21,7 +21,7 @@ export default function useOffSetTop(top) {
     return () => {
       window.onscroll = null;
     };
-  }, [isTop]);
+  }, [dispatch, isTop]);
 
   return offsetTop;
 }

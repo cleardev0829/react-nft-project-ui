@@ -19,10 +19,22 @@ const NumberStyle = styled(Typography)(({ theme }) => ({
 
 export default function Countdown() {
   const countdown = useCountdown(new Date("10/26/2021 15:33"));
+  console.log("===============", countdown);
   return (
     <Container>
       <Box sx={{ maxWidth: 480, margin: "auto", textAlign: "center" }}>
         <CountdownStyle>
+          <div>
+            <NumberStyle>{countdown.days}</NumberStyle>
+            <Typography
+              sx={{ fontSize: 10, color: (theme) => theme.palette.PURPLE }}
+            >
+              days
+            </Typography>
+          </div>
+
+          <NumberStyle>:</NumberStyle>
+
           <div>
             <NumberStyle>{countdown.hours}</NumberStyle>
             <Typography

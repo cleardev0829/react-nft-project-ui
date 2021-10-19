@@ -8,14 +8,11 @@ import { MHidden } from "../../components/@material-extend";
 import navConfig from "./MenuConfig";
 import VerticalMenuDesktop, { LinkStyle } from "./VerticalMenuDesktop";
 import { varFadeInUp, MotionInView } from "../../components/animate";
-import { useSelector } from "react-redux";
 
 export default function MainNavbar() {
   const isOffset = useOffSetTop(100);
   const { pathname } = useLocation();
   const isHome = pathname === "/";
-
-  const isActive = useSelector(({ active }) => active.isActive);
 
   return (
     <AppBar id="Top" color="transparent" sx={{ boxShadow: 0 }}>

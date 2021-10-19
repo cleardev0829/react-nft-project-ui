@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 // material
 import { useTheme } from "@material-ui/core/styles";
-import { useLocation } from "react-router-dom";
 import { Box } from "@material-ui/core";
 
 // ----------------------------------------------------------------------
@@ -12,7 +11,6 @@ Logo.propTypes = {
 
 export default function Logo({ sx }) {
   const theme = useTheme();
-  const { pathname } = useLocation();
 
   const PRIMARY_LIGHT = theme.palette.primary.light;
   // const PRIMARY_MAIN = theme.palette.primary.main;
@@ -27,10 +25,8 @@ export default function Logo({ sx }) {
         alt="logo"
         sx={{
           width: 130.23,
-          // height: 150,
           [theme.breakpoints.down("sm")]: {
             width: 90,
-            // height: 120,
           },
         }}
       />
