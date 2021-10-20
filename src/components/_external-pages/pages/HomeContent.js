@@ -21,8 +21,7 @@ const RootStyle = styled("div")(({ theme }) => ({
 export default function HomeContent() {
   const dispatch = useDispatch();
   window.scrollTo({
-    top: 100,
-    left: 100,
+    top: 0,
     behavior: "smooth",
   });
 

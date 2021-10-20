@@ -17,7 +17,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
 
 export default function Community() {
   return (
-    <RootStyle title="This is Demo website | Minimal-UI" id="move_top">
+    <RootStyle title="DeSci World" id="move_top">
       <ContentStyle>
         <CommunityContent />
       </ContentStyle>

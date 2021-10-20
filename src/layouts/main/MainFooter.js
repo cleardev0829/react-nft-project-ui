@@ -112,8 +112,8 @@ export default function MainFooter() {
                     </Typography>
                   )}
                   <img
-                    src="https://drive.google.com/uc?id=1e91vFO2I802myn0Xo20Vi2xHQU0iWJ6q"
-                    data-src="https://drive.google.com/uc?id=1e91vFO2I802myn0Xo20Vi2xHQU0iWJ6q"
+                    src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/DESCI_social_logos-01.png?alt=media&token=7094ea50-3d1a-4032-945e-9865607cf3d0"
+                    data-src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/DESCI_social_logos-01.png?alt=media&token=7094ea50-3d1a-4032-945e-9865607cf3d0"
                     alt=""
                   />
                   <Link
@@ -166,8 +166,8 @@ export default function MainFooter() {
                   )}
 
                   <img
-                    src="https://drive.google.com/uc?id=1DohCwAbJPSmRkOhD9dOiuqqGGG7z1Z74"
-                    data-src="https://drive.google.com/uc?id=1DohCwAbJPSmRkOhD9dOiuqqGGG7z1Z74"
+                    src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/DESCI_social_logos-02.png?alt=media&token=2878332d-37a2-4108-9946-e4647b5caf24"
+                    data-src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/DESCI_social_logos-02.png?alt=media&token=2878332d-37a2-4108-9946-e4647b5caf24"
                     alt=""
                   />
                   <Link

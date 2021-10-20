@@ -5,16 +5,7 @@ import { mockImgFeed } from "../../utils/mockImages";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-const CAROUSELS = [
-  "000",
-  // "001",
-  // "002",
-  // "003",
-  // "004",
-  // "005",
-  // "006",
-  // "007",
-].map((item, index) => {
+const CAROUSELS = ["000"].map((item, index) => {
   return {
     title: item,
     description: faker.lorem.lines(),
@@ -23,7 +14,6 @@ const CAROUSELS = [
 });
 
 const CarouselImgStyle = styled("img")(({ theme }) => ({
-  // height: 580,
   width: "100%",
   objectFit: "cover",
   [theme.breakpoints.up("md")]: {

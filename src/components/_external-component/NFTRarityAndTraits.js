@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, Box, useTheme } from "@material-ui/core";
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 import { varFadeInUp, MotionInView } from "../animate";
+import VideoPlayer from "../VideoPlayer";
 
 const RootStyle = styled("div")(({ theme }) => ({
   backgroundColor: "white",
@@ -70,17 +71,8 @@ export default function NFTRarityAndTraits() {
             <Grid item xs={12} md={6}>
               <MotionInView variants={varFadeInUp}>
                 <Box>
-                  <video
-                    width="100%"
-                    muted={false}
-                    loop={true}
-                    playsInline=""
-                    autoPlay={true}
-                    preload="none"
-                    data-src="https://drive.google.com/uc?export=download&id=1WAo2OU5wWj4NNcf2bmpMugcc_P4crWPh"
-                    data-lazyload=""
-                    data-behavior="softVideo"
-                    src="https://drive.google.com/uc?export=download&id=1WAo2OU5wWj4NNcf2bmpMugcc_P4crWPh"
+                  <VideoPlayer
+                    url="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/004-Large%20540p.mov?alt=media&token=a0e6fd4f-1086-4cd4-8205-99f56d21b225"
                     poster="/static/nft/net-002.png"
                   />
                 </Box>

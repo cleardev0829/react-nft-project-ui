@@ -64,11 +64,11 @@ export default function NFTMint() {
               </Typography>
             </Button>
             <Typography variant="h5">
-              minting cost:{" "}
+              minting cost:&nbsp;
               <span style={{ fontFamily: theme.typography.numberFontFamily }}>
                 0.088
               </span>
-              E
+              ETH
             </Typography>
             <Typography variant="h5">
               xxx/

@@ -3,6 +3,7 @@ import { Container, Grid, Typography, Box } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
 import ImageMagnifier from "src/components/ImageMagnifier";
 import VideoPlayer from "../VideoPlayer";
+// import Video from "../src/demo/App";
 import { MHidden } from "../@material-extend";
 
 const RootStyle = styled("div")(({ theme }) => ({
@@ -38,13 +39,13 @@ export default function HomeDeScientists() {
             <MotionInView variants={varFadeInUp}>
               <MHidden width="smDown">
                 <ImageMagnifier
-                  src="https://drive.google.com/uc?id=1VBrOZ2tn94tg4zs_dWsWimpxLk0A5fcQ"
-                  underSrc="https://drive.google.com/uc?id=1WfNmnv8vtyKf1fI-KCIhYbXE0KjX5X--"
+                  src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/005.png?alt=media&token=3638c5a0-ff76-44d7-ac17-1ce32d6550f5"
+                  underSrc="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/006%20(1).png?alt=media&token=ce38f17b-39c1-443b-8650-14b98009dea2"
                 />
               </MHidden>
               <MHidden width="smUp">
                 <ImageMagnifier
-                  src="https://drive.google.com/uc?id=1WfNmnv8vtyKf1fI-KCIhYbXE0KjX5X--"
+                  src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/006%20(1).png?alt=media&token=ce38f17b-39c1-443b-8650-14b98009dea2"
                   underSrc=""
                 />
               </MHidden>
@@ -91,10 +92,7 @@ export default function HomeDeScientists() {
           >
             <Grid item xs={12} md={8} dir="ltr">
               <MotionInView variants={varFadeInUp}>
-                <VideoPlayer
-                  url="https://drive.google.com/uc?export=download&id=1BLJwyxDV-ubBcIs04yl5lIqkvWZYqaiK"
-                  poster="/static/nft/net-012.png"
-                />
+                <VideoPlayer src="https://drive.google.com/uc?export=download&id=1BLJwyxDV-ubBcIs04yl5lIqkvWZYqaiK" />
               </MotionInView>
             </Grid>
 
@@ -126,8 +124,8 @@ export default function HomeDeScientists() {
             <Grid item xs={12} md={4} dir="ltr">
               <MotionInView variants={varFadeInUp}>
                 <img
-                  src="https://drive.google.com/uc?id=1pat5-LC82KDP9OC0sxru7hXtpGJNtKy4"
-                  data-src="https://drive.google.com/uc?id=1pat5-LC82KDP9OC0sxru7hXtpGJNtKy4"
+                  src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/007.jpeg?alt=media&token=8daa9de0-8c24-4556-9260-8ba5e700cf2c"
+                  data-src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/007.jpeg?alt=media&token=8daa9de0-8c24-4556-9260-8ba5e700cf2c"
                   alt=""
                 />
               </MotionInView>
@@ -136,8 +134,8 @@ export default function HomeDeScientists() {
             <Grid item xs={12} md={4} dir="ltr">
               <MotionInView variants={varFadeInUp}>
                 <img
-                  src="https://drive.google.com/uc?id=1jeG_DSRl1HFqXeziiClkMpTg5u4u32MF"
-                  data-src="https://drive.google.com/uc?id=1jeG_DSRl1HFqXeziiClkMpTg5u4u32MF"
+                  src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/008.jpeg?alt=media&token=236c9c62-5071-4af8-a3b8-0321d81541f3"
+                  data-src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/008.jpeg?alt=media&token=236c9c62-5071-4af8-a3b8-0321d81541f3"
                   alt=""
                 />
               </MotionInView>

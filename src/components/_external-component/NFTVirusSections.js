@@ -53,22 +53,22 @@ export default function NFTVirusSections() {
       <Section
         components={[
           <VideoPlayer
-            url="https://drive.google.com/uc?export=download&id=1syOF43Nlx3hjZ9bMU97fiQ2nnVejojV4"
+            url="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/005-Large%20540p.mov?alt=media&token=0734f52d-014f-4247-8b42-d51d4640209f"
             poster="/static/nft/net-004.png"
           />,
           <>
             <MHidden width="smDown">
               <ImageMagnifier
                 maxWidth={340}
-                src="https://drive.google.com/uc?id=1f4KtgrHaVO68jKvtVmRYVAdzwoNCL7CO"
-                underSrc="https://drive.google.com/uc?id=1wynSxn8NUtkId3-7e5srMZZ74AKOa5YE"
+                src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/005.png?alt=media&token=3638c5a0-ff76-44d7-ac17-1ce32d6550f5"
+                underSrc="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/006%20(1).png?alt=media&token=ce38f17b-39c1-443b-8650-14b98009dea2"
               />
             </MHidden>
             <MHidden width="smUp">
               <ImageMagnifier
                 maxWidth={340}
-                src="https://drive.google.com/uc?id=1wynSxn8NUtkId3-7e5srMZZ74AKOa5YE"
-                // src="https://drive.google.com/uc?id=1f4KtgrHaVO68jKvtVmRYVAdzwoNCL7CO"
+                src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/006%20(1).png?alt=media&token=ce38f17b-39c1-443b-8650-14b98009dea2"
+                underSrc=""
               />
             </MHidden>
           </>,

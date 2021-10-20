@@ -9,6 +9,7 @@ import {
 } from "@material-ui/core";
 import { varFadeInUp, MotionInView } from "../animate";
 import VideoPlayer from "../VideoPlayer";
+// import Video from "../src/demo/App";
 
 const RootStyle = styled("div")(({ theme }) => ({
   padding: theme.spacing(12, 0),
@@ -72,7 +73,7 @@ export default function HomeDesci() {
             >
               <Box
                 component="img"
-                src="https://drive.google.com/uc?id=13KHtuiccyuUcEmisxrddju_TaHEQruvr"
+                src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/003%20(1).png?alt=media&token=9136f967-2b2a-4645-a466-dd388d18396b"
                 sx={{
                   [theme.breakpoints.down("sm")]: {
                     width: "100%",
@@ -85,7 +86,7 @@ export default function HomeDesci() {
 
               <Box>
                 <VideoPlayer
-                  url="https://drive.google.com/uc?export=download&id=14KJiNw11qwa5CZsnzhP7H0XL6Z-0rtAQ"
+                  src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/002-Large%20540p.mov?alt=media&token=9712da4b-9f3a-4eb8-9363-8292da8acf24"
                   height={350}
                 />
               </Box>
@@ -104,8 +105,7 @@ export default function HomeDesci() {
             <Grid item xs={12} md={4} dir="ltr">
               <MotionInView variants={varFadeInUp}>
                 <img
-                  src="https://drive.google.com/uc?id=1X_CwL4h1l6iVLHq4m98bdagXyr3VrPNE"
-                  data-src="https://drive.google.com/uc?id=1X_CwL4h1l6iVLHq4m98bdagXyr3VrPNE"
+                  src="https://firebasestorage.googleapis.com/v0/b/desci-5b3ec.appspot.com/o/004.jpeg?alt=media&token=38349308-b3b7-4c7d-ad1f-1512cae62ed0"
                   alt=""
                 />
               </MotionInView>
